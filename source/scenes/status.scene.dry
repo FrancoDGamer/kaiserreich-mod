@@ -43,17 +43,21 @@ Reichstag composition:
 # 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ SP_r +]%
+{!<span class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
+{!<span class="tooltip-text" title="German Democratic Party">!}dkp{!</span>!}: [+ dkp_r +]%
 # 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
+{!<span class="tooltip-text" title="German Fatherland idk Party">DVLP</span>!}: [+ dvlp_r +]%
 # 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
+{!<span class="tooltip-text" title="German Socialist Party">DSP</span>!}: [+ dsp_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
+# 1928: 9, 1930: 10
+{!<span class="tooltip-text" title="Far Left Delegates">FL</span>!}: [+ fl_r +]%
+# 1928: 9, 1930: 10
+{!<span class="tooltip-text" title="Liberal idk Party">LVP</span>!}: [+ lvp_r +]%
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -78,15 +82,20 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_relation : relationships +]
 
 {!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
 
 {!<span class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dvlp_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="German Socialist Party">DSP</span>!}: [+ dsp_relation : relationships +]
+
+{!<span class="tooltip-text" title="Socialist Party">SP</span>!}: [+ sp_relation : relationships +]
+
+{!<span class="tooltip-text" title="The libs">LVP</span>!}: [+ lvp_relation : relationships +]
+
 
 = Internal Factions of the SPD
 
