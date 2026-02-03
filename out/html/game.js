@@ -161,7 +161,8 @@
   
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
-  window.displayText = function (text) {
+
+window.displayText = function (text) {
     return applyWholesome(text);
 };
 
@@ -197,7 +198,6 @@ function applyWholesome(str) {
         });
     });
 }
-
 
   // This function allows you to do something in response to signals.
   window.handleSignal = function(signal, event, scene_id) {
@@ -273,6 +273,7 @@ function applyWholesome(str) {
       return bar;
   };
 
+
   window.justLoaded = true;
   window.statusTab = "status";
   window.dendryModifyUI = main;
@@ -286,10 +287,12 @@ function applyWholesome(str) {
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
   };
 
-}());
-document.addEventListener('mousemove', e => {
+}
+ document.addEventListener('mousemove', e => {
     document.querySelectorAll('.mytooltiptext').forEach(el => {
         el.style.setProperty('--mouse-x', e.clientX + 'px');
         el.style.setProperty('--mouse-y', e.clientY + 'px');
     });
 });
+ ());
+
