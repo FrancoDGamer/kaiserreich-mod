@@ -285,13 +285,13 @@ function applyWholesome(str) {
     }
     window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
   };
- 
-}());
-
-
+  
 document.addEventListener('mousemove', e => {
     document.querySelectorAll('.mytooltiptext').forEach(el => {
         el.style.setProperty('--mouse-x', e.clientX + 'px');
         el.style.setProperty('--mouse-y', e.clientY + 'px');
     });
 });
+  
+}());
+
