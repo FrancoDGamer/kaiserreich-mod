@@ -9,4 +9,4 @@ const colourList = [{
         word: "SP",
         style: "color: #BA0000; font-weight: bold;",
         img: "img/ps.png" // this line is not mandatory
-    }
+    }];
