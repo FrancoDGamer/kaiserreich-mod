@@ -1,12 +1,12 @@
 
 const tooltipList = [{
-    searchString: "PS",
-    explanationText: "<img src=img/ps_a.png> The Socialist Party of Chile. <br> (Partido Socialista de Chile)"
+    searchString: "SP",
+    explanationText: "<img src=img/ps_a.png> The Socialist Party of Germany. <br> (Sozialistische Partei)"
 }];
 
 
 const colourList = [{
-        word: "PS",
+        word: "SP",
         style: "color: #BA0000; font-weight: bold;",
         img: "img/ps.png" // this line is not mandatory
     }
