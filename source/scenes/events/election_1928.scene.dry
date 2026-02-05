@@ -302,6 +302,7 @@ Syndicalist Coalition (SP + SPD): [+ syndicalist_coalition +]%
 There are some potential coalition arrangements.
 
 @coalition_menu
+
 - @democratic_union_coalition
 - @spd_majority
 
