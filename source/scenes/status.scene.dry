@@ -43,10 +43,31 @@ Reichstag composition:
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 
 # 1928: 15, 1930: 15, 1932: 
-{!<span style="color: #004DBA;" class="tooltip-text" title="Center Party + Bavarian People's Party">Z</span>!}: [+ z_r +]%
+{!<span style="color: #004DBA;" class="tooltip-text" title="Center Party">Z</span>!}: [+ z_r +]%
 
 # 1928: 10, 1930: 13
 {!<span style="color: #D10000;" class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #53683B;" class="tooltip-text" title="National Liberal Party">NLP</span>!}: [+ nlp_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #FFED4D;" class="tooltip-text" title="Progressive People's Party">FVP</span>!}: [+ fvp_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #FFCC00;" class="tooltip-text" title="Bavarian People's Party">BVP</span>!}: [+ bvp_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #FF96D7;" class="tooltip-text" title="Polish Party">PP</span>!}: [+ bvp_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #B5BA54;" class="tooltip-text" title="German-Hanoverian Party">Guelphs</span>!}: [+ guelph_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #000E91;" class="tooltip-text" title="Alsace–Lorraine People's Party">ELVP</span>!}: [+ upn_r +]%
+
+# 1928: 9, 1930: 10
+{!<span style="color: #FFC300;" class="tooltip-text" title="A collection of multiple minor liberal parties">Minority Liberals</span>!}: [+ minority_liberal_r +]%
 
 # 1928: 5, 1930: 4 (as DstP)
 {!<span style="color: #274875;" class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_r +]%
@@ -62,34 +83,6 @@ Reichstag composition:
 
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #690038;" class="tooltip-text" title="Far Left Delegates">sp</span>!}: [+ sp_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="National Liberal Party">NLP</span>!}: [+ nlp_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="Progressive People's Party">FVP</span>!}: [+ fvp_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="Bavarian People's Party">BVP</span>!}: [+ bvp_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="Polish Party">PP</span>!}: [+ bvp_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="German-Hanoverian Party">guelph</span>!}: [+ guelph_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="Alsace–Lorraine People's Party">ELVP</span>!}: [+ upn_r +]%
-
-# 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="A collection of multiple minor liberal parties">Minority Liberals</span>!}: [+ minority_liberal_r +]%
-
-
-// finished adding in new parties
-
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -108,7 +101,6 @@ Economic growth: [+ economic_growth_2 +]%
 @politics
 
 = Inter-party Relations
-
 
 {!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
 
