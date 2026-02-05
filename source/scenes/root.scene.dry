@@ -102,11 +102,18 @@ Q.moderate_plan_adopted = 0;
 
 // inter-party relations
 Q.z_relation = 50;
-Q.sp_relation = 0;
-Q.fl_relation = 25;
-Q.lvp_relation = 60;
-// DNVP and NSDAP are invariably hostile
+Q.sp_relation = 25;
+Q.faud_relation = 0;
+Q.lvp_relation = 0;
+Q.fvp_relation = 0;
+Q.nlp_relation = 0;
+Q.minority_liberal_relation = 0;
+Q.guelph_relation = 0;
+Q.pp_relation = 0;
+Q.upn_relation = 0;
+Q.bvp_relation = 0;
 Q.DKP_relation = 10;
+// DNVP and NSDAP are invariably hostile
 Q.DVP_relation = 10;
 Q.DVLP_relation = 0;
 Q.DSP_relation = 0;
@@ -213,8 +220,8 @@ Q.catholics = 30;
 Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
-// inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
-Q.inflation = 2.9;
+// infaudation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
+Q.infaudation = 2.9;
 
 // economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
 Q.economic_growth = 4.4;
@@ -230,78 +237,120 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'sp', 'fl', 'z', 'lvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other'];
+Q.parties = ['spd', 'sp', 'faud', 'z', 'nlp', 'fvp', 'lvp', 'minority_liberal', 'guelph', 'pp', 'upn, 'dkp', 'dvp', 'dvlp', 'dsp', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
+Q.workers_faud = 0;
 Q.workers_spd = 10;
 Q.workers_sp = 10;
-Q.workers_fl = 10;
 Q.workers_z = 10;
-Q.workers_lvp = 10;
+Q.workers_nlp = 10;
+Q.workers_fvp= 10;
+Q.workers_lvp = 0;
+Q.workers_minority_liberal = 0;
+Q.workers_guelph = 1;
+Q.workers_bvp = 1;
+Q.workers_pp = 1;
+Q.workers_upn = 1;
 Q.workers_dkp = 10;
 Q.workers_dvp = 10;
 Q.workers_dvlp = 10;
 Q.workers_dsp = 10;
-Q.workers_other = 10;
+Q.workers_other = 5;
 
+Q.old_middle_faud = 0;
 Q.old_middle_spd = 10;
 Q.old_middle_sp = 10;
-Q.old_middle_fl = 10;
 Q.old_middle_z = 10;
-Q.old_middle_lvp = 10;
+Q.old_middle_nlp = 10;
+Q.old_middle_fvp= 10;
+Q.old_middle_lvp = 0;
+Q.old_middle_minority_liberal = 0;
+Q.old_middle_guelph = 1;
+Q.old_middle_bvp = 1;
+Q.old_middle_pp = 1;
+Q.old_middle_upn = 1;
 Q.old_middle_dkp = 10;
 Q.old_middle_dvp = 10;
 Q.old_middle_dvlp = 10;
 Q.old_middle_dsp = 10;
-Q.old_middle_other = 10;
+Q.old_middle_other = 5;
 
+Q.new_middle_faud = 0;
 Q.new_middle_spd = 10;
-Q.old_middle_sp = 10;
-Q.old_middle_fl = 10;
-Q.old_middle_z = 10;
-Q.old_middle_lvp = 10;
-Q.old_middle_dkp = 10;
-Q.old_middle_dvp = 10;
-Q.old_middle_dvlp = 10;
-Q.old_middle_dsp = 10;
-Q.old_middle_other = 10;
+Q.new_middle_sp = 10;
+Q.new_middle_z = 10;
+Q.new_middle_nlp = 10;
+Q.new_middle_fvp= 10;
+Q.new_middle_lvp = 0;
+Q.new_middle_minority_liberal = 0;
+Q.new_middle_guelph = 1;
+Q.new_middle_bvp = 1;
+Q.new_middle_pp = 1;
+Q.new_middle_upn = 1;
+Q.new_middle_dkp = 10;
+Q.new_middle_dvp = 10;
+Q.new_middle_dvlp = 10;
+Q.new_middle_dsp = 10;
+Q.new_middle_other = 5;
 
+Q.rural_faud = 0;
 Q.rural_spd = 10;
 Q.rural_sp = 10;
-Q.rural_fl = 10;
 Q.rural_z = 10;
-Q.rural_lvp = 10;
+Q.rural_nlp = 10;
+Q.rural_fvp= 10;
+Q.rural_lvp = 0;
+Q.rural_minority_liberal = 1;
+Q.rural_guelph = 1;
+Q.rural_bvp = 1;
+Q.rural_pp = 1;
+Q.rural_upn = 1;
 Q.rural_dkp = 10;
 Q.rural_dvp = 10;
 Q.rural_dvlp = 10;
 Q.rural_dsp = 10;
-Q.rural_other = 10;
+Q.rural_other = 5;
 
+Q.unemployed_faud = 0;
 Q.unemployed_spd = 10;
 Q.unemployed_sp = 10;
-Q.unemployed_fl = 10;
 Q.unemployed_z = 10;
-Q.unemployed_lvp = 10;
+Q.unemployed_nlp = 10;
+Q.unemployed_fvp= 10;
+Q.unemployed_lvp = 0;
+Q.unemployed_minority_liberal = 1;
+Q.unemployed_guelph = 1;
+Q.unemployed_bvp = 1;
+Q.unemployed_pp = 1;
+Q.unemployed_upn = 1;
 Q.unemployed_dkp = 10;
 Q.unemployed_dvp = 10;
 Q.unemployed_dvlp = 10;
 Q.unemployed_dsp = 10;
-Q.unemployed_other = 10;
+Q.unemployed_other = 5;
 
-Q.catholics_spd = 10;
-Q.catholics_sp = 10;
-Q.catholics_fl = 10;
-Q.catholics_z = 10;
-Q.catholics_lvp = 10;
-Q.catholics_dkp = 10;
-Q.catholics_dvp = 10;
-Q.catholics_dvlp = 10;
-Q.catholics_dsp = 10;
-Q.catholics_other = 10;
+Q.catholic_faud = 0;
+Q.catholic_spd = 10;
+Q.catholic_sp = 10;
+Q.catholic_z = 10;
+Q.catholic_nlp = 10;
+Q.catholic_fvp= 10;
+Q.catholic_lvp = 0;
+Q.catholic_minority_liberal = 1;
+Q.catholic_guelph = 1;
+Q.catholic_bvp = 1;
+Q.catholic_pp = 1;
+Q.catholic_upn = 1;
+Q.catholic_dkp = 10;
+Q.catholic_dvp = 10;
+Q.catholic_dvlp = 10;
+Q.catholic_dsp = 10;
+Q.catholic_other = 5;
 
 // Current Reichstag composition
 // % of Reichstag in Jan 1928
@@ -311,26 +360,36 @@ Q.catholics_other = 10;
 // They did not have a CDU/CSU-style relationship.
 Q.spd_r = 10;
 Q.sp_r = 10;
-Q.fl_r = 10;
 Q.z_r = 10;
-Q.lvp_r = 10;
+Q.fvp_r = 10;
+Q.nlp_r = 10;
 Q.dkp_r = 10;
 Q.dvp_r = 10;
-Q.dvlp_r = 10;
+Q.dvlp_r = 5;
 Q.dsp_r = 10;
-Q.other_r = 10;
+Q.other_r = 5;
+Q.minority_liberal = 1;
+Q.pp_r = 1
+Q.upn_r = 1
+Q.guelph_r = 1
+Q.bvp_r = 1
 
 // diff from prev
-Q.old_spd_r = 9;
-Q.old_sp_r = 9;
-Q.old_fl_r = 9;
-Q.old_z_r = 9;
-Q.old_lvp_r = 9;
-Q.old_dkp_r = 9;
-Q.old_dvp_r = 9;
-Q.old_dvlp_r = 9;
-Q.old_dsp_r = 9;
-Q.old_other_r = 9;
+Q.old_spd_r = 10;
+Q.old_sp_r = 10;
+Q.old_z_r = 10;
+Q.old_fvp_r = 10;
+Q.old_nlp_r = 10;
+Q.old_dkp_r = 10;
+Q.old_dvp_r = 10;
+Q.old_dvlp_r = 5;
+Q.old_dsp_r = 10;
+Q.old_other_r = 5;
+Q.old_minority_liberal = 1;
+Q.old_pp_r = 1
+Q.old_upn_r = 1
+Q.old_guelph_r = 1
+Q.old_bvp_r = 1
 
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 0;
@@ -340,7 +399,7 @@ Q.old_sapd_r = 0;
 Q.election_records = [];
 // party support records for every month
 Q.party_support_records = [];
-// inflation and unemployment records
+// infaudation and unemployment records
 Q.economic_records = [];
 
 // State of the government
@@ -350,14 +409,20 @@ Q.chancellor = "Heinrich Bruning";
 Q.chancellor_party = 'Z';
 Q.spd_in_government = 0;
 Q.sp_in_government = 0;
-Q.fl_in_government = 0;
+Q.faud_in_government = 0;
 Q.z_in_government = 1;
-Q.lvp_in_government = 1;
+Q.nlp_in_government = 1;
+Q.fvp_in_government = 1;
+Q.lvp_in_government = 0;
 Q.dkp_in_government = 0;
 Q.dvp_in_government = 0;
 Q.dvlp_in_government = 1;
 Q.dsp_in_government = 0;
-Q.other_in_government = 0;
+Q.other_in_government = 1;
+Q.bvp_in_government = 1;
+Q.pp_in_government = 0;
+Q.guelph_in_government = 0;
+Q.upn_in_government = 0;
 
 Q.in_right_coalition = 0;
 // Weimar coalition = SPD + Z + DDP
@@ -392,7 +457,7 @@ Q.minority_government = 0;
 // starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
 // is the agricultural ministry useful at all?
 Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'LVP';
+Q.foreign_minister_party = 'FVP';
 Q.interior_minister = 'von Keudell';
 Q.interior_minister_party = 'DVLP';
 Q.justice_minister = 'Hergt';
@@ -402,7 +467,7 @@ Q.labor_minister_party = 'Z';
 Q.reichswehr_minister = 'Groener';
 Q.reichswehr_minister_party = 'I';
 Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'LVP';
+Q.economic_minister_party = 'NLP';
 Q.finance_minister = 'Köhler';
 Q.finance_minister_party = 'Z';
 Q.agriculture_minister = 'Schiele';
@@ -480,12 +545,12 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'inter_party_relationships', 'international_relations',
             'iron_front', 'media', 'enemies',
             'party_organizations', 'rally', 'reichsbanner',
-            'shuffle_leadership', 'streetfighting', 'peoples_party',
+            'shuffaude_leadership', 'streetfighting', 'peoples_party',
             'party_disunity',
             // govt
             'agricultural_policy', 'domestic_enemies', 'fiscal_policy',
             'foreign_policy', 'judiciary', 'labor_affairs', 'military_policy',
-            'police', 'prussian_affairs', 'shuffle_cabinet', 'social_welfare',
+            'police', 'prussian_affairs', 'shuffaude_cabinet', 'social_welfare',
             'homosexual_rights', 'economic_policy', 'coalition_affairs',
             'war_guilt', 'womens_rights', 'economic_democracy',
             'dealing_with_toleration',
@@ -495,7 +560,7 @@ Q.timers = ['advisor_action', 'confronting_nazis', 'crisis_program',
             'emergency_cuts', 'unemployment_insurance',
             'sa_ban', 'sh_ban', 'papen_chancellor',
             'sp_policy', 'sp_ultimatum', 'popular_front_dispute',
-            'high_inflation', 'banking_crisis', 'march_on_berlin',
+            'high_infaudation', 'banking_crisis', 'march_on_berlin',
             'understanding_enemy', 'schleichers_schemes'];
 Q.advisor_action_timer = 0;
 // party affairs timers
@@ -511,7 +576,7 @@ Q.enemies_timer = 0;
 Q.party_organizations_timer =  0;
 Q.rally_timer = 0;
 Q.reichsbanner_timer = 0;
-Q.shuffle_leadership_timer = 0;
+Q.shuffaude_leadership_timer = 0;
 Q.streetfighting_timer = 0;
 Q.peoples_party_timer = 0;
 // n_elections is the number of elections that have happened since the start of the game.
@@ -534,7 +599,7 @@ Q.labor_affairs_timer = 0;
 Q.military_policy_timer = 0;
 Q.police_timer = 0;
 Q.prussian_affairs_timer = 0;
-Q.shuffle_cabinet_timer = 0;
+Q.shuffaude_cabinet_timer = 0;
 Q.social_welfare_timer = 0;
 Q.war_guilt_timer = 0;
 Q.womens_rights_timer = 0;
@@ -595,7 +660,7 @@ Q.stampfer_advisor = 0; // Friedrich Stampfer
 set-bg: img/map_2.jpg
 new-page: true
 
-> *"Such a general development cannot be attributed to the false tactics of any single party or to the mistakes of individual leaders. On the contrary, the conduct of individual leaders is determined largely by the sentiments of the people as a whole. It would be erroneous, however, to regard the sentiments of the moment as reflecting the natural make-up and character of the people. They are merely the consequence of the special circumstances which have brought about this profound degradation of the entire nation."*
+> *"Such a general development cannot be attributed to the false tactics of any single party or to the mistakes of individual leaders. On the contrary, the conduct of individual leaders is determined largely by the sentiments of the people as a whole. It would be erroneous, however, to regard the sentiments of the moment as refaudecting the natural make-up and character of the people. They are merely the consequence of the special circumstances which have brought about this profound degradation of the entire nation."*
 
  - Karl Kautsky, *Hitlerism and Social Democracy*, 1934
 
@@ -603,41 +668,10 @@ This is a game of alternate history. While historical accuracy is a major concer
 
 For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
-- @1928_easy: Begin (easy difficulty)
 - @1928_main: Begin (normal difficulty)
-- @1928_hard: Begin (hard difficulty)
-- @1928_historical: Begin (historical mode)
-
-@1928_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; sp_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
-go-to: 1928_main
-
-@1928_hard
-on-arrival: difficulty = 1; resources = 0; dues = 1; rb_strength = 1000; reformist_dissent = 25; left_dissent = 30; labor_dissent = 25; center_dissent = 25; z_relation = 41; sp_relation = 16; dvp_relation = 31; budget = 3;
-go-to: 1928_main
-
-@1928_historical
-subtitle: Saving, loading, and polls will be disabled. [? if not achievement_game_completed: Not recommended for a first playthrough. ?]
-on-arrival: {!
-Q.difficulty = 2;
-Q.historical_mode = 1;
-Q.resources = 2;
-Q.dues = 1;
-Q.rb_strength = 2000;
-Q.reformist_dissent = 25;
-Q.left_dissent = 30;
-Q.labor_dissent = 25;
-Q.center_dissent = 25;
-Q.z_relation = 41;
-Q.sp_relation = 16;
-Q.dvp_relation = 31;
-Q.budget = 2;
-this.state.disableSaves = true;
-!}
-go-to: 1928_main
 
 @1928_main
-audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
+audio: shuffaude music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_HOHEN_BERGEN_noise_reduced.mp3 music/1928_1930/MarekWeber.mp3 music/1928_1930/BAUERNKAPELLE.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1928_1930/LiedDerPompadour.mp3 music/1928_1933/SozialistenMarsch.mp3
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
