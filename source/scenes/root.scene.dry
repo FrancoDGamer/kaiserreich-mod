@@ -369,10 +369,10 @@ Q.dvlp_r = 5;
 Q.dsp_r = 10;
 Q.other_r = 5;
 Q.minority_liberal = 1;
-Q.pp_r = 1
-Q.upn_r = 1
-Q.guelph_r = 1
-Q.bvp_r = 1
+Q.pp_r = 1;
+Q.upn_r = 1;
+Q.guelph_r = 1;
+Q.bvp_r = 1;
 
 // diff from prev
 Q.old_spd_r = 10;
@@ -386,10 +386,10 @@ Q.old_dvlp_r = 5;
 Q.old_dsp_r = 10;
 Q.old_other_r = 5;
 Q.old_minority_liberal = 1;
-Q.old_pp_r = 1
-Q.old_upn_r = 1
-Q.old_guelph_r = 1
-Q.old_bvp_r = 1
+Q.old_pp_r = 1;
+Q.old_upn_r = 1;
+Q.old_guelph_r = 1;
+Q.old_bvp_r = 1;
 
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 0;
