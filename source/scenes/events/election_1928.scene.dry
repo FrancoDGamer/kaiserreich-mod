@@ -101,7 +101,7 @@ if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
 // coalitions
 Q.democratic_union = Q.spd_r + Q.lvp_r + Q.z_r - 3;
 Q.march_coalition = Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r;
-Q.syndicalist_coalition = Q.sp+r + Q.spd+r;
+Q.syndicalist_coalition = Q.sp_r + Q.spd_r;
 
 if (Q.kpd_relation >= 30) {
     Q.weimar_coalition += Q.sapd_r;
