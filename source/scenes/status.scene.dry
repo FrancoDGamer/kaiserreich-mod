@@ -200,17 +200,23 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 SPD: [+ spd_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+SP: [+ sp_votes +]%
+
+FAUD: [+ faud_votes +]%
 
 Z: [+ z_votes +]%
 
-SP: [+ sp_votes +]%
+BVP: [+ bvp_votes +]%
 
-faud: [+ fl_votes +]%
+NLP: [+ lvp_votes +]%
 
-LVP: [+ lvp_votes +]%
+FVP: [+ fvp_votes +]%
 
-// [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+Minority Liberals: [+ minorityliberal_votes +]%
+
+GHP: [+ guelph_votes +]%
+
+EVLP: [+ upn_votes +]%
 
 DKP: [+ dkp_votes +]%
 
@@ -224,16 +230,112 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, faud: [+ workers_fl_display +]%, Z: [+ workers_z_display +]%, SP: [+ workers_sp_display +]%, DKP: [+ workers_dvp_display +]%, LVP: [+ new_middle_lvp_display +]%, DVP: [+ workers_dvp_display +]%; DVLP: [+ workers_dvlp_display +]%, DSP: [+ workers_dsp_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: 
+SPD: [+ workers_spd_display +]%
+FAUD: [+ workers_faud_display +]%
+SP: [+ workers_sp_display +]%
+Z: [+ workers_z_display +]%
+BVP: [+ workers_bvp_display +]%
+NLP: [+ workers_nlp_display +]%
+FVP: [+ workers_fvp_display +]%
+Minority Liberals: [+ workers_minorityliberal_display +]%
+PP: [+ workers_nlp_display +]%
+GHP: [+ workers_guelph_display +]%
+ELVP: [+ workers_upn_display +]%
+DKP: [+ workers_dkp_display +]%
+DVP: [+ workers_dvp_display +]%
+DVLP: [+ workers_dvlp_display +]%
+DSP: [+ workers_dsp_display +]%
+Others: [+ workers_other_display +]% 
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, faud: [+ new_middle_fl_display +]%, Z: [+ new_middle_z_display +]%, SP: [+ new_middle_sp_display +]%, DKP: [+ new_middle_dvp_display +]%, LVP: [+ new_middle_lvp_display +]%, DVP: [+ new_middle_dvp_display +]%; DVLP: [+ new_middle_dvlp_display +]%, DSP: [+ new_middle_dsp_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+New Middle Class: 
+SPD: [+ new_middle_spd_display +]%
+FAUD: [+ new_middle_faud_display +]%
+SP: [+ new_middle_sp_display +]%
+Z: [+ new_middle_z_display +]%
+BVP: [+ new_middle_bvp_display +]%
+NLP: [+ new_middle_nlp_display +]%
+FVP: [+ new_middle_fvp_display +]%
+Minority Liberals: [+ new_middle_minorityliberal_display +]%
+PP: [+ new_middle_nlp_display +]%
+GHP: [+ new_middle_guelph_display +]%
+ELVP: [+ new_middle_upn_display +]%
+DKP: [+ new_middle_dkp_display +]%
+DVP: [+ new_middle_dvp_display +]%
+DVLP: [+ new_middle_dvlp_display +]%
+DSP: [+ new_middle_dsp_display +]%
+Others: [+ new_middle_other_display +]% 
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, faud: [+ old_middle_fl_display +]%, Z: [+ old_middle_z_display +]%, SP: [+ old_middle_sp_display +]%, DKP: [+ old_middle_dkp_display +]%, LVP: [+ new_middle_lvp_display +]%, DVP: [+ old_middle_dvp_display +]%; DVLP: [+ old_middle_dvlp_display +]%, DSP: [+ old_middle_dsp_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Old Middle Class:
+SPD: [+ old_middle_spd_display +]%
+FAUD: [+ old_middle_faud_display +]%
+SP: [+ old_middle_sp_display +]%
+Z: [+ old_middle_z_display +]%
+BVP: [+ old_middle_bvp_display +]%
+NLP: [+ old_middle_nlp_display +]%
+FVP: [+ old_middle_fvp_display +]%
+Minority Liberals: [+ old_middle_minorityliberal_display +]%
+PP: [+ old_middle_nlp_display +]%
+GHP: [+ old_middle_guelph_display +]%
+ELVP: [+ old_middle_upn_display +]%
+DKP: [+ old_middle_dkp_display +]%
+DVP: [+ old_middle_dvp_display +]%
+DVLP: [+ old_middle_dvlp_display +]%
+DSP: [+ old_middle_dsp_display +]%
+Others: [+ old_middle_other_display +]% 
 
-Rural: SPD: [+ rural_spd_display +]%, faud: [+ rural_fl_display +]%, Z: [+ rural_z_display +]%, SP: [+ rural_sp_display +]%, DKP: [+ rural_dvp_display +]%, LVP: [+ new_middle_lvp_display +]%, DVP: [+ rural_dvp_display +]%; DVLP: [+ rural_dvlp_display +]%, DSP: [+ rural_dsp_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Rural: 
+SPD: [+ rural_spd_display +]%
+FAUD: [+ rural_faud_display +]%
+SP: [+ rural_sp_display +]%
+Z: [+ rural_z_display +]%
+BVP: [+ rural_bvp_display +]%
+NLP: [+ rural_nlp_display +]%
+FVP: [+ rural_fvp_display +]%
+Minority Liberals: [+ rural_minorityliberal_display +]%
+PP: [+ rural_nlp_display +]%
+GHP: [+ rural_guelph_display +]%
+ELVP: [+ rural_upn_display +]%
+DKP: [+ rural_dkp_display +]%
+DVP: [+ rural_dvp_display +]%
+DVLP: [+ rural_dvlp_display +]%
+DSP: [+ rural_dsp_display +]%
+Others: [+ rural_other_display +]% 
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, faud: [+ unemployed_fl_display +]%, Z: [+ unemployed_z_display +]%, SP: [+ unemployed_sp_display +]%, DKP: [+ unemployed_dvp_display +]%, LVP: [+ unemployed_display +]%, DVP: [+ unemployed_dvp_display +]%; DVLP: [+ unemployed_dvlp_display +]%, DSP: [+ unemployed_dsp_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Unemployed:
+SPD: [+ rural_spd_display +]%
+FAUD: [+ rural_faud_display +]%
+SP: [+ rural_sp_display +]%
+Z: [+ rural_z_display +]%
+BVP: [+ rural_bvp_display +]%
+NLP: [+ rural_nlp_display +]%
+FVP: [+ rural_fvp_display +]%
+Minority Liberals: [+ rural_minorityliberal_display +]%
+PP: [+ rural_nlp_display +]%
+GHP: [+ rural_guelph_display +]%
+ELVP: [+ rural_upn_display +]%
+DKP: [+ rural_dkp_display +]%
+DVP: [+ rural_dvp_display +]%
+DVLP: [+ rural_dvlp_display +]%
+DSP: [+ rural_dsp_display +]%
+Others: [+ rural_other_display +]% 
 
-Catholics: SPD: [+ catholics_spd_display +]%, faud: [+ catholics_fl_display +]%, Z: [+ catholics_z_display +]%, SP: [+ catholics_sp_display +]%, DKP: [+ new_middle_dvp_display +]%, LVP: [+ new_middle_lvp_display +]%, DVP: [+ catholics_dvp_display +]%; DVLP: [+ catholics_dvlp_display +]%, DSP: [+ catholics_dsp_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Catholics: 
+SPD: [+ catholics_spd_display +]%
+FAUD: [+ catholics_faud_display +]%
+SP: [+ catholics_sp_display +]%
+Z: [+ catholics_z_display +]%
+BVP: [+ catholics_bvp_display +]%
+NLP: [+ catholics_nlp_display +]%
+FVP: [+ catholics_fvp_display +]%
+Minority Liberals: [+ catholics_minorityliberal_display +]%
+PP: [+ catholics_nlp_display +]%
+GHP: [+ catholics_guelph_display +]%
+ELVP: [+ catholics_upn_display +]%
+DKP: [+ catholics_dkp_display +]%
+DVP: [+ catholics_dvp_display +]%
+DVLP: [+ catholics_dvlp_display +]%
+DSP: [+ catholics_dsp_display +]%
+Others: [+ catholics_other_display +]% 
 
 Support for the Republic: [+ pro_republic_disp +]%
