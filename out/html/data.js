@@ -72,7 +72,8 @@ const colourList = [{
 },
                     {
         word: "SPD",
-        style: "color: #E30063; font-weight: bold;",
+        style: "color: #E30063; font-weight: bold; background-color: white; border-radius: 1px;",
+        
 },
                     {
         word: "Z",
