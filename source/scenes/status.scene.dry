@@ -106,7 +106,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+DVP: [+ dvp_relation : relationships +]
 
 {!<span class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_relation : relationships +]
 
