@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1931;
+Q.year = 1928;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -193,7 +193,7 @@ Q.constructive_vonc = 0;
 Q.presidential_powers = 0;
 // allows banning of non-constitutional parties
 Q.constitutional_protection = 0;
-Q.sp_banned = 0;
+Q.kpd_banned = 0;
 Q.nsdap_banned = 0;
 
 // coups and capital strikes happen when you upset the right or the capitalists too much with your policies. they're an additional check on your policies, when purely electoral checks don't suffice.
@@ -395,12 +395,16 @@ Q.old_bvp_r = 1;
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
-// array of objects of the form {date: Date(), spd: 10, sp: 12, ...} for each election
+// for changing the DDP's name to the DStP
+Q.ddp_name = "DDP";
+
+// array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
 // party support records for every month
 Q.party_support_records = [];
 // inflation and unemployment records
 Q.economic_records = [];
+
 
 // State of the government
 Q.president = "Herbert von Dirksen";
@@ -430,9 +434,9 @@ Q.in_weimar_coalition = 0;
 // Grand coalition = SPD + Z + BVP + DDP + DVP
 // also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
 Q.in_grand_coalition = 0;
-// Popular front = SPD + sp + Z + DDP
+// Popular front = SPD + KPD + Z + DDP
 Q.in_popular_front = 0;
-// left coalition = SPD + sp + left-splinters
+// left coalition = SPD + KPD + left-splinters
 Q.in_left_front = 0;
 // emergency government containing the SPD: only president Braun can do this.
 Q.in_emergency_government = 0;
@@ -444,8 +448,8 @@ Q.in_minority_government = 0;
 
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
-// dissent from the sp, in a popular front or left front government
-Q.sp_coalition_dissent = 0;
+// dissent from the KPD, in a popular front or left front government
+Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
 Q.spd_toleration = 0;
@@ -459,9 +463,9 @@ Q.minority_government = 0;
 Q.foreign_minister = 'Streseman';
 Q.foreign_minister_party = 'FVP';
 Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DVLP';
+Q.interior_minister_party = 'DKP';
 Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DVLP';
+Q.justice_minister_party = 'DKP';
 Q.labor_minister = 'Brauns';
 Q.labor_minister_party = 'Z';
 Q.reichswehr_minister = 'Groener';
@@ -471,7 +475,7 @@ Q.economic_minister_party = 'NLP';
 Q.finance_minister = 'Köhler';
 Q.finance_minister_party = 'Z';
 Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DVLP';
+Q.agriculture_minister_party = 'DKP';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
@@ -706,17 +710,8 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-
 = 1928
 
-KAISERREICH 
-BOTTOM TEXT
+It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
 
 Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
-
-SP
-SP
-SP
-SP
-SP
-
