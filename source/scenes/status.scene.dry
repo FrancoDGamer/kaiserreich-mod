@@ -38,48 +38,48 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Reichstag composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span style="color: #E30063;" class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
+{!<span style="color: #E30063;" class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]% [+ 445/spd_r +] Seats
 
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 
 # 1928: 15, 1930: 15, 1932: 
-{!<span style="color: #004DBA;" class="tooltip-text" title="Center Party">Z</span>!}: [+ z_r +]%
+{!<span style="color: #004DBA;" class="tooltip-text" title="Center Party">Z</span>!}: [+ z_r +]% - [+ 445/z_r +] Seats
 
 # 1928: 10, 1930: 13
-{!<span style="color: #D10000;" class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_r +]%
+{!<span style="color: #D10000;" class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_r +]% [+ 445/sp_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #53683B;" class="tooltip-text" title="National Liberal Party">NLP</span>!}: [+ nlp_r +]%
+{!<span style="color: #53683B;" class="tooltip-text" title="National Liberal Party">NLP</span>!}: [+ nlp_r +]% [+ 445/nlp_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FFED4D;" class="tooltip-text" title="Progressive People's Party">FVP</span>!}: [+ fvp_r +]%
+{!<span style="color: #FFED4D;" class="tooltip-text" title="Progressive People's Party">FVP</span>!}: [+ fvp_r +]% [+ 445/fvp_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="Bavarian People's Party">BVP</span>!}: [+ bvp_r +]%
+{!<span style="color: #FFCC00;" class="tooltip-text" title="Bavarian People's Party">BVP</span>!}: [+ bvp_r +]% [+ 445/bvp_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FF96D7;" class="tooltip-text" title="Polish Party">PP</span>!}: [+ bvp_r +]%
+{!<span style="color: #FF96D7;" class="tooltip-text" title="Polish Party">PP</span>!}: [+ bvp_r +]% [+ 445/pp_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #B5BA54;" class="tooltip-text" title="German-Hanoverian Party">Guelphs</span>!}: [+ guelph_r +]%
+{!<span style="color: #B5BA54;" class="tooltip-text" title="German-Hanoverian Party">Guelphs</span>!}: [+ guelph_r +]% [+ 445/guelph_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #000E91;" class="tooltip-text" title="Alsace–Lorraine People's Party">ELVP</span>!}: [+ upn_r +]%
+{!<span style="color: #000E91;" class="tooltip-text" title="Alsace–Lorraine People's Party">ELVP</span>!}: [+ upn_r +]% [+ 445/upn_r +] Seats
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FFC300;" class="tooltip-text" title="A collection of multiple minor liberal parties">Minority Liberals</span>!}: [+ minority_liberal_r +]%
+{!<span style="color: #FFC300;" class="tooltip-text" title="A collection of multiple minor liberal parties">Minority Liberals</span>!}: [+ minorityliberal_r +]% [+ 445/minorityliberal_r +] Seats
 
 # 1928: 5, 1930: 4 (as DstP)
-{!<span style="color: #274875;" class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_r +]%
+{!<span style="color: #274875;" class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_r +]% [+ 445/dkp_r +] Seats
 
 # 1928: 9, 1930: 5
-{!<span style="color: #161654;" class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+{!<span style="color: #161654;" class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]% [+ 445/dvp_r +] Seats
 
 # 1928: 14, 1930: 7
-{!<span style="color: #426366;" class="tooltip-text" title="German Fatherland idk Party">DVLP</span>!}: [+ dvlp_r +]%
+{!<span style="color: #426366;" class="tooltip-text" title="German Fatherland idk Party">DVLP</span>!}: [+ dvlp_r +]% [+ 445/dvlp_r +] Seats
 
 # 1928: 3, 1930: 18
-{!<span style="color: #2E4D1F;" class="tooltip-text" title="German Socialist Party">DSP</span>!}: [+ dsp_r +]%
+{!<span style="color: #2E4D1F;" class="tooltip-text" title="German Socialist Party">DSP</span>!}: [+ dsp_r +]% [+ 445/dsp_r +] Seats
 
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
