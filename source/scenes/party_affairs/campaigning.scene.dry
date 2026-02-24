@@ -18,7 +18,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @special: Launch a specialized campaign, aimed at a certain demographic or specific message we want to get across.
 - @season: Mobilize the party up and get the grassroots ready! We'll launch a political movement!
 - @info: How are our opponents campaigns doing?
-- @root: Put this on hold, good sir! I must peruse if this shall be it to reach socialism or nay.
+- @easy_discard: Put this on hold, good sir! I must peruse if this shall be it to reach socialism or nay.
 
 @start
 subtitle: The political scene in the German Empire is filled with constant propaganda, books and political cartoons. Newspapers such as Vowarts and the Berliner Morgenpost engage in fierce analysis and debates around the situation. The Viennan Coffeehouses have survived and made their way into Berlin, wherein niche political circles and fierce intellectual debates can be found. All this can be leveraged to the SPD's favour.
