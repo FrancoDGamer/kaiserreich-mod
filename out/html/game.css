@@ -3,7 +3,7 @@ body {
   --border-color: #000;
   --content-bg-color: #2D2D3D;
   --text-color: #E3E3FF;
-  --link-color: #900;
+  --link-color: #BC2015;
   --link-hover-color: rgba(0, 0, 0, 0.05);
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
   --unavailable-color: #999;
@@ -53,6 +53,8 @@ header, #content, footer {
   font-size: 1.1em;
   padding: 1em 1.5em 1.5em 1.5em;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  border-style: double;
+  border-width: 4px;
 }
 footer {
   margin-top: 1em;
