@@ -9,6 +9,20 @@ tags: party_affairs
 
 = Campaigning
 
+The political scene in the German Empire is highly dynamic and afloat with campaign after campaign.
+
+Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
+
+- @change: We have to alter the details of our current campaign.
+- @start: Start a new broad campaign to spread our message and accomplishments.
+- @special: Launch a specialized campaign, aimed at a certain demographic or specific message we want to get across.
+- @season: Fire the party up and get the grassroots ready! We'll launch a campaigning season.
+- @info: How are our opponents campaigns doing?
+- @exit: Put this on hold, good sir! I must peruse if this shall be it to reach socialism or nay.
+
+@start
+subtitle: The political scene in the German Empire is filled with constant propaganda, books and political cartoons. Newspapers such as Vowarts and the Berliner Morgenpost engage in fierce analysis and debates around the situation. The Viennan Coffeehouses have survived and made their way into Berlin, wherein niche political circles and fierce intellectual debates can be found. All this can be leveraged to the SPD's favour.
+
 Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
 
 - @workers: The urban working class, our traditional support base.
@@ -17,16 +31,43 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @rural: Rural workers and small farmers, who have felt neglected by us in the past.
 - @unemployed: The unemployed.
 - @catholics: Catholics, who typically support the Center Party.
-- @root: We either don't want to or cannot campaign right now.
-- @easy_discard
 
 @workers
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: workers_spd += 6*(1-dissent); workers_spd -= 2 if unemployed >= 15; workers_spd -= 2 if unemployed >= 25; workers_spd += 6*(1-dissent) if wtb_adopted = 1; resources -= 1; workers_spd += 3*(1-dissent) if nationalization_progress >= 1;
+subtitle: We are the workers.
 
-We have increased our campaigning among the workers. [? if unemployed >= 15: The high levels of unemployment make our campaign more difficult. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract workers. ?]
+What message should our campaign focus on?
+
+- @leftist_worker: We must address the worker concerns directly, focusing on populist rethoric and showsmanship.
+- @centre_worker: The role of the SPD as a protector of labor rights and ally of trade unions.
+- @reformist_worker: The need for reform of old institutions via democratic and parliamentary means.
+- @republican_worker: The preservation of the March Constitution and the democratization of the Empire.
+- @democratic_worker: Educate the workers 
+- @democratic_propaganda_worker: Bring a pro-democratic message towards the workers via.
+- @exit
+
+@leftist_worker
+
+We have began a campaign of populism. Though popular, this alienates Bourgeious parties and gives the reactionaries ammo against us. It might also risk empowering the FAUD or radicalizing germany.
+
+@centre_worker
+
+We have done centre
+
+@reformist_worker
+
+We have done reform
+
+@republican_worker
+
+Republic bottom text
+
+@democratic_worker
+
+democracy 1
+
+@democratic_propaganda_worker
+
+democracy 2
 
 @new_middle
 subtitle: -1 resources
@@ -68,3 +109,21 @@ view-if: peoples_party == 1
 on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
 
 We have increased our campaigning among Catholics.
+
+@special
+
+Message 1
+
+@season
+
+Message 2
+
+@info
+
+info 1
+
+@exit
+
+we leave
+
+
