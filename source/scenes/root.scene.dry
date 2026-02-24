@@ -681,6 +681,7 @@ For more information on the politics and government of the German Republic, see 
 
 @1928_easy
 on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
+new-page: true
 go-to: you
 
 @1928_main
