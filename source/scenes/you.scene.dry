@@ -8,7 +8,7 @@ contentElement.style.backgroundColor = '#000000';
 
 const header = document.querySelector('header');
 header.style.color = '#000000';
-contentElement.style.color = '#000000';
+contentElement.style.color = '#fff';
 
 const isMobile = window.innerWidth <= 768;
 const toolsElements = document.querySelectorAll('.tools');
@@ -18,13 +18,13 @@ toolsElements.forEach(tool => {
         tool.style.marginLeft = '';
         tool.style.padding = '0.6em';
         tool.style.width = '';
-        tool.style.color = '#FFFFFF';
+        tool.style.color = '#000';
         tool.style.backgroundColor = '#000000';
     } else {
         tool.style.marginLeft = '-6em';
         tool.style.padding = '0.6em';
         tool.style.width = '20rem';
-        tool.style.color = '#FFFFFF';
+        tool.style.color = '#000';
         tool.style.backgroundColor = '#000000';
     }
 });
@@ -36,12 +36,12 @@ if (qualitiesH1) {
 
 const headerLinks = document.querySelectorAll('#header-links a');
 headerLinks.forEach(link => {
-    link.style.color = 'black';
+    link.style.color = 'white';
 });
 
 const tabContainer = document.querySelector('.tab_container');
 if (tabContainer) {
-    tabContainer.style.backgroundColor = '#c3b8a0';
+    tabContainer.style.backgroundColor = '#000';
 }
 
 const tabButtons = document.querySelectorAll('.tab_button');
@@ -75,7 +75,24 @@ tabButtons.forEach(button => {
 
 !}
 
-- @start: Begin anew.
+Who are you?
+
+- @you_are_hermann_muller
+- @you_are_otto_braun
+- @you_are_carlo_mierendorff
+- @you_are_custom
+
+@you_are_hermann_muller
+go-to: start
+
+@you_are_otto_braun
+go-to: start
+
+@you_are_carlo_mierendorff
+go-to: start
+
+@you_are_custom
+go-to: start
 
 @start
 go-to: root.1928_main
