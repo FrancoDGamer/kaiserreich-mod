@@ -100,6 +100,9 @@ Q.moderate_plan_adopted = 0;
 
 // organizations
 
+//campaigning status
+Q.campaign_underway = 0;
+
 // inter-party relations
 Q.z_relation = 50;
 Q.sp_relation = 25;
