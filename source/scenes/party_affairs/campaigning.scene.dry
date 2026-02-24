@@ -16,7 +16,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @change: We have to alter the details of our current campaign.
 - @start: Start a new broad campaign to spread our message and accomplishments.
 - @special: Launch a specialized campaign, aimed at a certain demographic or specific message we want to get across.
-- @season: Fire the party up and get the grassroots ready! We'll launch a campaigning season.
+- @season: Mobilize the party up and get the grassroots ready! We'll launch a political movement!
 - @info: How are our opponents campaigns doing?
 - @root: Put this on hold, good sir! I must peruse if this shall be it to reach socialism or nay.
 
@@ -35,37 +35,61 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 @workers
 subtitle: We are the workers.
 
+The SPD is the largest worker's movement in the country. With the continuous rise of syndicalism abroad, groups like the FAUD or the SP have lost momentum in parliamentary affairs, and even their members are forced to tactically vote for the SPD.
+
 What message should our campaign focus on?
 
-- @leftist_worker: We must address the worker concerns directly, focusing on populist rethoric and showsmanship.
-- @centre_worker: The role of the SPD as a protector of labor rights and ally of trade unions.
+- @revolutionary: We will advocate for the overthrow of the monarchy and the establishment of a syndicalist state.
+- @revolutionary_careful: We will try to subtly push workers towards syndicalims.
+- @leftist_worker: We must seek to directly rally around the worker's concerns, focusing on populist rethoric and showsmanship.
+- @centre_worker: Our campaign will focus on the role of the SPD as a protector of labor rights and ally of trade unions.
 - @reformist_worker: The need for reform of old institutions via democratic and parliamentary means.
 - @republican_worker: The preservation of the March Constitution and the democratization of the Empire.
 - @democratic_worker: Educate the workers 
 - @democratic_propaganda_worker: Bring a pro-democratic message towards the workers via.
 - @campaigning: let's check it out.
 
-@leftist_worker
+@revolutionary
+subtitle: This is a very risky option that will be perceived as a declaration of war.
+choose-if: campaign_syndicalist == 1
+unavailable-subtitle: We are a marxist social democratic party! We would never advocate for syndicalism!
+on-arrival: campaign_underway += 1
 
-We have began a campaign of populism. Though popular, this alienates Bourgeious parties and gives the reactionaries ammo against us. It might also risk empowering the FAUD or radicalizing germany.
+WIP.
+
+@revolutionary_careful
+choose-if: campaign_syndicalist == 1
+unavailable-subtitle: We are a marxist social democratic party! We would never advocate for syndicalism!
+
+WIP.
+
+@leftist_worker
+on-arrival: campaign_underway += 1
+
+We have began a primarily populist campaign. This is an inherently popular campaign, however it alienates Bourgeious parties and gives the reactionaries ammo against us. It might also risk empowering the FAUD or radicalizing Germany as a whole.
 
 @centre_worker
+on-arrival: campaign_underway += 1
 
-We have done centre
+Our campaign focuses primarily on the . Its effectiveness is largely dependant 
 
 @reformist_worker
+on-arrival: campaign_underway += 1
 
 We have done reform
 
 @republican_worker
+on-arrival: campaign_underway += 1
 
 Republic bottom text
 
 @democratic_worker
+on-arrival: campaign_underway += 1
 
 democracy 1
 
 @democratic_propaganda_worker
+on-arrival: campaign_underway += 1
 
 democracy 2
 
@@ -111,17 +135,22 @@ on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
 We have increased our campaigning among Catholics.
 
 @special
+subtitle: Running a specialized campaign allow us to reach specific interest groups outside the major demographics of the Empire, or directly target specific states or local regions. It might also help us make roadways into groups we haven't previously worked with.
 
 Message 1
 
 @season
+subtitle: A campaigning season usually occurs as a result of major events or votes, such as referendums or elections, and it will be more effective and easier to mobilize the party in such occasions. We can also try to mobilize our demographics and allies in protest or support via this option.
 
 Message 2
 
 @info
+subtitle: We are not the only ones running campaigns. Keeping track of our opponents tactics and making a decision can be highly helpful.
 
 info 1
 
 @change
+choose-if: campaign_underway == 1
+unavailable-subtitle: We have no campaigns going on.
 
 aaa
