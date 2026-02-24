@@ -75,5 +75,7 @@ tabButtons.forEach(button => {
 
 !}
 
-@start: Begin anew.
+- @start: Begin anew.
+
+@start
 go-to: root.1928_main
