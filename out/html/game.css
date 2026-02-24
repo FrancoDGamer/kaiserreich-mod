@@ -131,7 +131,7 @@ p.game-over {
   color: #999;
 }
 ul.choices {
-  border: 2px solid #876;
+  border: 2px double #E3E3FF;
   padding: 0;
   margin: 0.25em 0 0 0;
   list-style-type: none;
