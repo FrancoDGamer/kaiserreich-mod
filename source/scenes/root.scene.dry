@@ -102,6 +102,7 @@ Q.moderate_plan_adopted = 0;
 
 //campaigning status
 Q.campaign_underway = 0;
+Q.campaign_syndicalist = 0;
 
 // inter-party relations
 Q.z_relation = 50;
