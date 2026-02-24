@@ -9,9 +9,18 @@ tags: party_affairs
 
 = Campaigning
 
-The political scene in the German Empire is highly dynamic and afloat with campaign after campaign.
+The political scene in the German Empire is highly dynamic and afloat with campaign after campaign. The state is overtaken by a fundamental contradiction, seen on one hand as the 'political arena' of Europe, afloat with ideologies and critical thought, and on the other as a bastion of conservatism and monarchism following its victory in the weltkrieg, has created an unique political environment.
 
-Whether or not we are in an electoral campaign, the party is always trying to broaden its voter base. Who should we focus our campaign efforts on?
+As the leader of the worker's movement in Germany, the Social Democratic Party must navigate this troublesome political atmosphere, prove itself against other ideologies and secure the future of its constituents. To this end, it's essential to maintain a strong performance among the many demographics of Germany, lest we lose the role of Opposition Leader to the <span style="color: #426366;">right</span>, or <span style="color: #2E4D1F;">wor</span><span style="color: #5b6f8f;">se</span>.
+
+The Urban Working Class remains our main base of support, fiercely aligned with us. Germany is in a golden age, and so radicalism is low and belief in the system is high, leading to other organisations like the SP or the FAUD failing to claim the workers.
+The New Middle Class that was born following the Weltkrieg sees a few marxist thinkers support us, but is largely aligned with the liberal parties and specific interest groups. 
+The Old Middle Class of artisans and small businesses is largely split among more conservative liberal parties such as the NLP, and the right wing parties like the DVP or KRP.
+The Rural class of Germany currently offers most of its support to reactionary parties such as the DKP or the DVLP. A number of Agrarian minor parties also enjoy benefits in specific constituencies.
+The Unemployed class of impermanent or jobless workers are largely apolitical. Though in the Weltkrieg this has been one of our major classes, in Germany's golden age, unemployement remains extremely low, and part timer workers can jump through jobs with no problem.
+The Catholics are overwhelmingly aligned with Zentrum and the BVP. Though attempts have been made, protestantism has failed to pose a similar political force. We have however seen some support in the past from more left leaning catholics.
+
+To change the minds of these demographics, and possibly align smaller groups of interests such as the protestants or the jews, we can launch a series of campaigns aimed at the common people.
 
 - @change: We have to alter the details of our current campaign.
 - @start: Start a new broad campaign to spread our message and accomplishments.
@@ -32,8 +41,14 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @unemployed: The unemployed.
 - @catholics: Catholics, who typically support the Center Party.
 
+
+
+// Workers
+
+
+
 @workers
-subtitle: We are the workers.
+subtitle: Proletariat and blue collar workers form the backbone of the German Industry.
 
 The SPD is the largest worker's movement in the country. With the continuous rise of syndicalism abroad, groups like the FAUD or the SP have lost momentum in parliamentary affairs, and even their members are forced to tactically vote for the SPD.
 
@@ -93,13 +108,28 @@ on-arrival: campaign_underway += 1
 
 democracy 2
 
-@new_middle
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: new_middle_spd += 6*(1-dissent); new_middle_spd -= 4 if socialism <= 49 and peoples_party == 0; resources -= 1; peoples_party_support += 1;
 
-We have increased our campaigning among the new middle class. [? if socialism <= 49 and peoples_party == 0: The popular antipathy towards socialism among this group makes our campaign more difficult. ?] [? if peoples_party > 0: As a people's party, we have an easier time increasing support among the middle class than before. ?]
+
+// New Middle
+
+
+
+@new_middle
+subtitle: This demographic is traditionally dominated by the liberal parties. 
+
+As a Marxist party, the SPD is eyed by government officials and white-collar workers with some suspicion. Though the new middle class is willing to work with us and we have a strong history of collaboration, this group is quite independent from the worker's movement and many even see us as being uneducated. It's up to the SPD to change these views.
+
+What will be our campaign's message?
+
+- @republican_new_middle: The , and .
+- @reformist_new_middle: We will forgo electoral appeal to focus on presenting ourselves as a cooperative partner of the liberal movement, focusing on our contributions to Germany and presenting ourselves as a . 
+- @
+- @
+- @
+- @
+
+
+
 
 @old_middle
 subtitle: -1 resources
