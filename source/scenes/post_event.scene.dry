@@ -482,6 +482,10 @@ if (this.ui && this.ui.show_portraits) {
     }
 }
 
+if (pro_republic >= 1) {
+    workers_spd += 3
+}
+
 if (typeof window !== "undefined" && window.generateBar) {
 }
 !}
