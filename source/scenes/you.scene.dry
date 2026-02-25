@@ -1,13 +1,6 @@
 title: You.
 new-page: true
 on-arrival: {!
-const contentElement = document.getElementById('content');
-contentElement.style.backgroundColor = '#000';
-
-const header = document.querySelector('header');
-header.style.color = '#FFF';
-contentElement.style.color = '#FFF';
-
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
   toolsWrapper.style.display = 'none';
