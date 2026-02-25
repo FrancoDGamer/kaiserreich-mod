@@ -100,9 +100,6 @@ Q.moderate_plan_adopted = 0;
 
 // organizations
 
-//campaigning status
-Q.campaign_underway = 0;
-Q.campaign_syndicalist = 0;
 
 // inter-party relations
 Q.z_relation = 50;
@@ -667,6 +664,20 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
+
+// Custom stuff from now on 
+
+// Campaigning status
+Q.campaign_underway = 0;
+Q.campaign_syndicalist = 0;
+Q.campaign_worker_leftist = 0;
+Q.campaign_worker_centre = 0;
+Q.campaign_worker_reformist = 0;
+Q.campaign_worker_republican = 0;
+Q.campaign_worker_democratic = 0;
+Q.campaign_worker_democratic_propaganda = 0;
+
+
 !}
 set-bg: img/Kaiserreich.jpg
 new-page: true
