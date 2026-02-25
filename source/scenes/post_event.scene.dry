@@ -153,8 +153,6 @@ if (Q.month_actions >= 1) {
 
     // cap the science bonus at 6
 
-    console.log(Q.science_bonus);
-
     // accumulated economic growth/decline
     // Maybe there should be differences for positive/negative growth?
     if (Q.economic_growth < 0) {
