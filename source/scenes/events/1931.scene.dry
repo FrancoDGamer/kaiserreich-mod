@@ -1,0 +1,8 @@
+title: 1931
+subtitle: A new year 
+tags: event
+view-if: year = 1931 and month = 1 
+priority: 2
+max-visits: 1
+
+I HAVE EDITED THE EVENT
