@@ -338,6 +338,29 @@ if (this.ui && this.ui.show_portraits) {
 
 if (typeof window !== "undefined" && window.generateBar) {
 }
+
+// New stuff from now on.
+
+// Campaigning changes.
+if (Q.campaign_worker_leftist == 1) {
+    Q.workers_spd += 5;
+}
+if (Q.campaign_worker_centre == 1) {
+    Q.unemployed_spd += 5;
+}
+if (Q.campaign_worker_reformist == 1) {
+    Q.pro_republic += 5;
+}
+if (Q.campaign_worker_republican == 1) {
+    Q.new_middle_spd += 5;
+}
+if (Q.campaign_worker_democratic == 1) {
+    Q.old_middle_spd += 5;
+}
+if (Q.campaign_worker_democratic_propaganda == 1) {
+    Q.workers_spd += 5;
+}
+
 !}
 go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0; main.main_easy if has_event = 0 and difficulty < 0
 
