@@ -83,32 +83,32 @@ unavailable-subtitle: We are a marxist social democratic party! We would never a
 WIP.
 
 @leftist_worker
-on-arrival: campaign_underway += 1, campaign_worker_leftist == 1
+on-arrival: campaign_underway += 1, campaign_worker_leftist = 1
 
 We have began a primarily populist campaign. This is an inherently popular campaign, however it alienates Bourgeious parties and gives the reactionaries ammo against us. It might also risk empowering the FAUD or radicalizing Germany as a whole.
 
 @centre_worker
-on-arrival: campaign_underway += 1, campaign_worker_centre == 1;
+on-arrival: campaign_underway += 1, campaign_worker_centre = 1;
 
 Our campaign focuses primarily on the . Its effectiveness is largely dependant 
 
 @reformist_worker
-on-arrival: campaign_underway += 1, campaign_worker_reformist == 1;
+on-arrival: campaign_underway += 1, campaign_worker_reformist = 1;
 
 We have done reform
 
 @republican_worker
-on-arrival: campaign_underway += 1, campaign_worker_republican == 1;
+on-arrival: campaign_underway += 1, campaign_worker_republican = 1;
 
 Republic bottom text
 
 @democratic_worker
-on-arrival: campaign_underway += 1, campaign_worker_democratic == 1;
+on-arrival: campaign_underway += 1, campaign_worker_democratic = 1;
 
 democracy 1
 
 @democratic_propaganda_worker
-on-arrival: campaign_underway += 1, campaign_worker_democratic_propaganda == 1;
+on-arrival: campaign_underway += 1, campaign_worker_democratic_propaganda = 1;
 
 democracy 2
 
