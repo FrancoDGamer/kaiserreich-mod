@@ -194,6 +194,8 @@ on-arrival: {!
 Q.pro_republic_disp = Math.round(Q.pro_republic);
 Q.nationalism_disp = Math.round(Q.nationalism);
 Q.socialism_disp = Math.round(Q.socialism);
+Q.pro_kaiser_disp = Math.round(Q.pro_kaiser);
+Q.pro_war_disp = Math.round(Q.pro_war);
 !}
 
 = Projected election results
@@ -230,7 +232,13 @@ DSP: [+ dsp_votes +]%
 
 Others: [+ other_votes +]%
 
-Support for the Republic: [+ pro_republic_disp +]%
+Democracy vs Authoritarianism: [+ pro_republic_disp +]%
+Socialism vs Capitalism: [+ socialism_disp +]%
+Nationalism vs Internationalism: [+ nationalism_disp +]%
+War Support: [+ pro_war_disp +]%
+Support for the Monarchy: [+ pro_kaiser_disp +]%
+
+
 
 **Detailed results for each demographic**
 
