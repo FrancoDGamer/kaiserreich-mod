@@ -45,7 +45,7 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @rural: Rural workers and small farmers, who have felt neglected by us in the past.
 - @unemployed: The unemployed.
 - @catholics: Catholics, who typically support the Center Party.
-
+- @campaigning: Could we do other types of campaigns?
 
 
 
@@ -64,9 +64,9 @@ What message should our campaign focus on?
 - @centre_worker: Our campaign will focus on the role of the SPD as a protector of labor rights and ally of trade unions.
 - @reformist_worker: The need for reform of old institutions via democratic and parliamentary means.
 - @republican_worker: The preservation of the March Constitution and the democratization of the Empire.
-- @democratic_worker: Educate the workers 
-- @democratic_propaganda_worker: Bring a pro-democratic message towards the workers via.
-- @campaigning: let's check it out.
+- @democratic_worker: We shall have an educational campaign, aiming to teach the workers the workings of parliamentary democracy and establishing class conciousness. 
+- @democratic_propaganda_worker: We'll need a more popular messaging if we want to truly show the workers the workings of democracy. Political cartoons and 
+- @start: Let's check the other demographics.
 
 @revolutionary
 subtitle: This is a very risky option that will be perceived as a declaration of war.
@@ -125,10 +125,19 @@ As a Marxist party, the SPD is eyed by government officials and white-collar wor
 
 What will be our campaign's message?
 
-- @republican_new_middle: We will focus on pushing for meaningful changing and posing difficult questions aboutthe monarchy and complacency, aiming to radicalize the liberals into taking action and further into the left.
+- @liberal_agressive: We shall embark in a campaign of relentless harassment towards the New Middle Class. SPD hecklers, mobs and fierce agitators shall roam the streets, making sure no liberal is unscathed!
+- @intellectual_warfare: It's pointless to extend an olive branch to the New Middle Class, it'll never change their minds on socialism. What we need is to harshly criticize their moral failings and prove ourselves to be in the right. By humiliating the liberals and showing how they have no moral grandstanding, we can force them to accept socialism as the one true path forwards.
+- @intellectual_olive_branch: We must create an atmosphere of healthy intellectual debate with hopes for the potential emerging synthesis between our viewpoints- At least a fair amount ought to learn of Marxist thought. To the universities, coffeehouses and journals we go!  
+- @republican_new_middle: We will focus on pushing for meaningful changing and posing difficult questions about the monarchy and complacency, aiming to radicalize the liberals into taking action and further into the left.
 - @reformist_new_middle: We will forgo electoral appeal to focus on presenting ourselves as a cooperative partner of the liberal movement, focusing on our contributions to Germany and presenting ourselves as a strong partner. 
 - @liberal_new_middle: We will focus on a liberal message, emphasizing individual rights and positing trade unions and the SPD as defenders of democratic rights.
 - @liberal_hijack_new_middle: We will try to hijack the liberal message from the liberal parties, trying to pose ourselves as the best choice for liberalism. 
+
+@liberal_agressive
+choose-if: campaign_syndicalist == 1
+unavailable-subtitle: Why the #@$! would we do that?!
+
+WIP
 
 @republican_new_middle
 subtitle: WIP
@@ -150,35 +159,133 @@ subtitle: WIP
 
 WIP
 
-@old_middle
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: old_middle_spd += 5*(1-dissent); resources -= 1; old_middle_spd -= 3 if nationalism >= 51 and peoples_party == 0; peoples_party_support += 1
 
-We have increased our campaigning among the old middle class. [? if nationalism >= 51 and peoples_party == 0: The high levels of nationalism among this group make our campaign more difficult. ?] [? if peoples_party > 0: As a people's party, we have an easier time increasing support among the middle class than before. ?]
+
+
+
+
+@old_middle
+subtitle: This demographic is fiercely reactionary and anti-syndicalist. Expect fierce opposition, including reaction from other political parties...
+
+The Old Middle Class has been one of the SPD's grand oppositions. It's unlikely we'll manage to make inroads...
+
+- @black_monday_harassment: Hm? Black Monday has caused an epidemic of suicides among this class?...This is a great opportunity. We'll begin a campaign of harassment and blame these idiots, under financial and mental pressure, we can maybe get them to finally jump out of bridges.
+- @patriotic: We'll aim for a patriotic campaign, presenting the SPD as a defender of the German Monarchy and lauding our accomplishments for the nation! We will prove how we are NOT Syndicalists!
+- @economy: What these guys really care about is the economy. We must show them how free market liberalism is inferior to state intervention, spreading information about our economic proposals and accomplishments.
+- @peace_branch: If we want to make in-roads with the old middle class, we'll need an effort from the bottom. We must extend a peace branch from our grassroots, undoing old rivalries and building up community ties, until we can eventually show how the true enemies are the Junkers.
+
+@black_monday_harassment
+choose-if: campaign_syndicalist == 1
+unavailable-subtitle: Huh? Black monday?
+
+WIP
+
+@patriotic
+subtitle: The SPD already has made some inways this way in the past, such as with the 'Red Czar' Otto Braun or with Ebert himself acquiring massive influence during the Weltkrieg, though our core base deeply admonishes it, and it even led to the USPD splitting away.
+
+WIP
+
+@peace_branch
+subtitle: This will be a slow and painful process. Do not expect these old men to budge. 
+
+WIP
+
+
+
+
+
 
 @rural
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: rural_spd += 5*(1-dissent); rural_spd -= 3*(1-dissent) if peoples_party == 0; resources -= 1; peoples_party_support += 1; rural_spd += 3*(1-dissent) if rural_policy >= 2
+subtitle: This demographic has been dominated by the Junkers and Rural Aristocracy. Can we really break their centuries hold on the rural population?
 
-We have increased our campaigning among farmers. [? if peoples_party == 0: We have not historically campaigned much among the farmers, and they do not trust us. ?][? if peoples_party > 0: As a people's party, we have an easier time increasing support among farmers than before. ?][? if rural_policy >= 2 : Our rural policies have made it easier for us to build support among farmers. ?]
+The SPD's relationship with the rural relationship has always been a complicated one. However, some recent such as Franz Baade and Charles Mierendoff have seen the rise of a new, Agrarian socialism.
+
+- @land_reform: The conservative's chokehold over the rural propaganda machine is too strong. We must focus on proposing policy that benefits the farmers.
+- @junkers: Our efforts must be targetted at the Junkers and their vast stretches of land. The SPD must take an active role as a defender of farmers against the elites.
+- @junkers_2: An unique opportunity has arisen with this demographic due to the agricultural crisis. By painting the anti-modernisation and long-time protectionist measures of the Junkers and conservative forces, we can try to posit ourselves as an alternative amidst the rural population. 
+- @agrarian: We must focus our campaigning efforts around rural communities. Posters, speeches and funding to local politicians can go a long way.
+- @minorities: It's pointless to try to win votes by ourselves, but by starting campaigns to build ties with and work with other parties, such as the minority representatives or Zentrum, we can try to increase our influence in the region.
+
+@land_reform
+subtitle: Land Reform has been one of the SPD's policies, although it's hardly a priority, however focusing too much on this might put us on a crash course with the reactionaries and liberals...
+
+@junkers
+subtitle: Many experts in our party say that this must be paired with actions, rethoric alone will only go so far.
+
+@junkers_2:
+subtitle: Whilst propaganda and course is always very nice, perhaps we could also try to organise this as a political movement?
+
+@agrarian
+subtitle: Though our media machine seldom reaches out of cities, it's still worth a try.
+
+@minorities
+subtitle: Our relations with the minority parties, as well as Zentrum in the Reichstag will be essential to making this work.
+
+
+
+
+
 
 @unemployed
-subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-on-arrival: unemployed_spd += 6*(1-dissent); resources -= 1; unemployed_spd -= 3 if welfare < 0; unemployed_spd += 6*(1-dissent) if wtb_adopted = 1; unemployed_spd += 3*(1-dissent) if welfare >= 2;
+subtitle: This demographic 
 
-We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract support from the unemployed. ?]
+Once upon a time, the SPD enjoyed its role as a defender of the unemployed and of Weltkrieg veterans, our unemployement insurance programme even being a notorious example of positive SPD policy. However, the economic boom and golden era that we are living in has largely weakened the size of this demographic, as well as the related effects. Worse yet, conservative media has actively portrayed people who struggle to find permanent work as lazy or as a burden to society. We must regain momentum among this demographic.
+
+This is not to say we have lost support among them. 
+
+- @leech: Well, the problem is how we need more unemployed people. Let's examine what methods we'll have to run unemployement-increasing campaigns?
+- @poster: We must try to share the stories of those who were forgotten by the system and try to break the perception that we are in a 'golden age'.
+- @veterans: Our focus must be on appealing directly to the veterans of the Weltkrieg. Securing their support will solidify the SPD as a party of the people.
+- @mutual_aid: The SPD can make a real change here. Focus on campaigns that bring the unemployed into party organisations, such as nursery care, health services, self-help groups for mental health and rifle clubs.
+- @economic_change: We will focus on proposing economic change that will create jobs and change lives.
+- @welfare: Let's focus on reiterating our role in the creation of a welfare state that will take care of all.
+
+@leech
+subtitle: You can't be serious about this...
+
+Well, chairman, you'll have a very hard time convincing the party of your unemployement increase programme, but here are the main ways we can get it done...
+
+- @pensions: Create a "party pension fund", and give unemployed, injured or old people access to pensions, thus possibly indirectly allowing them to quit their jobs.
+- @cheques_lite: Direct Party Funding to writers or intellectuals who are trapped in companies, so that they can quit their jobs and will hopefully make good art about the SPD.
+- @cheques: Direct Party Funding towards giving certain workers who fit into some conditions we want (e.c single or homeless) willing to quit their jobs, then we fund their lifestyle.
+- @buyout: Let's purchase businesses just to collapse them, thus artificially increasing unemployment.
+- @state: Can we start pushing for policies that will deliberately raise unemployment?
+
+@pensions
+subtitle: We'll have to choose who exactly we want to give the pensions to, but this can be much easier to justify compared to any other alternative, given our existing mutual aid network.
+WIP
+
+@cheques_lite
+subtitle: Resurrecting artistic patronage is going to be by far one of the weirdest methods of raising unemployement 
+
+@cheques
+subtitle: It's very obvious we are trying to raise unemployement now, and it'll seem like a terrible use of party funds. But maybe people will think we're just being damn marxist or, maybe even doing good for the nation?!
+
+@buyout
+subtitle: High cost, but potentially high impact if we buy the correct businesses, could even cascade to something else.
+
+@state
+subtitle: HOW ARE WE GOING TO CONVINCE THE GRASSROOTS TO RALLY FOR THIS??!?!!
+
+@poster
+subtitle: This depends a lot on whether our current media situation can effectively bring awareness or not.
+
+@veterans
+subtitle: Though this is a wide and varied section of the population that is strongly monarchist, many Veterans, shaped by their experience in the war, have went to other demographics or changed support away from the patriotism. The SPD saw a noticeable radicalization of veterans during the war, whom now support us.
+
+@mutual_aid
+subtitle: This depends on how strong and effective our mutual aid programmes actually are.
+
+@economic_change
+subtitle: Though potentially a bit more ambitious and capable of going over people's heads, the message of creating jobs can be a very strong one nevertheless if executed correctly... 
+
+@welfare
+subtitle: Popular among the workers and unemployed alike, our traditional course of action.
 
 @catholics
 subtitle: -1 resources
-choose-if: resources >= 1
-unavailable-subtitle: Not enough resources.
-view-if: peoples_party == 1
+choose-if: peoples_party == 1
+unavailable-subtitle: In addition to beig Marxist, we are a nominally atheist party, which makes it imposible for us to campaign with this demographic.
 on-arrival: catholics_spd += 6*(1-dissent); resources -= 1
 
 We have increased our campaigning among Catholics.
