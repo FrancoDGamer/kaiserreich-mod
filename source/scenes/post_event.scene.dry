@@ -22,6 +22,11 @@ if (Q.pro_republic < 0) {
 if (Q.pro_republic >= 100) {
     Q.pro_republic = 99;
 }
+
+if (pro_republic >= 1) {
+    workers_spd += 3
+}
+
 // re-calculate party support
 // calculate normalized class voting for the achievements
 for (var c of Q.classes) {
