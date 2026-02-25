@@ -77,10 +77,10 @@ tabButtons.forEach(button => {
 
 Who are you?
 
-- @you_are_hermann_muller
-- @you_are_otto_braun
-- @you_are_carlo_mierendorff
-- @you_are_custom
+- @you_are_hermann_muller: I am Hermann Muller.
+- @you_are_otto_braun: I am Otto Braun.
+- @you_are_carlo_mierendorff: I am Carlo Mierendoff.
+- @you_are_custom: I happened to be at the right place, the right time.
 
 @you_are_hermann_muller
 go-to: start
@@ -92,6 +92,7 @@ go-to: start
 go-to: start
 
 @you_are_custom
+subtitle: Custom character.
 go-to: start
 
 @start
