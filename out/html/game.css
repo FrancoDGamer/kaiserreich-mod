@@ -583,7 +583,9 @@ table {
 .seat.guelph {
     fill: #B5BA54;
 }
-
+.seat.guelph {
+    fill: #274875;
+}
 
 .tooltip-text {
     text-decoration: underline;
