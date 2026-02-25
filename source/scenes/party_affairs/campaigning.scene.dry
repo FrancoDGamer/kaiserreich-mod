@@ -13,6 +13,15 @@ The political scene in the German Empire is highly dynamic and afloat with campa
 
 As the leader of the worker's movement in Germany, the Social Democratic Party must navigate this troublesome political atmosphere, prove itself against other ideologies and secure the future of its constituents. To this end, it's essential to maintain a strong performance among the many demographics of Germany, lest we lose the role of Opposition Leader to the <span style="color: #3874d6;">right</span>, or <span style="color: #2E4D1F;">wor</span><span style="color: #5b6f8f;">se</span>.
 
+- @demographic What is the current situation with the demographics?
+- @change: We have to alter the details of our current campaign.
+- @start: Start a new broad campaign to spread our message and accomplishments.
+- @special: Launch a specialized campaign, aimed at a certain demographic or specific message we want to get across.
+- @season: Mobilize the party up and get the grassroots ready! We'll launch a political movement!
+- @info: How are our opponents campaigns doing?
+- @easy_discard: Put this on hold, good sir! I must peruse if this shall be it to reach socialism or nay.
+
+@demographic
 The Urban Working Class remains our main base of support, fiercely aligned with us. Germany is in a golden age, and so radicalism is low and belief in the system is high, leading to other organisations like the SP or the FAUD failing to claim the workers.
 
 The New Middle Class that was born following the Weltkrieg sees a few marxist thinkers support us, but is largely aligned with the liberal parties and specific interest groups. 
