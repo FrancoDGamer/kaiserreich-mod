@@ -31,9 +31,11 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 = Government
 
-President: [+ president +]
+Kaiser: [+ kaiser +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Reichsklanzer: [+ reichskanzler +]
+
+Vice-Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
 Reichstag composition:
 
