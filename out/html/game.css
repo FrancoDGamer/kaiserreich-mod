@@ -539,7 +539,7 @@ table {
 }
 
 /* Styles for parties */
-.seat.sa {
+.seat.sp {
     fill: #8B0000;
 }
 .seat.spd {
@@ -569,16 +569,16 @@ table {
     fill: #954B00;
 }
 .seat.pp {
-    fill: #FFF;
+    fill: #FFFFFF;
 }
 .seat.minorityliberal {
-    fill: #FFF;
+    fill: #FFFFFF;
 }
 .seat.upn {
-    fill: #FFF;
+    fill: #FFFFFF;
 }
 .seat.dvp {
-    fill: #FFF;
+    fill: #FFFFFF;
 }
 
 
