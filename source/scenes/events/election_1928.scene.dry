@@ -88,14 +88,10 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
 // get change arrows and signs
 
 
-// The largest party can only be the NSDAP or the SPD.
+// The largest party can only be the DLVP or the SPD.
 Q.largest_party = 'SPD';
-if (Q.nsdap_r >= Q.spd_r && Q.nsdap_r >= Q.kpd_r) {
-    Q.largest_party = 'NSDAP';
-}
-
-if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
-    Q.largest_party = 'KPD';
+if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.kpd_r) {
+    Q.largest_party = 'dvlp';
 }
 
 // coalitions
@@ -172,10 +168,10 @@ on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
 data = [
     {
-        "id": "kpd",
-        "legend": "KPD",
-        "name": "KPD",
-        "seats": Math.round(Q.kpd_r*5),
+        "id": "sp",
+        "legend": "SP",
+        "name": "SP",
+        "seats": Math.round(Q.sp_r*5),
     }
 ];
 if (Q.sapd_formed && Q.sapd_r) {
@@ -298,7 +294,7 @@ go-to: coalition_menu
 
 Democratic Union (SPD + LVP + Z): [+ democratic_union +]%
 
-March Coalition (NLP + FVP + DKP + Z + BVP): [+ march_coalition +]%
+March Coalition (NLP + FVP + DKP + FKP + Z + BVP): [+ march_coalition +]%
 
 Syndicalist Coalition (SP + SPD): [+ syndicalist_coalition +]%
 
