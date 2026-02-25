@@ -540,7 +540,7 @@ table {
 
 /* Styles for parties */
 .seat.sp {
-    fill: #8B0000;
+    fill: #D10000;
 }
 .seat.spd {
     fill: #E3000F;
@@ -548,7 +548,7 @@ table {
     stroke-width: 1.5px;
 }
 .seat.fvp {
-    fill: #DCCA4A;
+    fill: #FFED4D;
 }
 .seat.z {
     fill: #000;
@@ -557,31 +557,31 @@ table {
     fill: #69A2BE;
 }
 .seat.nlp {
-    fill: #D5AC27;
+    fill: #53683B;
 }
 .seat.other {
     fill: #909090;
 }
 .seat.dvlp {
-    fill: #3F7BC1;
+    fill: #426366;
 }
 .seat.dsp {
     fill: #954B00;
 }
 .seat.pp {
-    fill: #FFFFFF;
+    fill: #FF96D7;
 }
 .seat.minorityliberal {
-    fill: #FFFFFF;
+    fill: #FFC300;
 }
 .seat.upn {
-    fill: #FFFFFF;
+    fill: #000E91;
 }
 .seat.dvp {
-    fill: #FFFFFF;
+    fill: #161654;
 }
 .seat.guelph {
-    fill: #FFFFFF;
+    fill: #B5BA54;
 }
 
 
