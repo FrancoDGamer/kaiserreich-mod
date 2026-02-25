@@ -132,14 +132,15 @@ What will be our campaign's message?
 - @reformist_new_middle: We will forgo electoral appeal to focus on presenting ourselves as a cooperative partner of the liberal movement, focusing on our contributions to Germany and presenting ourselves as a strong partner. 
 - @liberal_new_middle: We will focus on a liberal message, emphasizing individual rights and positing trade unions and the SPD as defenders of democratic rights.
 - @liberal_hijack_new_middle: We will try to hijack the liberal message from the liberal parties, trying to pose ourselves as the best choice for liberalism. 
+- @start: Let's check the other demographics.
 
 @intellectual_warfare
-subtitle: WIP
+subtitle: Can we really change people's minds this way?
 
 WIP
 
 @intellectual_olive_branch
-subtitle: WIP
+subtitle: Marxist thinkers have traditionally faced a lot of opposition in more liberal or conservative academia. Even Albert Von Einstein has sadly had his lectures harrassed over his associations with the SPD. Changing this will require effort, and above all: Participation.
 
 WIP
 
@@ -150,22 +151,22 @@ unavailable-subtitle: Why the #@$! would we do that?!
 WIP
 
 @republican_new_middle
-subtitle: WIP
+subtitle: This Republican and pro-Democratic message might bring the liberals closer to us, but it'll also push the monarchist right further against us.
 
 WIP
 
 @reformist_new_middle
-subtitle: WIP
+subtitle: This depends purely on our prior cooperation and actions. Our break with the Grand Coalition in 1926 still hasn't been forgotten by this class.
 
 WIP
 
 @liberal_new_middle
-subtitle: WIP
+subtitle: A weird strategy that alienates our core base, but could see us winning over a lot of defectors if it's succesful.
 
 WIP
 
 @liberal_hijack_new_middle
-subtitle: WIP
+subtitle: This is risky and we will find ourselves on a crash course between our left wing and the liberal parties who will try to "expose us for what we are", but maybe this is the only way to eventually secure parliamentary majority. And besides, the liberals can't be trusted to manage themselves, right? They need the SPD guidance.
 
 WIP
 
@@ -180,9 +181,11 @@ subtitle: This demographic is fiercely reactionary and anti-syndicalist. Expect 
 The Old Middle Class has been one of the SPD's grand oppositions. It's unlikely we'll manage to make inroads...
 
 - @black_monday_harassment: Hm? Black Monday has caused an epidemic of suicides among this class?...This is a great opportunity. We'll begin a campaign of harassment and blame these idiots, under financial and mental pressure, we can maybe get them to finally jump out of bridges.
+- @monarchist: Let's do a pro-monarchy campaign. Social Democracy and a People's Kaiser under the German Flag!
 - @patriotic: We'll aim for a patriotic campaign, presenting the SPD as a defender of the German Monarchy and lauding our accomplishments for the nation! We will prove how we are NOT Syndicalists!
 - @economy: What these guys really care about is the economy. We must show them how free market liberalism is inferior to state intervention, spreading information about our economic proposals and accomplishments.
 - @peace_branch: If we want to make in-roads with the old middle class, we'll need an effort from the bottom. We must extend a peace branch from our grassroots, undoing old rivalries and building up community ties, until we can eventually show how the true enemies are the Junkers.
+- @start: Let's check the other demographics.
 
 @black_monday_harassment
 choose-if: campaign_syndicalist == 1
@@ -190,8 +193,13 @@ unavailable-subtitle: Huh? Black monday?
 
 WIP
 
+@monarchist
+subtitle: This will probably backfire.
+
+WIP
+
 @patriotic
-subtitle: The SPD already has made some inways this way in the past, such as with the 'Red Czar' Otto Braun or with Ebert himself acquiring massive influence during the Weltkrieg, though our core base deeply admonishes it, and it even led to the USPD splitting away.
+subtitle: The SPD already has made some inways this way in the past, such as with the 'Red Czar' Otto Braun securing support in Prussia, or with Ebert himself acquiring massive influence during the Weltkrieg, though our core base deeply admonishes it, and it even led to the USPD splitting away.
 
 WIP
 
@@ -214,11 +222,13 @@ subtitle: This demographic has been dominated by the Junkers and Rural Aristocra
 
 The SPD's relationship with the rural relationship has always been a complicated one. However, some recent such as Franz Baade and Charles Mierendoff have seen the rise of a new, Agrarian socialism.
 
-- @land_reform: The conservative's chokehold over the rural propaganda machine is too strong. We must focus on proposing policy that benefits the farmers.
+- @land_reform: The conservative's chokehold over the rural propaganda machine is too strong for our own media to get into work. We must focus on proposing policy that benefits the farmers.
 - @junkers: Our efforts must be targetted at the Junkers and their vast stretches of land. The SPD must take an active role as a defender of farmers against the elites.
 - @junkers_2: An unique opportunity has arisen with this demographic due to the agricultural crisis. By painting the anti-modernisation and long-time protectionist measures of the Junkers and conservative forces, we can try to posit ourselves as an alternative amidst the rural population. 
 - @agrarian: We must focus our campaigning efforts around rural communities. Posters, speeches and funding to local politicians can go a long way.
 - @minorities: It's pointless to try to win votes by ourselves, but by starting campaigns to build ties with and work with other parties, such as the minority representatives or Zentrum, we can try to increase our influence in the region.
+- @start: Let's check the other demographics.
+
 
 @land_reform
 subtitle: Land Reform has been one of the SPD's policies, although it's hardly a priority, however focusing too much on this might put us on a crash course with the reactionaries and liberals...
@@ -246,7 +256,7 @@ subtitle: Our relations with the minority parties, as well as Zentrum in the Rei
 WIP
 
 @unemployed
-subtitle: This demographic 
+subtitle: This demographic once used to be one of the strongest ones, but as expected, widespread employement sadly wipes out unemployement.
 
 Once upon a time, the SPD enjoyed its role as a defender of the unemployed and of Weltkrieg veterans, our unemployement insurance programme even being a notorious example of positive SPD policy. However, the economic boom and golden era that we are living in has largely weakened the size of this demographic, as well as the related effects. Worse yet, conservative media has actively portrayed people who struggle to find permanent work as lazy or as a burden to society. We must regain momentum among this demographic.
 
@@ -258,6 +268,7 @@ This is not to say we have lost support among them.
 - @mutual_aid: The SPD can make a real change here. Focus on campaigns that bring the unemployed into party organisations, such as nursery care, health services, self-help groups for mental health and rifle clubs.
 - @economic_change: We will focus on proposing economic change that will create jobs and change lives.
 - @welfare: Let's focus on reiterating our role in the creation of a welfare state that will take care of all.
+- @start: Let's check the other demographics.
 
 @leech
 subtitle: You can't be serious about this...
@@ -269,6 +280,7 @@ Well, chairman, you'll have a very hard time convincing the party of your unempl
 - @cheques: Direct Party Funding towards giving certain workers who fit into some conditions we want (e.c single or homeless) willing to quit their jobs, then we fund their lifestyle.
 - @buyout: Let's purchase businesses just to collapse them, thus artificially increasing unemployment.
 - @state: Can we start pushing for policies that will deliberately raise unemployment?
+- @unemployed: Actually, I changed my mind.
 
 @pensions
 subtitle: We'll have to choose who exactly we want to give the pensions to, but this can be much easier to justify compared to any other alternative, given our existing mutual aid network.
