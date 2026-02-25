@@ -28,4 +28,4 @@ subtitle: Custom character.
 go-to: start
 
 @start
-go-to: root.1928_main
+go-to: welcome
