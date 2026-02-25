@@ -1,13 +1,6 @@
 title: Welcome.
 new-page: true
 on-arrival: {!
-const contentElement = document.getElementById('content');
-contentElement.style.backgroundColor = '#1A1919';
-
-const header = document.querySelector('header');
-header.style.color = '#E3E3FF';
-contentElement.style.color = '#E3E3FF';
-
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
   toolsWrapper.style.display = 'block';
