@@ -9,7 +9,7 @@ if (Q.advisor_action_timer <= 0) {
 } else {
     Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
 }
-if (Q.pro_republic > 1) {
+if (Q.pro_republic >= 1) {
     workers_spd += 3;
 }
 !}
