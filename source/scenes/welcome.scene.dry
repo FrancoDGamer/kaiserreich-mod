@@ -7,11 +7,11 @@ if (toolsWrapper) {
 }
 
 const contentElement = document.getElementById('content');
-contentElement.style.backgroundColor = ' ';
+contentElement.style.backgroundColor = '#1A1919';
 
 const header = document.querySelector('header');
-header.style.color = ' ';
-contentElement.style.color = ' ';
+header.style.color = '#E3E3FF';
+contentElement.style.color = '#E3E3FF';
 
 
 !}
