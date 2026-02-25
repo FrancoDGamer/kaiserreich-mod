@@ -8,8 +8,8 @@ body {
   --unavailable-bg-color: rgba(0, 0, 0, 0.1);
   --unavailable-color: #999;
   --tab-bg-color: #1A1919;
-  --tab-color: #E3E3FF;
-  --tab-hover-color: #2D2D3D;
+  --tab-color: #1A1919;
+  --tab-hover-color: #20202b;
   --card-border-color: #ccc; 
   --card-bg-color: #ddd; 
   font-family: "Minion Pro", Georgia, serif;
