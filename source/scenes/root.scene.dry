@@ -125,9 +125,9 @@ Q.DSP_relation = 0;
 Q.sp_leader = "Thälmann";
 // alternative is the Conciliators as party leader
 Q.sp_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
+Q.z_leader = "Willhelm Marx";
 // party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1928 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
+Q.z_party_leader = "Willhelm Marx";
 Q.nsdap_leader = "Hitler";
 
 // hmm... maybe we can play nice with Hindenburg???
@@ -413,8 +413,10 @@ Q.economic_records = [];
 
 // State of the government
 Q.president = "Herbert von Dirksen";
+Q.kaiser = "Wilhelm II";
 // starting chancellor: 
-Q.chancellor = "Heinrich Bruning";
+Q.reichskanzler = "Ulrich von Brockdorff-Rantzau";
+Q.chancellor = "Willhelm Marx";
 Q.chancellor_party = 'Z';
 Q.spd_in_government = 0;
 Q.sp_in_government = 0;
@@ -423,9 +425,9 @@ Q.z_in_government = 1;
 Q.nlp_in_government = 1;
 Q.fvp_in_government = 1;
 Q.lvp_in_government = 0;
-Q.dkp_in_government = 0;
+Q.dkp_in_government = 1;
 Q.dvp_in_government = 0;
-Q.dvlp_in_government = 1;
+Q.dvlp_in_government = 0;
 Q.dsp_in_government = 0;
 Q.other_in_government = 1;
 Q.bvp_in_government = 1;
@@ -680,7 +682,7 @@ For more information on the politics and government of the German Republic, see 
 - @1928_easy: Begin (easy difficulty)
 
 @1928_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
+on-arrival: difficulty = -1; resources = 2000000; dues = 3; rb_strength = 2500; kpd_relation = 29; z_relation = 54; dvp_relation = 49; budget = 5;
 new-page: true
 go-to: you
 
