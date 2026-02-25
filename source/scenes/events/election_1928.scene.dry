@@ -226,6 +226,43 @@ data = data.concat([
         "seats": Math.round(Q.dkp_r*5),
     },
     {
+        "id": "pp",
+        "legend": "PP",
+        "name": "PP",
+        "seats": Math.round(Q.pp_r*5),
+    },
+    {
+        "id": "guelph",
+        "legend": "GUELPH",
+        "name": "GUELPH",
+        "seats": Math.round(Q.guelph_r*5),
+    },
+    {
+        "id": "upn",
+        "legend": "EVLP",
+        "name": "EVLP",
+        "seats": Math.round(Q.upn_r*5),
+    },
+    {
+        "id": "dsp",
+        "legend": "DSP",
+        "name": "DSP",
+        "seats": Math.round(Q.dsp_r*5),
+    },
+    {
+        "id": "dvp",
+        "legend": "DVP",
+        "name": "DVP",
+        "seats": Math.round(Q.dvp_r*5),
+    },
+    {
+        "id": "minorityliberal",
+        "legend": "MINORITYLIBERAL",
+        "name": "MINORITYLIBERAL",
+        "seats": Math.round(Q.minorityliberal_r*5),
+    },
+
+    {
         "id": "dvlp",
         "legend": "DVLP",
         "name": "DVLP",
