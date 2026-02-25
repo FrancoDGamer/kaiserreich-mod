@@ -1,5 +1,33 @@
-
+title: Welcome.
+new-page: true
+on-arrival: {!
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
-  toolsWrapper.style.display = 'none';
+  toolsWrapper.style.display = 'block';
 }
+!}
+
+The dark clouds on the horizon begin to form. You can feel the tides shift, and yet something deeper within you asks: .
+
+What are you going to save?
+
+- @democracy: My task is to save German Democracy.
+- @workers: The Workers. My task is to save Marxist Social Democracy.
+- @world: My task is to save save the world from a war so brutal.
+- @nothing: Nothing. I will walk the path forwards, and I won't let the past hold me back.
+
+@democracy
+subtitle: Saving Social Democracy is secondary.
+go-to: root.1928_main
+
+@workers
+subtitle: Saving German Democracy is secondary.
+go-to: root.1928_main
+
+@world
+subtitle: And what if from war so brutal, the world doesn't deserves to be saved? 
+go-to: root.1928_main
+
+@nothing
+subtitle: And if it leads straight into the firepits of war, so be it.
+go-to: root.1928_main
