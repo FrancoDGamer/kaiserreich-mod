@@ -133,6 +133,16 @@ What will be our campaign's message?
 - @liberal_new_middle: We will focus on a liberal message, emphasizing individual rights and positing trade unions and the SPD as defenders of democratic rights.
 - @liberal_hijack_new_middle: We will try to hijack the liberal message from the liberal parties, trying to pose ourselves as the best choice for liberalism. 
 
+@intellectual_warfare
+subtitle: WIP
+
+WIP
+
+@intellectual_olive_branch
+subtitle: WIP
+
+WIP
+
 @liberal_agressive
 choose-if: campaign_syndicalist == 1
 unavailable-subtitle: Why the #@$! would we do that?!
@@ -190,6 +200,10 @@ subtitle: This will be a slow and painful process. Do not expect these old men t
 
 WIP
 
+@economy
+subtitle: Can we really convince the small business class that the state is good for them?
+
+WIP
 
 
 
