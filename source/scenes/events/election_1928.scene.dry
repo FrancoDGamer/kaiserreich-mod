@@ -339,14 +339,23 @@ There are some potential coalition arrangements.
 
 @coalition_menu
 
-- @democratic_union_coalition
-- @spd_majority
+- @march_coalition: Another March Coalition is formed!
+- @democratic_union_coalition: The Democratic Union wins out!
+- @spd_majority: SPD Majority Alone
+
+@march_coalition
+title: March Coalition
+subtitle: NLP + FVP + DKP + FKP + Z + BVP [+ march_coalition +]%
+choose-if: march_coalition >= 50
+
+A march coalition is formed. This is the traditional ruling coalition of the German Empire.
 
 @democratic_union_coalition
-title: du
+title: Democratic Union
 subtitle: SPD + LVP + Z ([+ democratic_union +]%)
+choose-if: democratic_union >= 50
 
-How do we convince vehemently anti-socialist parties to allow us to form a majority coalition? Our largely benevolent relations with the Center and DVP may allow us some leverage.
+How do we convince vehemently anti-socialist parties to allow us to form a majority coalition? Our largely benevolent relations with the Center and the LVP may allow us some leverage.
 
 - @use_resources
 
