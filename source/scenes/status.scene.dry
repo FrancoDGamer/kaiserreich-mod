@@ -43,43 +43,43 @@ Reichstag composition:
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 
 # 1928: 15, 1930: 15, 1932: 
-{!<span style="color: #004DBA;" class="tooltip-text" title="Center Party">Z</span>!}: [+ z_r +]%
+Z: [+ z_r +]%
 
 # 1928: 10, 1930: 13
-{!<span style="color: #D10000;" class="tooltip-text" title="Socialist Party of Germany">SP</span>!}: [+ sp_r +]%
+SP: [+ sp_r +]%
 
 # 1928: 9, 1930: 10
-{!<span style="color: #53683B;" class="tooltip-text" title="National Liberal Party">NLP</span>!}: [+ nlp_r +]% 
+NLP: [+ nlp_r +]% 
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FFED4D;" class="tooltip-text" title="Progressive People's Party">FVP</span>!}: [+ fvp_r +]%
+FVP: [+ fvp_r +]%
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FFCC00;" class="tooltip-text" title="Bavarian People's Party">BVP</span>!}: [+ bvp_r +]%
+BVP: [+ bvp_r +]%
 
 # 1928: 9, 1930: 10
-{!<span style="color: #FF96D7;" class="tooltip-text" title="Polish Party">PP</span>!}: [+ pp_r +]%
+PP: [+ pp_r +]%
 
 # 1928: 9, 1930: 10
-{!<span style="color: #B5BA54;" class="tooltip-text" title="German-Hanoverian Party">Guelphs</span>!}: [+ guelph_r +]%
+Guelphs: [+ guelph_r +]%
 
 # 1928: 9, 1930: 10
-{!<span style="color: #000E91;" class="tooltip-text" title="Alsace–Lorraine People's Party">ELVP</span>!}: [+ upn_r +]%
+ELVP: [+ upn_r +]%
 
 # 1928: 9, 1930: 10
 {!<span style="color: #FFC300;" class="tooltip-text" title="A collection of multiple minor liberal parties">Minority Liberals</span>!}: [+ minorityliberal_r +]%
 
 # 1928: 5, 1930: 4 (as DstP)
-{!<span style="color: #274875;" class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_r +]%
+DKP: [+ dkp_r +]%
 
 # 1928: 9, 1930: 5
-{!<span style="color: #161654;" class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+DVP: [+ dvp_r +]%
 
 # 1928: 14, 1930: 7
-{!<span style="color: #426366;" class="tooltip-text" title="German Fatherland idk Party">DVLP</span>!}: [+ dvlp_r +]%
+DVLP: [+ dvlp_r +]%
 
 # 1928: 3, 1930: 18
-{!<span style="color: #2E4D1F;" class="tooltip-text" title="German Socialist Party">DSP</span>!}: [+ dsp_r +]%
+DSP: [+ dsp_r +]%
 
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
@@ -102,31 +102,31 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
-{!<span class="tooltip-text" title="Center Party">}Z{</span>!}: [+ z_relation : relationships +]
+Z: [+ z_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}DKP{!</span>!}: [+ dkp_relation : relationships +]
+DKP: [+ dkp_relation : relationships +]
 
 DVP: [+ dvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Socialist Party of Germany">}SP{</span>!}: [+ sp_relation : relationships +]
+SP: [+ sp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">}DNVP{</span>!}: [+ dvlp_relation : relationships +]
+DVLP: [+ dvlp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Socialist Party">}DSP{</span>!}: [+ dsp_relation : relationships +]
+DSP: [+ dsp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Socialist Party">}SP{</span>!}: [+ sp_relation : relationships +]
+SP: [+ sp_relation : relationships +]
 
-{!<span class="tooltip-text" title="The libs">}LVP{</span>!}: [+ lvp_relation : relationships +]
+LVP: [+ lvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Libtards">}Minority Liberals{</span>!}: [+ minority_liberal_relation : relationships +]
+Minority Liberals: [+ minority_liberal_relation : relationships +]
 
-{!<span class="tooltip-text" title="Bavarian People's Party">}BVP{</span>!}: [+ bvp_relation : relationships +]
+BVP: [+ bvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="The libs">}NLP{</span>!}: [+ nlp_relation : relationships +]
+NLP: [+ nlp_relation : relationships +]
 
-{!<span class="tooltip-text" title="The libs">}FVP{</span>!}: [+ fvp_relation : relationships +]
+FVP: [+ fvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Free Workers Association of Germany">}FAUD{</span>!}: [+ faud_relation : relationships +]
+FAUD: [+ faud_relation : relationships +]
 
 = Internal Factions of the SPD
 
@@ -228,210 +228,30 @@ DSP: [+ dsp_votes +]%
 
 Others: [+ other_votes +]%
 
+Support for the Republic: [+ pro_republic_disp +]%
+
 **Detailed results for each demographic**
 
 Workers
 
-SPD: [+ workers_spd_display +]%
-
-FAUD: [+ workers_faud_display +]%
-
-SP: [+ workers_sp_display +]%
-
-Z: [+ workers_z_display +]%
-
-BVP: [+ workers_bvp_display +]%
-
-NLP: [+ workers_nlp_display +]%
-
-FVP: [+ workers_fvp_display +]%
-
-Minority Liberals: [+ workers_minorityliberal_display +]%
-
-PP: [+ workers_nlp_display +]%
-
-GHP: [+ workers_guelph_display +]%
-
-ELVP: [+ workers_upn_display +]%
-
-DKP: [+ workers_dkp_display +]%
-
-DVP: [+ workers_dvp_display +]%
-
-DVLP: [+ workers_dvlp_display +]%
-
-DSP: [+ workers_dsp_display +]%
-
-Others: [+ workers_other_display +]% 
+SPD: [+ workers_spd_display +]%, FAUD: [+ workers_faud_display +]%, SP: [+ workers_sp_display +]%, Z: [+ workers_z_display +]%, BVP: [+ workers_bvp_display +]%, NLP: [+ workers_nlp_display +]%, FVP: [+ workers_fvp_display +]%, Minority Liberals: [+ workers_minorityliberal_display +]%, PP: [+ workers_nlp_display +]%, GHP: [+ workers_guelph_display +]%, ELVP: [+ workers_upn_display +]%, DKP: [+ workers_dkp_display +]%, DVP: [+ workers_dvp_display +]%, DVLP: [+ workers_dvlp_display +]%, DSP: [+ workers_dsp_display +]%, Others: [+ workers_other_display +]% 
 
 New Middle Class: 
 
-SPD: [+ new_middle_spd_display +]%
-
-FAUD: [+ new_middle_faud_display +]%
-
-SP: [+ new_middle_sp_display +]%
-
-Z: [+ new_middle_z_display +]%
-
-BVP: [+ new_middle_bvp_display +]%
-
-NLP: [+ new_middle_nlp_display +]%
-
-FVP: [+ new_middle_fvp_display +]%
-
-Minority Liberals: [+ new_middle_minorityliberal_display +]%
-
-PP: [+ new_middle_nlp_display +]%
-
-GHP: [+ new_middle_guelph_display +]%
-
-ELVP: [+ new_middle_upn_display +]%
-
-DKP: [+ new_middle_dkp_display +]%
-
-DVP: [+ new_middle_dvp_display +]%
-
-DVLP: [+ new_middle_dvlp_display +]%
-
-DSP: [+ new_middle_dsp_display +]%
-
-Others: [+ new_middle_other_display +]% 
+SPD: [+ new_middle_spd_display +]%, FAUD: [+ new_middle_faud_display +]% SP: [+ new_middle_sp_display +]%, Z: [+ new_middle_z_display +]%, BVP: [+ new_middle_bvp_display +]%, NLP: [+ new_middle_nlp_display +]%, FVP: [+ new_middle_fvp_display +]%, Minority Liberals: [+ new_middle_minorityliberal_display +]%, PP: [+ new_middle_nlp_display +]%, GHP: [+ new_middle_guelph_display +]%, ELVP: [+ new_middle_upn_display +]%, DKP: [+ new_middle_dkp_display +]%, DVP: [+ new_middle_dvp_display +]%, DVLP: [+ new_middle_dvlp_display +]%, DSP: [+ new_middle_dsp_display +]%, Others: [+ new_middle_other_display +]%
 
 Old Middle Class:
 
-SPD: [+ old_middle_spd_display +]%
-
-FAUD: [+ old_middle_faud_display +]%
-
-SP: [+ old_middle_sp_display +]%
-
-Z: [+ old_middle_z_display +]%
-
-BVP: [+ old_middle_bvp_display +]%
-
-NLP: [+ old_middle_nlp_display +]%
-
-FVP: [+ old_middle_fvp_display +]%
-
-Minority Liberals: [+ old_middle_minorityliberal_display +]%
-
-PP: [+ old_middle_nlp_display +]%
-
-GHP: [+ old_middle_guelph_display +]%
-
-ELVP: [+ old_middle_upn_display +]%
-
-DKP: [+ old_middle_dkp_display +]%
-
-DVP: [+ old_middle_dvp_display +]%
-
-DVLP: [+ old_middle_dvlp_display +]%
-
-DSP: [+ old_middle_dsp_display +]%
-
-Others: [+ old_middle_other_display +]% 
+SPD: [+ old_middle_spd_display +]%, FAUD: [+ old_middle_faud_display +]%, SP: [+ old_middle_sp_display +]%, Z: [+ old_middle_z_display +]%, BVP: [+ old_middle_bvp_display +]%, NLP: [+ old_middle_nlp_display +]%, FVP: [+ old_middle_fvp_display +]%, Minority Liberals: [+ old_middle_minorityliberal_display +]%, PP: [+ old_middle_nlp_display +]%, GHP: [+ old_middle_guelph_display +]%, ELVP: [+ old_middle_upn_display +]%, DKP: [+ old_middle_dkp_display +]%, DVP: [+ old_middle_dvp_display +]%, DVLP: [+ old_middle_dvlp_display +]%, DSP: [+ old_middle_dsp_display +]%, Others: [+ old_middle_other_display +]%
 
 Rural: 
 
-SPD: [+ rural_spd_display +]%
-
-FAUD: [+ rural_faud_display +]%
-
-SP: [+ rural_sp_display +]%
-
-Z: [+ rural_z_display +]%
-
-BVP: [+ rural_bvp_display +]%
-
-NLP: [+ rural_nlp_display +]%
-
-FVP: [+ rural_fvp_display +]%
-
-Minority Liberals: [+ rural_minorityliberal_display +]%
-
-PP: [+ rural_nlp_display +]%
-
-GHP: [+ rural_guelph_display +]%
-
-ELVP: [+ rural_upn_display +]%
-
-DKP: [+ rural_dkp_display +]%
-
-DVP: [+ rural_dvp_display +]%
-
-DVLP: [+ rural_dvlp_display +]%
-
-DSP: [+ rural_dsp_display +]%
-
-Others: [+ rural_other_display +]% 
+SPD: [+ rural_spd_display +]%, FAUD: [+ rural_faud_display +]%, SP: [+ rural_sp_display +]%, Z: [+ rural_z_display +]%, BVP: [+ rural_bvp_display +]%, NLP: [+ rural_nlp_display +]%, FVP: [+ rural_fvp_display +]%, Minority Liberals: [+ rural_minorityliberal_display +]%, PP: [+ rural_nlp_display +]%, GHP: [+ rural_guelph_display +]%, ELVP: [+ rural_upn_display +]%, DKP: [+ rural_dkp_display +]%, DVP: [+ rural_dvp_display +]%, DVLP: [+ rural_dvlp_display +]%, DSP: [+ rural_dsp_display +]%, Others: [+ rural_other_display +]%
 
 Unemployed:
 
-SPD: [+ rural_spd_display +]%
-
-FAUD: [+ rural_faud_display +]%
-
-SP: [+ rural_sp_display +]%
-
-Z: [+ rural_z_display +]%
-
-BVP: [+ rural_bvp_display +]%
-
-NLP: [+ rural_nlp_display +]%
-
-FVP: [+ rural_fvp_display +]%
-
-Minority Liberals: [+ rural_minorityliberal_display +]%
-
-PP: [+ rural_nlp_display +]%
-
-GHP: [+ rural_guelph_display +]%
-
-ELVP: [+ rural_upn_display +]%
-
-DKP: [+ rural_dkp_display +]%
-
-DVP: [+ rural_dvp_display +]%
-
-DVLP: [+ rural_dvlp_display +]%
-
-DSP: [+ rural_dsp_display +]%
-
-Others: [+ rural_other_display +]% 
+SPD: [+ rural_spd_display +]%, FAUD: [+ rural_faud_display +]%, SP: [+ rural_sp_display +]%, Z: [+ rural_z_display +]%, BVP: [+ rural_bvp_display +]%, NLP: [+ rural_nlp_display +]%, FVP: [+ rural_fvp_display +]%, Minority Liberals: [+ rural_minorityliberal_display +]%, PP: [+ rural_nlp_display +]%, GHP: [+ rural_guelph_display +]%, ELVP: [+ rural_upn_display +]%, DKP: [+ rural_dkp_display +]%, DVP: [+ rural_dvp_display +]%, DVLP: [+ rural_dvlp_display +]%, DSP: [+ rural_dsp_display +]%, Others: [+ rural_other_display +]%
 
 Catholics: 
 
-SPD: [+ catholics_spd_display +]%
-
-FAUD: [+ catholics_faud_display +]%
-
-SP: [+ catholics_sp_display +]%
-
-Z: [+ catholics_z_display +]%
-
-BVP: [+ catholics_bvp_display +]%
-
-NLP: [+ catholics_nlp_display +]%
-
-FVP: [+ catholics_fvp_display +]%
-
-Minority Liberals: [+ catholics_minorityliberal_display +]%
-
-PP: [+ catholics_nlp_display +]%
-
-GHP: [+ catholics_guelph_display +]%
-
-ELVP: [+ catholics_upn_display +]%
-
-DKP: [+ catholics_dkp_display +]%
-
-DVP: [+ catholics_dvp_display +]%
-
-DVLP: [+ catholics_dvlp_display +]%
-
-DSP: [+ catholics_dsp_display +]%
-
-Others: [+ catholics_other_display +]% 
-
-Support for the Republic: [+ pro_republic_disp +]%
+SPD: [+ catholics_spd_display +]%, FAUD: [+ catholics_faud_display +]%, SP: [+ catholics_sp_display +]%, Z: [+ catholics_z_display +]%, BVP: [+ catholics_bvp_display +]%, NLP: [+ catholics_nlp_display +]%, FVP: [+ catholics_fvp_display +]%, Minority Liberals: [+ catholics_minorityliberal_display +]%, PP: [+ catholics_nlp_display +]%, GHP: [+ catholics_guelph_display +]%, ELVP: [+ catholics_upn_display +]%, DKP: [+ catholics_dkp_display +]%, DVP: [+ catholics_dvp_display +]%, DVLP: [+ catholics_dvlp_display +]%, DSP: [+ catholics_dsp_display +]%, Others: [+ catholics_other_display +]%
