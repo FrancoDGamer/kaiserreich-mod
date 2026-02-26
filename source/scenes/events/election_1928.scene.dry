@@ -77,7 +77,7 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
         if (Q.use_decimals) {
             Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
         } else {
-            Q[party + '_r_disp'] = Q[party+'_r'];
+            Q[party + '_r_disp'] = Math.round(Q[party+'_r']*10)/10;
         }
         Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
         var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
@@ -160,7 +160,7 @@ if (Q.nsdap_r >= 15) {
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
 for (var party of Q.parties) {
-    election_result[party] = Q[party + '_r'];
+    election_result[party] = math.round(Q[party + '_r']*10)/10;
 }
 Q.election_records.push(election_result);
 !}
