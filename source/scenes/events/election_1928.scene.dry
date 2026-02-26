@@ -48,7 +48,7 @@ for (var party of Q.parties) {
         if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
             Q[party + '_r'] = 0;
         } else {
-            Q[party + '_r'] = Math.round(Q[party + '_votes']*1000)/10;
+            Q[party + '_r'] = Math.round(Q[party + '_votes']*10000)/10;
         }
         new_party_sum += Q[party + '_r'];
     } else {
