@@ -156,7 +156,7 @@ if (Q.nsdap_r >= 15) {
 
 var election_result = {'date': new Date(Q.year, Q.month - 1)};
 for (var party of Q.parties) {
-    election_result[party] = Q[party + '_r'].toFixed(1);
+    election_result[party] = Q[party + '_r'];
 }
 Q.election_records.push(election_result);
 !}
