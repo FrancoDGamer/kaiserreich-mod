@@ -7,7 +7,7 @@ for (var c of Q.classes) {
         if (Q[c+'_'+party] < 0) {
             Q[c+'_'+party] = 0;
         }
-        class_votes += Q[c+'_'+party];
+        class_votes += Q[c+'_'+party].toFixed(1);
     }
     for (var party of Q.parties) {
         Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
