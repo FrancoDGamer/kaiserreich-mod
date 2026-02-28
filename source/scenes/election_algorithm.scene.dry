@@ -11,7 +11,7 @@ for (var c of Q.classes) {
     }
     for (var party of Q.parties) {
         Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
-        Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
+        Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes*10)/10;
     }
 }
 
@@ -46,7 +46,7 @@ for (var party of Q.parties) {
         Q[party+'_votes'] = Q[party+'_votes_dec'];
         Q[party + '_votes_disp'] = Q[party+'_votes'];
     } else {
-        Q[party+'_votes'] = Math.round(Q[party+'_normalized']*100);
+        Q[party+'_votes'] = Math.round(Q[party+'_normalized']*100*10)/10;
         Q[party + '_votes_disp'] = Q[party+'_votes_dec'].toFixed(1);
     }
     //Q[party+'_votes'] = Q[party+'_votes_dec'];
