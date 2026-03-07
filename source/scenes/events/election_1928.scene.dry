@@ -296,7 +296,7 @@ go-to: coalition_menu
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!} 
-{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]%** {!</td><td>!} [+ spd_seats +] {!</td><td>!} [+ spd_seats_change_display +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td><td>!} [+ sp_seats_change_display +] {!</td></tr>!}
