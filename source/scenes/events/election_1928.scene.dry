@@ -296,35 +296,35 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td><td>!} [+ spd_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]%** {!</td><td>!} [+ spd_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td><td>!} [+ sp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +] {!</td><td>!} [+ bvp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +] {!</td><td>!} [+ z_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +]% {!</td><td>!} [+ z_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#53683B'> </div> !} NLP: {!</td><td>!} [+ nlp_r +]% {!</td><td>!} [+ str_change_nlp +] {!</td><td>!} [+ nlp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#53683B'> </div> !} NLP: {!</td><td>!} [+ nlp_r +]% {!</td><td>!} [+ str_change_nlp +]% {!</td><td>!} [+ nlp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FFED4D'> </div> !} FVP: {!</td><td>!} [+ fvp_r +]% {!</td><td>!} [+ str_change_fvp +] {!</td><td>!} [+ fvp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFED4D'> </div> !} FVP: {!</td><td>!} [+ fvp_r +]% {!</td><td>!} [+ str_change_fvp +]% {!</td><td>!} [+ fvp_seats +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#FFC300'> </div> !} Minority Liberals: {!</td><td>!} [+ minorityliberal_r +]% {!</td><td>!} [+ str_change_minorityliberal +] {!</td><td>!} [+ minorityliberal_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#274875'> </div> !} DKP: {!</td><td>!} [+ dkp_r +]% {!</td><td>!} [+ str_change_dkp +] {!</td><td>!} [+ dkp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#274875'> </div> !} DKP: {!</td><td>!} [+ dkp_r +]% {!</td><td>!} [+ str_change_dkp +]% {!</td><td>!} [+ dkp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FF96D7'> </div> !} PP: {!</td><td>!} [+ pp_r +]% {!</td><td>!} [+ str_change_pp +] {!</td><td>!} [+ pp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF96D7'> </div> !} PP: {!</td><td>!} [+ pp_r +]% {!</td><td>!} [+ str_change_pp +]% {!</td><td>!} [+ pp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +] {!</td><td>!} [+ elvp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#B5BA54'> </div> !} GHP: {!</td><td>!} [+ guelph_r +]% {!</td><td>!} [+ str_change_guelph +] {!</td><td>!} [+ guelph_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#B5BA54'> </div> !} GHP: {!</td><td>!} [+ guelph_r +]% {!</td><td>!} [+ str_change_guelph +]% {!</td><td>!} [+ guelph_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +] {!</td><td>!} [+ dvp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +]% {!</td><td>!} [+ dvp_seats +] {!</td></tr>!}
  
-{!<tr><td><div class="box" style='background-color:#426366'> </div> !} DVLP: {!</td><td>!} [+ dvlp_r +]% {!</td><td>!} [+ str_change_dvlp +] {!</td><td>!} [+ dvlp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#426366'> </div> !} DVLP: {!</td><td>!} [+ dvlp_r +]% {!</td><td>!} [+ str_change_dvlp +]% {!</td><td>!} [+ dvlp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} DSP: {!</td><td>!} [+ dsp_r +]% {!</td><td>!} [+ str_change_dsp +] {!</td><td>!} [+ dsp_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} DSP: {!</td><td>!} [+ dsp_r +]% {!</td><td>!} [+ str_change_dsp +]% {!</td><td>!} [+ dsp_seats +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +] {!</td><td>!} [+ other_seats +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +]% {!</td><td>!} [+ other_seats +] {!</td></tr>!}
 
 {!</table>!}
 
