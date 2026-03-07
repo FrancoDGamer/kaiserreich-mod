@@ -10,8 +10,8 @@ for (var c of Q.classes) {
         class_votes += Q[c+'_'+party];
     }
     for (var party of Q.parties) {
-        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes.toFixed(1);
-        Q[c + '_' + party + '_display'] = Q[c+'_'+party]/class_votes.toFixed(1);
+        Q[c + '_' + party + '_normalized'].toFixed(1) = 100*Q[c+'_'+party].toFixed(1)/class_votes.toFixed(1);
+        Q[c + '_' + party + '_display'].toFixed(1) = Q[c+'_'+party].toFixed(1)/class_votes.toFixed(1);
     }
 }
 
