@@ -43,7 +43,7 @@ on-arrival: {!
 // banning parties
 var new_party_sum = 0;
 for (var party of Q.parties) {
-    Q['old_' + party + '_r'] = Q[party + '_r'];
+    Q['old_' + party + '_r'] = Q[party + '_r'].toFixed(1);
     if (Q.constitutional_reform > 0) {
         if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
             Q[party + '_r'] = 0;
@@ -52,13 +52,13 @@ for (var party of Q.parties) {
         }
         new_party_sum += Q[party + '_r'];
     } else {
-        Q[party + '_r'] = Q[party + '_votes'];
+        Q[party + '_r'] = Q[party + '_votes'].toFixed(1);
     }
     // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
         Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
     }  else {
-            Q[party + '_r_disp'] = Q[party+'_r'];
+            Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
     }
     Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
     var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
@@ -95,9 +95,9 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.kpd_r) {
 }
 
 // coalitions
-Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
-Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
-Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
+Q.democratic_union = Q.spd_r + Q.lvp_r + Q.z_r);
+Q.march_coalition = Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r;
+Q.syndicalist_coalition = Q.sp_r + Q.spd_r;
 
 Q.leverage = Q.spd_r;
 
