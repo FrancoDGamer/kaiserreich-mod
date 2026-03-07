@@ -52,7 +52,7 @@ for (var party of Q.parties) {
         }
         new_party_sum += Q[party + '_r'];
     } else {
-        Q[party + '_r'] = Q[party + '_votes'];
+        Q[party + '_r'] = Q[party + '_votes'].toFixed(1);
     }
     // if we use decimals, then we might want to truncate the numbers
     if (Q.use_decimals) {
