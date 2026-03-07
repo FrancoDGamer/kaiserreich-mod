@@ -378,13 +378,6 @@ Q.minorityliberal_r = 1;
 Q.pp_r = 4;
 Q.elvp_r = 2;
 Q.guelph_r = 2;
-Q.lrp_r = 0;
-Q.fkp_r = 0;
-Q.upn_r = 0;
-Q.lvp_r = 0;
-Q.agrarian_r = 0;
-Q.dane = 0;
-Q.dnef = 0;
 
 // diff from prev
 Q.old_spd_r = 27;

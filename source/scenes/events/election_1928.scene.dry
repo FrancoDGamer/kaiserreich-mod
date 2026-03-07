@@ -149,6 +149,10 @@ Q.strike_term_seen = 0;
 
 Q.z_minus_bvp_r = Q.z_r - 3;
 
+// seats
+
+Q.seats_spd = Math.round(Q.spd_r*5);
+
 // understanding the enemy
 if (Q.nsdap_r >= 15) {
     Q.understanding_enemy_timer = 2;
@@ -290,7 +294,7 @@ go-to: coalition_menu
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]** {!</td><td>!} [+ seats_spd +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +] {!</td></tr>!}
 
