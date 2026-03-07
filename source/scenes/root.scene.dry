@@ -242,7 +242,7 @@ Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'sp', 'faud', 'z', 'nlp', 'bvp', 'lrp', 'fvp', 'lvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'fkp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other', 'agrarian', 'dane', 'upn', 'dnef', 'lvp'];
+Q.parties = ['spd', 'sp', 'faud', 'z', 'nlp', 'bvp', 'fvp', 'lvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -378,8 +378,13 @@ Q.minorityliberal_r = 1;
 Q.pp_r = 4;
 Q.elvp_r = 2;
 Q.guelph_r = 2;
-
-
+Q.lrp_r = 0;
+Q.fkp_r = 0;
+Q.upn_r = 0;
+Q.lvp_r = 0;
+Q.agrarian_r = 0;
+Q.dane = 0;
+Q.dnef = 0;
 
 // diff from prev
 Q.old_spd_r = 27;
