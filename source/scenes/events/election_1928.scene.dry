@@ -95,7 +95,7 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.kpd_r) {
 }
 
 // coalitions
-Q.democratic_union = Q.spd_r + Q.lvp_r + Q.z_r);
+Q.democratic_union = Q.spd_r + Q.lvp_r + Q.z_r;
 Q.march_coalition = Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r;
 Q.syndicalist_coalition = Q.sp_r + Q.spd_r;
 
