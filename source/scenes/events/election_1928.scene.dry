@@ -240,10 +240,10 @@ data = data.concat([
         "seats": Math.round(Q.dkp_r*5),
     },
     {
-        "id": "upn",
+        "id": "elvp",
         "legend": "EVLP",
         "name": "EVLP",
-        "seats": Math.round(Q.upn_r*5),
+        "seats": Math.round(Q.elvp_r*5),
     },
     {
         "id": "dvlp",
@@ -308,7 +308,7 @@ go-to: coalition_menu
 
 {!<tr><td><div class="box" style='background-color:#FF96D7'> </div> !} PP: {!</td><td>!} [+ pp_r +]% {!</td><td>!} [+ str_change_pp +] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ upn_r +]% {!</td><td>!} [+ str_change_upn +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +] {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#B5BA54'> </div> !} GHP: {!</td><td>!} [+ guelph_r +]% {!</td><td>!} [+ str_change_guelph +] {!</td></tr>!}
 
