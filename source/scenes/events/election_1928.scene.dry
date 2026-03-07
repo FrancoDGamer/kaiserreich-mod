@@ -152,7 +152,7 @@ Q.z_minus_bvp_r = Q.z_r - 3;
 // seats
 
 for (var party of Q.parties) {
-    Q[party + '_seats'] = Math.round(Q[party + '_r']*5);
+    Q[party + '_seats'] = Math.floor(Q[party + '_r']*5);
 }
 
 // understanding the enemy
