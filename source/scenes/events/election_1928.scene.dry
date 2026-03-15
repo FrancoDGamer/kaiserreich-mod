@@ -95,9 +95,9 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.z_r) {
 }
 
 // coalitions
-Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r);
+Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
 Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
-Q.syndicalist_coalition = (Q.sp_r + Q.spd_r);
+Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
 Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
 Q.catholic_parties = (Q.z_r + Q.bvp_r + Q.lrp_r + Q.evlp_r).toFixed(1);
 Q.minority_parties = (Q.bvp_r + Q.lrp_r + Q.evlp_r + Q.pp_r).toFixed(1);
@@ -381,11 +381,11 @@ go-to: coalition_menu
 
 = **Potential coalitions:**
 
-Democratic Union (SPD + LVP + Z): [+ (democratic_union).toFixed(1) +]%
+Democratic Union (SPD + LVP + Z): [+ democratic_union +]%
 
-March Coalition (NLP + FVP + DKP + FKP + Z + BVP): [+ (march_coalition).toFixed(1) +]%
+March Coalition (NLP + FVP + DKP + FKP + Z + BVP): [+ march_coalition +]%
 
-Syndicalist Coalition (SP + SPD): [+ (syndicalist_coalition).toFixed(1) +]%
+Syndicalist Coalition (SP + SPD): [+ syndicalist_coalition +]%
 
 There are some potential coalition arrangements.
 
