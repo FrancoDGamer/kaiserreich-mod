@@ -96,16 +96,6 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.z_r) {
 
 // Adding part of FAUD and SP support to SPD
 
-Q.sp_r = Q.sp_spd_support;
-Q.faud_r = Q.faud_spd_support;
-Q.faud_r = Q.faud_sp_support;
-Q.faud_spd_support + Q.sp_spd_support = Q.communist;
-
-Q.spd_r += Q.communist;
-Q.faud_r -= Q.faud_spd_support;
-Q.faud_r -= Q.faud_sp_support;
-Q.sp_r -= Q.sp_spd_support;
-Q.sp_r += Q.faud_sp_support;
 
 // coalitions
 Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
