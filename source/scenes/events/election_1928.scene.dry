@@ -117,7 +117,7 @@ Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
 
 Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
 
-Q.catholic_parties = (Q.z_r + Q.lrp_r + Q.evlp_r).toFixed(1);
+Q.catholicism_parties = (Q.z_r + Q.lrp_r + Q.evlp_r + Q.bvp_r).toFixed(1);
 
 Q.liberal_parties = (Q.nlp_r + Q.fvp_r + Q.minorityliberal_r).toFixed(1);
 
@@ -344,7 +344,7 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td><td>!} [+ sp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Catholic Parties [+ catholic_parties +]
+= Catholic Parties [+ catholicism_parties +]
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
