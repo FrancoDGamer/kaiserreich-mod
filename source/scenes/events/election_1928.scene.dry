@@ -96,9 +96,9 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.z_r) {
 
 // Adding part of FAUD and SP support to SPD
 
-Q.sp_r/10 = Q.sp_spd_support;
-Q.faud_r/2 = Q.faud_spd_support;
-Q.faud_r/2 = Q.faud_sp_support;
+Q.sp_r = Q.sp_spd_support;
+Q.faud_r = Q.faud_spd_support;
+Q.faud_r = Q.faud_sp_support;
 Q.faud_spd_support + Q.sp_spd_support = Q.communist;
 
 Q.spd_r += Q.communist;
@@ -109,13 +109,21 @@ Q.sp_r += Q.faud_sp_support;
 
 // coalitions
 Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
+
 Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
+
 Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
+
 Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
+
 Q.catholic_parties = (Q.z_r + Q.bvp_r + Q.lrp_r + Q.evlp_r).toFixed(1);
+
 Q.minority_parties = (Q.bvp_r + Q.lrp_r + Q.evlp_r + Q.pp_r).toFixed(1);
+
 Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r).toFixed(1);
+
 Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r).toFixed(1);
+
 Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r).toFixed(1);
 
 Q.leverage = Q.spd_r;
