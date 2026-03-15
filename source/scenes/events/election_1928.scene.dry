@@ -98,6 +98,12 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.kpd_r) {
 Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r);
 Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
 Q.syndicalist_coalition = (Q.sp_r + Q.spd_r);
+Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r);
+Q.catholic_parties = (Q.z_r + Q.bvp_r + Q.lrp_r + Q.evlp_r);
+Q.minority_parties = (Q.bvp_r + Q.lrp_r + Q.evlp_r + Q.pp_r);
+Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r);
+Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r);
+Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r);
 
 Q.leverage = Q.spd_r;
 
@@ -306,7 +312,7 @@ go-to: coalition_menu
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
-= Leftist Parties
+= Marxist Parties [+ leftist_parties +]
 
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
@@ -315,16 +321,17 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td><td>!} [+ sp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Catholic Parties
+= Catholic Parties [+ catholic_parties +]
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +]% {!</td><td>!} [+ z_seats +] {!</td><td>!} [+ z_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td><td>!} [+ bvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ evlp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Liberal Parties
+= Liberal Parties [+ liberal_parties +]
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
@@ -333,35 +340,47 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#FFC300'> </div> !} Minority Liberals: {!</td><td>!} [+ minorityliberal_r +]% {!</td><td>!} [+ str_change_minorityliberal +] {!</td><td>!} [+ minorityliberal_seats +] {!</td><td>!} [+ minorityliberal_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Minority Bloc 
+= Minority Bloc [+ minority_parties +]
+
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#FF96D7'> </div> !} PP: {!</td><td>!} [+ pp_r +]% {!</td><td>!} [+ str_change_pp +]% {!</td><td>!} [+ pp_seats +] {!</td><td>!} [+ pp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#B5BA54'> </div> !} GHP: {!</td><td>!} [+ guelph_r +]% {!</td><td>!} [+ str_change_guelph +]% {!</td><td>!} [+ guelph_seats +] {!</td><td>!} [+ guelph_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} Danes: {!</td><td>!} [+ danes_r +]% {!</td><td>!} [+ str_change_danes +]% {!</td><td>!} [+ danes_seats +] {!</td><td>!} [+ danes_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td><td>!} [+ bvp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ evlp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
+= Conservative Parties [+ conservative_parties +]
 
-= Conservative Parties
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#274875'> </div> !} FKP: {!</td><td>!} [+ fkp_r +]% {!</td><td>!} [+ str_change_fkp +]% {!</td><td>!} [+ fkp_seats +] {!</td><td>!} [+ fkp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#274875'> </div> !} DKP: {!</td><td>!} [+ dkp_r +]% {!</td><td>!} [+ str_change_dkp +]% {!</td><td>!} [+ dkp_seats +] {!</td><td>!} [+ dkp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +]% {!</td><td>!} [+ dvp_seats +] {!</td><td>!} [+ dvp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#426366'> </div> !} DVLP: {!</td><td>!} [+ dvlp_r +]% {!</td><td>!} [+ str_change_dvlp +]% {!</td><td>!} [+ dvlp_seats +] {!</td><td>!} [+ dvlp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Far Right Parties
+= Volkisch Parties [+ volkisch_parties +]
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#426366'> </div> !} DVLP: {!</td><td>!} [+ dvlp_r +]% {!</td><td>!} [+ str_change_dvlp +]% {!</td><td>!} [+ dvlp_seats +] {!</td><td>!} [+ dvlp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +]% {!</td><td>!} [+ dvp_seats +] {!</td><td>!} [+ dvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} DSP: {!</td><td>!} [+ dsp_r +]% {!</td><td>!} [+ str_change_dsp +]% {!</td><td>!} [+ dsp_seats +] {!</td><td>!} [+ dsp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Others: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +]% {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ other_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-{!</table>!}
-{!<svg id="election_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
-{!<svg id="party_support_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
+= Others [+ other_parties +]
 
-**Potential coalitions:**
+{!<table>!}
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#274875'> </div> !} Agrarians: {!</td><td>!} [+ agrarian_r +]% {!</td><td>!} [+ str_change_agrarian +]% {!</td><td>!} [+ agrarian_seats +] {!</td><td>!} [+ agrarian_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Independents: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +]% {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ other_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
+{!</table>!}
+
+= **Potential coalitions:**
 
 Democratic Union (SPD + LVP + Z): [+ democratic_union +]%
 
