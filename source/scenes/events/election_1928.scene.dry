@@ -90,7 +90,7 @@ if (Q.electoral_threshold && Q.electoral_threshold > 0) {
 
 // The largest party can only be the DLVP or the SPD.
 Q.largest_party = 'SPD';
-if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.kpd_r) {
+if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.z_r) {
     Q.largest_party = 'dvlp';
 }
 
@@ -98,12 +98,12 @@ if (Q.dvlp_r >= Q.spd_r && Q.dvlp_r >= Q.kpd_r) {
 Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r);
 Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
 Q.syndicalist_coalition = (Q.sp_r + Q.spd_r);
-Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r);
-Q.catholic_parties = (Q.z_r + Q.bvp_r + Q.lrp_r + Q.evlp_r);
-Q.minority_parties = (Q.bvp_r + Q.lrp_r + Q.evlp_r + Q.pp_r);
-Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r);
-Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r);
-Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r);
+Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
+Q.catholic_parties = (Q.z_r + Q.bvp_r + Q.lrp_r + Q.evlp_r).toFixed(1);
+Q.minority_parties = (Q.bvp_r + Q.lrp_r + Q.evlp_r + Q.pp_r).toFixed(1);
+Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r).toFixed(1);
+Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r).toFixed(1);
+Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r).toFixed(1);
 
 Q.leverage = Q.spd_r;
 
@@ -317,7 +317,6 @@ go-to: coalition_menu
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]%** {!</td><td>!} [+ spd_seats +] {!</td><td>!} [+ spd_seats_change_display +] {!</td></tr>!}
-
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td><td>!} [+ sp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
@@ -382,11 +381,11 @@ go-to: coalition_menu
 
 = **Potential coalitions:**
 
-Democratic Union (SPD + LVP + Z): [+ democratic_union +]%
+Democratic Union (SPD + LVP + Z): [+ (democratic_union).toFixed(1) +]%
 
-March Coalition (NLP + FVP + DKP + FKP + Z + BVP): [+ march_coalition +]%
+March Coalition (NLP + FVP + DKP + FKP + Z + BVP): [+ (march_coalition).toFixed(1) +]%
 
-Syndicalist Coalition (SP + SPD): [+ syndicalist_coalition +]%
+Syndicalist Coalition (SP + SPD): [+ (syndicalist_coalition).toFixed(1) +]%
 
 There are some potential coalition arrangements.
 
