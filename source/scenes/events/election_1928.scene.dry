@@ -108,9 +108,9 @@ Q.sp_r -= Q.sp_spd_support;
 Q.sp_r += Q.faud_sp_support;
 
 // coalitions
-Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
-Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
-Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
+Q.democratic_union = Q.spd_r + Q.lvp_r + Q.z_r;
+Q.march_coalition = Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r;
+Q.syndicalist_coalition = Q.sp_r + Q.spd_r;
 
 Q.leverage = Q.spd_r;
 
