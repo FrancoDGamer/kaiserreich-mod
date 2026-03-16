@@ -100,7 +100,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 # = Public Opinion
 
-@politics
+@politics2
 
 = Inter-party Relations
 
@@ -143,7 +143,7 @@ FAUD: [+ faud_relation : relationships +]
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
 
-@paramilitaries
+@paramilitaries2
 on-arrival: {!
 if (Q.rb_strength) {
     Q.rb_strength_2 = Q.rb_strength.toFixed(1);
@@ -189,7 +189,7 @@ Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
 [? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
-@polls
+@polls2
 on-arrival: {!
 Q.pro_republic_disp = Math.round(Q.pro_republic);
 Q.nationalism_disp = Math.round(Q.nationalism);
