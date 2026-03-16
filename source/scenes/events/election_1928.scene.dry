@@ -117,11 +117,11 @@ Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
 
 Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
 
-Q.catholicism_parties = (Q.z_r + Q.lrp_r + Q.elvp_r + Q.bvp_r).toFixed(1);
+Q.catholic_parties = (Q.z_r + Q.bvp_r).toFixed(1);
 
 Q.liberal_parties = (Q.nlp_r + Q.fvp_r + Q.minorityliberal_r).toFixed(1);
 
-Q.minority_parties = (Q.lrp_r + Q.elvp_r + Q.pp_r).toFixed(1);
+Q.minority_parties = (Q.lrp_r + Q.elvp_r + Q.pp_r + bvp_r).toFixed(1);
 
 Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r).toFixed(1);
 
@@ -289,8 +289,8 @@ data = data.concat([
     },
     {
         "id": "elvp",
-        "legend": "EVLP",
-        "name": "EVLP",
+        "legend": "ELVP",
+        "name": "ELVP",
         "seats": Math.round(Q.elvp_r*5),
     },
     {
@@ -344,7 +344,7 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td><td>!} [+ sp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Catholic Parties [+ catholicism_parties +]%
+= Catholic Parties [+ Q.catholic_parties +]%
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
