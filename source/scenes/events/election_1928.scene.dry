@@ -175,16 +175,6 @@ for (var party of Q.parties) {
 }
 Q.election_records.push(election_result);
 
-
-    var lines = d3.linegraph(false, false,
-            Q.parties_graph,
-            {'spd': '#E3000F'},
-            {'spd': 'SPD'});
-    lines.width(width).height(400);
-    //var svg = lines(Q.election_records);
-    d3.select("#election_history").datum(Q.election_records).call(lines);
-    //document.getElementById('election_history').innerHTML = svg.outerHTML;
-
 // coalitions
 Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
 
