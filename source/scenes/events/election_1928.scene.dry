@@ -107,28 +107,6 @@ Q.faud_r -= Q.faud_sp_support;
 Q.sp_r -= Q.sp_spd_support;
 Q.sp_r += Q.faud_sp_support;
 
-
-// coalitions
-Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
-
-Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
-
-Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
-
-Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
-
-Q.catholic_parties = (Q.z_r + Q.bvp_r).toFixed(1);
-
-Q.liberal_parties = (Q.nlp_r + Q.fvp_r + Q.minorityliberal_r).toFixed(1);
-
-Q.minority_parties = (Q.lrp_r + Q.elvp_r + Q.pp_r + bvp_r).toFixed(1);
-
-Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r).toFixed(1);
-
-Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r).toFixed(1);
-
-Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r).toFixed(1);
-
 Q.leverage = Q.spd_r;
 
 Q.grand_coalition_failed = 0;
@@ -206,6 +184,27 @@ Q.election_records.push(election_result);
     //var svg = lines(Q.election_records);
     d3.select("#election_history").datum(Q.election_records).call(lines);
     //document.getElementById('election_history').innerHTML = svg.outerHTML;
+
+// coalitions
+Q.democratic_union = (Q.spd_r + Q.lvp_r + Q.z_r).toFixed(1);
+
+Q.march_coalition = (Q.nlp_r + Q.z_r + Q.bvp_r + Q.fvp_r + Q.dkp_r).toFixed(1);
+
+Q.syndicalist_coalition = (Q.sp_r + Q.spd_r).toFixed(1);
+
+Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r).toFixed(1);
+
+Q.catholic_parties = (Q.z_r + Q.bvp_r).toFixed(1);
+
+Q.liberal_parties = (Q.nlp_r + Q.fvp_r + Q.minorityliberal_r).toFixed(1);
+
+Q.minority_parties = (Q.lrp_r + Q.elvp_r + Q.pp_r + bvp_r).toFixed(1);
+
+Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r).toFixed(1);
+
+Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r).toFixed(1);
+
+Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r).toFixed(1);
 
 !}
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
