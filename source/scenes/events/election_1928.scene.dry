@@ -181,13 +181,14 @@ for (var party of Q.parties) {
 Q.election_records.push(election_result);
 
 // factions
-Q.leftist_parties = Math.round(sp_r + spd_r + faud_r);
-Q.catholic_parties = z_r + bvp_r;
-Q.liberal_parties = nlp_r + fvp_r + minorityliberal_r;
-Q.minority_parties = lrp_r + elvp_r + pp_r + bvp_r;
-Q.conservative_parties = dkp_r + dvp_r + fkp_r + agrarian_r + dvlp_r;
-Q.volkisch_parties = dsp_r + dvp_r + antisemites_r;
-Q.other_parties = others_r + agrarian_r + antisemites_r;
+Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r);
+Q.catholic_parties = (Q.z_r + Q.bvp_r);
+Q.liberal_parties = Q.nlp_r + Q.fvp_r + Q.minorityliberal_r;
+Q.minority_parties = Q.lrp_r + Q.elvp_r + Q.pp_r + bvp_r;
+Q.conservative_parties = Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r;
+Q.volkisch_parties = Q.dsp_r + Q.dvp_r + Q.antisemites_r;
+Q.other_parties = Q.others_r + Q.agrarian_r + Q.antisemites_r;
+
 !}
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
 on-display: {!
@@ -319,8 +320,6 @@ go-to: coalition_menu
 
 = Marxist Parties [+ leftist_parties +]%
 
-[+ leftist_parties +]%
-
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]%** {!</td><td>!} [+ spd_seats +] {!</td><td>!} [+ spd_seats_change_display +] {!</td></tr>!}
@@ -328,9 +327,6 @@ go-to: coalition_menu
 {!</table>!}
 
 = Catholic Parties [+ catholic_parties +]%
-
-[+ catholic_parties +]%
-
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
