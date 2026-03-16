@@ -320,6 +320,10 @@ go-to: coalition_menu
 
 = Marxist Parties [+ leftist_parties +]%
 
+Marxist Parties see an intrisic connection between production and society, and seek the construction of a classless, equal society based on the theories of Karl Marx. Marxist forces in Germany have generally offered principled opposition to the Syndicalist movement, either criticizing its bureaucracy, inefficiency, or nationalist tendencies, aligning themselves closer with traditional Marxist movements.
+
+With the Liegnitz programme and the return of the USPD into the party, the SPD has affirmed itself as a Marxist Party and became the de facto face of Marxism in Germany. However, this has came with some consequences: .
+
 {!<table>!} 
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div> !} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td><td>!} **[+ str_change_spd +]%** {!</td><td>!} [+ spd_seats +] {!</td><td>!} [+ spd_seats_change_display +] {!</td></tr>!}
@@ -327,6 +331,10 @@ go-to: coalition_menu
 {!</table>!}
 
 = Catholic Parties [+ catholic_parties +]%
+
+Catholicism has became a very strong political force in Germany, with Zentrum positioning itself as a party of the Catholics, who overwhelmingly vote for it. Catholics primarily desire the protection of religions and traditions in German society, but are much more amenable to material conditions or government intervention than Liberals or Conservatives.
+
+A number of regionalist parties such as the BVP or the LRP have aligned themselves with Zentrum, these parties have turned their home locations into strongholds, though they tend to be a lot more conservative than Zentrum, who sees significant influence from left-wing Catholics and progressives.
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
@@ -338,6 +346,8 @@ go-to: coalition_menu
 
 = Liberal Parties [+ liberal_parties +]%
 
+German Liberalism has had a very long and deep history.
+
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#53683B'> </div> !} NLP: {!</td><td>!} [+ nlp_r +]% {!</td><td>!} [+ str_change_nlp +]% {!</td><td>!} [+ nlp_seats +] {!</td><td>!} [+ nlp_seats_change_display +] {!</td></tr>!}
@@ -346,6 +356,8 @@ go-to: coalition_menu
 {!</table>!}
 
 = Minority Bloc [+ minority_parties +]%
+
+Following the reforms and the expansion , a number of Minority Parties have came into prominence in the Reichstag. Together they form a , 
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
@@ -359,6 +371,8 @@ go-to: coalition_menu
 
 = Conservative Parties [+ conservative_parties +]%
 
+The Conservative parties of Germany honor fatherland, god and king. They are defined by their desire to uphold ancient traditions and creating a socially harmonious society. Whilst the specifics of what such a society and traditions might look vary a lot and differ, the Conservatives can largely agree that Marxism and Syndicalism are threats that should be dealt with, and are capable of presenting an united front as a result.
+
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#274875'> </div> !} FKP: {!</td><td>!} [+ fkp_r +]% {!</td><td>!} [+ str_change_fkp +]% {!</td><td>!} [+ fkp_seats +] {!</td><td>!} [+ fkp_seats_change_display +] {!</td></tr>!}
@@ -369,6 +383,10 @@ go-to: coalition_menu
 
 = Volkisch Parties [+ volkisch_parties +]%
 
+Volkisch Parties believe in the idea of "Blood and Soil"- A fundamental tie between the land and the people that live on it. Differing from conservative parties who focus on the past of our fathers or grandfathers, Volkisch groups call back to an even more ancient tradition that requires a revolution of societal norms to be brought back. 
+
+In current Germany politics, antisemite candidates in rural constituencies are the only outright Volkisch candidates that have reached success. The DSP and the DVP fight over the fate of the Volkisch movement in intellectual circles and influence said candidates, but have traditionally failed to secure urban seats or rural constituencies by just as anti-semitic DKP candidates. Some of the more extreme candidates in the DVLP adopt a stance that can be said to be Volkisch in nature, but cannot claim to be as dedicated as DSP or DVP candidates traditionally are.
+
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +]% {!</td><td>!} [+ dvp_seats +] {!</td><td>!} [+ dvp_seats_change_display +] {!</td></tr>!}
@@ -378,11 +396,14 @@ go-to: coalition_menu
 
 = Others [+ other_parties +]%
 
+In the Reichstag, there are also a number of candidates not affiliated with a specific party who have achieved success largely as a result of the local constituency.
+
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#274875'> </div> !} Agrarians: {!</td><td>!} [+ agrarian_r +]% {!</td><td>!} [+ str_change_agrarian +]% {!</td><td>!} [+ agrarian_seats +] {!</td><td>!} [+ agrarian_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Independents: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +]% {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ other_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFC300'> </div> !} Minority Liberals: {!</td><td>!} [+ minorityliberal_r +]% {!</td><td>!} [+ str_change_minorityliberal +] {!</td><td>!} [+ minorityliberal_seats +] {!</td><td>!} [+ minorityliberal_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
 = **Potential coalitions:**
