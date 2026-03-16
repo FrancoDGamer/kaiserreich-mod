@@ -208,6 +208,7 @@ blockquote + blockquote.attribution {
 .tools.right {
   float: right;
   right: 0.4em;
+  float: top;
 }
 #qualities {
   text-indent: 0;
