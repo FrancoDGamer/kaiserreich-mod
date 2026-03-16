@@ -237,6 +237,30 @@ window.displayText = function (text) {
       window.updateSidebar();
   };
 
+    window.updateSidebar2 = function() {
+      $('#qualities').empty();
+      var scene = dendryUI.game.scenes[window.statusTab2];
+      dendryUI.dendryEngine._runActions(scene.onArrival);
+      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+  };
+
+  window.changeTab2 = function(newTab, tabId) {
+      var tabButton = document.getElementById(tabId);
+      var tabButtons = document.getElementsByClassName('tab_button');
+      for (i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
+      }
+      tabButton.className += ' active';
+      window.statusTab2 = newTab;
+      window.updateSidebar2();
+  };
+
+  window.onDisplayContent = function() {
+      window.updateSidebar();
+  };
+
+
   /*
    * This function copied from the code for Infinite Space Battle Simulator
    *
