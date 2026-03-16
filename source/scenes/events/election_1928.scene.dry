@@ -181,7 +181,7 @@ for (var party of Q.parties) {
 Q.election_records.push(election_result);
 
 // factions
-Q.leftist_parties = sp_r + spd_r + faud_r;
+Q.leftist_parties = Math.round(sp_r + spd_r + faud_r);
 Q.catholic_parties = z_r + bvp_r;
 Q.liberal_parties = nlp_r + fvp_r + minorityliberal_r;
 Q.minority_parties = lrp_r + elvp_r + pp_r + bvp_r;
@@ -318,6 +318,7 @@ go-to: coalition_menu
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 = Marxist Parties [+ leftist_parties +]%
+
 [+ leftist_parties +]%
 
 {!<table>!} 
@@ -327,6 +328,7 @@ go-to: coalition_menu
 {!</table>!}
 
 = Catholic Parties [+ catholic_parties +]%
+
 [+ catholic_parties +]%
 
 
