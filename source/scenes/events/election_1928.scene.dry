@@ -187,7 +187,7 @@ Q.liberal_parties = (Q.nlp_r + Q.fvp_r + Q.minorityliberal_r);
 Q.minority_parties = (Q.lrp_r + Q.elvp_r + Q.pp_r + Q.bvp_r);
 Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r);
 Q.volkisch_parties = (Q.dsp_r + Q.dvp_r + Q.antisemites_r);
-Q.other_parties = (Q.others_r + Q.agrarian_r + Q.antisemites_r);
+Q.other_parties = (Q.other_r + Q.agrarian_r + Q.antisemites_r);
 
 !}
 on-departure: nazi_urgency = 1 if (nazi_urgency == 0 and nsdap_r >= 15)
