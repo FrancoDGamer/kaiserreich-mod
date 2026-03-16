@@ -238,11 +238,11 @@ window.displayText = function (text) {
   };
 
     window.updateSidebar2 = function() {
-      $('#qualities').empty();
+      $('#qualities2').empty();
       var scene = dendryUI.game.scenes[window.statusTab2];
       dendryUI.dendryEngine._runActions(scene.onArrival);
       var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+      $('#qualities2').append(dendryUI.contentToHTML.convert(displayContent));
   };
 
   window.changeTab2 = function(newTab, tabId) {
@@ -284,7 +284,7 @@ window.displayText = function (text) {
       if (colors) {
           value.style.backgroundColor = window.probToColor(width*100);
       }
-      bar.textContent = qualityName + ': ' + quality;
+      bar.textFor  = qualityName + ': ' + quality;
       if (colors) {
           bar.textContent += '/' + max;
       }
