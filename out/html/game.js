@@ -214,51 +214,52 @@ window.displayText = function (text) {
   };
 
   // TODO: have some code for tabbed sidebar browsing.
-  window.updateSidebar = function() {
-      $('#qualities').empty();
-      var scene = dendryUI.game.scenes[window.statusTab];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+    window.updateSidebar = function () {
+        $('#qualities').empty();
+        var statusScene = dendryUI.game.scenes["status"];
+        var scene = dendryUI.game.scenes[window.statusTab];
+        dendryUI.dendryEngine._runActions(statusScene.onArrival);
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
+        dendryUI.dendryEngine._runActions(scene.onDisplay);
+    };
 
-  window.changeTab = function(newTab, tabId) {
-      var tabButton = document.getElementById(tabId);
-      var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
-      }
-      tabButton.className += ' active';
-      window.statusTab = newTab;
-      window.updateSidebar();
-  };
+    window.updateSidebarRight = function () {
+        $('#qualities_2').empty();
+        var statusScene = dendryUI.game.scenes["status_2"];
+        var scene = dendryUI.game.scenes[window.statusTabRight];
+        dendryUI.dendryEngine._runActions(statusScene.onArrival);
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+        var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+        $('#qualities_2').append(dendryUI.contentToHTML.convert(displayContent));
+        dendryUI.dendryEngine._runActions(scene.onDisplay);
+    };
 
-  window.onDisplayContent = function() {
-      window.updateSidebar();
-  };
+    window.changeTab = function (newTab, tabId, isRight) {
+        if (tabId == 'poll_tab_left' && dendryUI.dendryEngine.state.qualities.historical_mode) {
+            window.alert('Polls are not available in historical mode.');
+            return;
+        }
+        var tabButton = document.getElementById(tabId);
+        var tabButtons = isRight ?
+            document.querySelectorAll('#stats_sidebar_right .tab_button') :
+            document.querySelectorAll('#stats_sidebar .tab_button');
+        for (var i = 0; i < tabButtons.length; i++) {
+            tabButtons[i].className = tabButtons[i].className.replace(' active', '');
+        }
+        tabButton.className += ' active';
 
-    window.updateSidebar2 = function() {
-      $('#qualities2').empty();
-      var scene = dendryUI.game.scenes[window.statusTab2];
-      dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities2').append(dendryUI.contentToHTML.convert(displayContent));
-  };
+        if (isRight) {
+            window.statusTabRight = newTab;
+            window.updateSidebarRight();
+        } else {
+            window.statusTab = newTab;
+            window.updateSidebar();
+        }
+    };
 
-  window.changeTab2 = function(newTab, tabId) {
-      var tabButton = document.getElementById(tabId);
-      var tabButtons = document.getElementsByClassName('tab_button');
-      for (i = 0; i < tabButtons.length; i++) {
-        tabButtons[i].className = tabButtons[i].className.replace(' active', '');
-      }
-      tabButton.className += ' active';
-      window.statusTab2 = newTab;
-      window.updateSidebar2();
-  };
 
-  window.onDisplayContent = function() {
-      window.updateSidebar();
-  };
 
 
   /*
@@ -295,7 +296,7 @@ window.displayText = function (text) {
 
   window.justLoaded = true;
   window.statusTab = "status";
-  window.statusTab2 = "status_2";
+  statusTabRight = "status2";
   window.dendryModifyUI = main;
   console.log("Modifying stats: see dendryUI.dendryEngine.state.qualities");
 
