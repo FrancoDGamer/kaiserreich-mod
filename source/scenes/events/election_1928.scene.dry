@@ -182,7 +182,7 @@ Q.election_records.push(election_result);
 
 // factions
 Q.leftist_parties = (Q.sp_r + Q.spd_r + Q.faud_r);
-Q.catholic_parties = (Q.z_r + Q.bvp_r);
+Q.catholic_parties = (Q.z_r + Q.bvp_r + Q.lrp_r + Q.elvp_r);
 Q.liberal_parties = (Q.nlp_r + Q.fvp_r + Q.minorityliberal_r);
 Q.minority_parties = (Q.lrp_r + Q.elvp_r + Q.pp_r + bvp_r);
 Q.conservative_parties = (Q.dkp_r + Q.dvp_r + Q.fkp_r + Q.agrarian_r + Q.dvlp_r);
@@ -332,7 +332,7 @@ go-to: coalition_menu
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +]% {!</td><td>!} [+ z_seats +] {!</td><td>!} [+ z_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td><td>!} [+ bvp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ evlp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ elvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000E91'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
@@ -353,7 +353,7 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#B5BA54'> </div> !} GHP: {!</td><td>!} [+ guelph_r +]% {!</td><td>!} [+ str_change_guelph +]% {!</td><td>!} [+ guelph_seats +] {!</td><td>!} [+ guelph_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} Danes: {!</td><td>!} [+ danes_r +]% {!</td><td>!} [+ str_change_danes +]% {!</td><td>!} [+ danes_seats +] {!</td><td>!} [+ danes_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td><td>!} [+ bvp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ evlp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ elvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000E91'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
