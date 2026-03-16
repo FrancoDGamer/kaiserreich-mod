@@ -344,7 +344,7 @@ go-to: coalition_menu
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} SP: {!</td><td>!} [+ sp_r +]% {!</td><td>!} [+ str_change_sp +]% {!</td><td>!} [+ sp_seats +] {!</td><td>!} [+ sp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
-= Catholic Parties [+ Q.catholic_parties +]%
+= Catholic Parties [+ catholic_parties +]%
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
