@@ -16,13 +16,9 @@ Chancellor must act
 - @wait: Wait for development on the situation 
 - @preempt: Pre-empt the chancellor's move and call a party congress to determine our next steps, we must take action.
 
-// Wait and see
-
 @wait 
 
 Nothing happens
-
-// Early preemption scenario
 
 @preempt 
 subtitle: This will enable us to choose a stance on the war, from opposing it to supporting it.
