@@ -1,0 +1,106 @@
+title: Border clashes around Yan
+subtitle: r
+on-arrival: {!
+!}
+tags: event
+view-if: year = 1928 and month = 3
+priority: 2
+max-visits: 1
+
+Germany intervention, problems
+
+Communications intercepted 
+
+Chancellor must act
+
+- @wait: Wait for development on the situation 
+- @preempt: Pre-empt the chancellor's move and call a party congress to determine our next steps, we must take action.
+
+@preempt 
+subtitle: This will enable us to choose a stance on the war, from opposing it to supporting it.
+go-to: coalition_menu
+
+WIP  
+
+@zhilhi_congress_menu
+- @antiwar: German Imperialism in Asia is cruel and a blight on our nation. We must harshly oppose intervention.
+- @prowar: Japan is the real threat in Asia. We must try to convince the party to support conflict with Japan. 
+- @neutral: Too many lives are at stake here. The SPD should take a neutral stance on the matter for now. Party members should avoid talking about the war to their constituents whilst we watch and see.
+- @principled: We must offer principled opposition to both sides. Japan and Germany are equally as guilty in this stance. 
+- @free: We must avoid taking an unified stance on the matter, we shall issue an internal declaration to push for the representatives freedom of choice on the matter.
+- @china: What should matter the most is China, not Japan or Germany. The Zhilhi are corrupt and ineffective, therefore the SPD must consider support for a Chinese Faction and push German politics towards their favour. 
+- @ignore: Rather than focusing on social matters, the SPD should actively ignore the war and focus on issues that affect the workers here and now.
+
+@antiwar 
+subtitle: This option lets us capitalize on German weariness to the conflicts and wars we've been getting into, however we will have to convince the dissenting factions.
+
+WIP
+
+- @antiwar_force: Let's force a vote. 
+- @antiwar_negotiations: Let's try to convince the party.
+- @antiwar_concede: A bit early, but call the congress off.
+- @zhilhi_congress_menu: Can we bring up another stance?
+
+@antiwar_force
+
+WIP
+
+@antiwar_negotiations
+
+WIP
+
+@antiwar_concede
+
+WIP
+
+@prowar 
+subtitle: This option is highly unpopular around the party, we will have a tough time convincing them. 
+
+- @prowar_force: Let's force a vote. 
+- @prowar_negotiations: Let's try to convince the party.
+- @prowar_concede: A bit early, but call the congress off.
+- @zhilhi_congress_menu: Can we bring up another stance?
+
+@prowar_force
+
+WIP
+
+@prowar_negotiations
+
+WIP
+
+@prowar_concede
+
+WIP
+
+@neutral
+subtitle: There are some demands for action, we'll have to address them.
+
+- @neutral_force: Let's force a vote. 
+- @neutral_negotiations: Let's try to convince the party.
+- @neutral_concede: A bit early, but call the congress off.
+- @zhilhi_congress_menu: Can we bring up another stance?
+
+@neutral_force
+
+WIP
+
+@neutral_negotiations
+
+WIP
+
+@neutral_concede
+
+WIP
+
+@principled
+subtitle: A prime compromise between many differing viewpoints, this is not hard to convince the congress, however some of the more extreme hawks or doves will be disappointed. 
+
+@free
+subtitle: Not hard to get it passed, but after calling the congress, representatives are expecting to come out with a decision.
+
+@china
+subtitle: This option is seen by many as insane, it is going to lead to a lot of discussion around the party, but we might be able to choose a warlord to support?...
+
+@ignore
+subtitle: Focus on bread and gas prices.
