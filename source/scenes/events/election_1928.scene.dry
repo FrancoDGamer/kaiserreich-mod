@@ -240,6 +240,18 @@ data = data.concat([
         "seats": Math.round(Q.z_r*5),
     },
     {
+        "id": "lrp",
+        "legend": "LRP",
+        "name": "LRP",
+        "seats": Math.round(Q.lrp_r*5),
+    },
+    {
+        "id": "elvp",
+        "legend": "ELVP",
+        "name": "ELVP",
+        "seats": Math.round(Q.elvp_r*5),
+    },
+    {
         "id": "bvp",
         "legend": "BVP",
         "name": "BVP",
@@ -258,10 +270,16 @@ data = data.concat([
         "seats": Math.round(Q.minorityliberal_r*5),
     },
     {
-        "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
-        "seats": Math.round(Q.dvp_r*5),
+        "id": "danes",
+        "legend": "DANES",
+        "name": "DANES",
+        "seats": Math.round(Q.danes_r*5),
+    },
+    {
+        "id": "fkp",
+        "legend": "FKP",
+        "name": "FKP",
+        "seats": Math.round(Q.fkp_r*5),
     },
     {
         "id": "dkp",
@@ -270,16 +288,16 @@ data = data.concat([
         "seats": Math.round(Q.dkp_r*5),
     },
     {
-        "id": "elvp",
-        "legend": "ELVP",
-        "name": "ELVP",
-        "seats": Math.round(Q.elvp_r*5),
-    },
-    {
         "id": "dvlp",
         "legend": "DVLP",
         "name": "DVLP",
         "seats": Math.round(Q.dvlp_r*5),
+    },
+    {
+        "id": "dvp",
+        "legend": "DVP",
+        "name": "DVP",
+        "seats": Math.round(Q.dvp_r*5),
     },
     {
         "id": "dsp",
@@ -341,7 +359,7 @@ A number of regionalist parties such as the BVP or the LRP have aligned themselv
 {!<tr><td><div class="box" style='background-color:#000000'> </div> !} Z: {!</td><td>!} [+ z_r +]% {!</td><td>!} [+ str_change_z +]% {!</td><td>!} [+ z_seats +] {!</td><td>!} [+ z_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td><td>!} [+ bvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ elvp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3A7B9C'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
 = Liberal Parties [+ liberal_parties +]%
@@ -363,10 +381,10 @@ Following the reforms and the expansion , a number of Minority Parties have came
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#FF96D7'> </div> !} PP: {!</td><td>!} [+ pp_r +]% {!</td><td>!} [+ str_change_pp +]% {!</td><td>!} [+ pp_seats +] {!</td><td>!} [+ pp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#B5BA54'> </div> !} GHP: {!</td><td>!} [+ guelph_r +]% {!</td><td>!} [+ str_change_guelph +]% {!</td><td>!} [+ guelph_seats +] {!</td><td>!} [+ guelph_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} Danes: {!</td><td>!} [+ danes_r +]% {!</td><td>!} [+ str_change_danes +]% {!</td><td>!} [+ danes_seats +] {!</td><td>!} [+ danes_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#9C3A42'> </div> !} Danes: {!</td><td>!} [+ danes_r +]% {!</td><td>!} [+ str_change_danes +]% {!</td><td>!} [+ danes_seats +] {!</td><td>!} [+ danes_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} BVP: {!</td><td>!} [+ bvp_r +]% {!</td><td>!} [+ str_change_bvp +]% {!</td><td>!} [+ bvp_seats +] {!</td><td>!} [+ bvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#000E91'> </div> !} ELVP: {!</td><td>!} [+ elvp_r +]% {!</td><td>!} [+ str_change_elvp +]% {!</td><td>!} [+ elvp_seats +] {!</td><td>!} [+ elvp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3A7B9C'> </div> !} LRP: {!</td><td>!} [+ lrp_r +]% {!</td><td>!} [+ str_change_lrp +]% {!</td><td>!} [+ lrp_seats +] {!</td><td>!} [+ lrp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
 = Conservative Parties [+ conservative_parties +]%
@@ -376,7 +394,7 @@ The Conservative parties of Germany honor fatherland, god and king. They are def
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#274875'> </div> !} FKP: {!</td><td>!} [+ fkp_r +]% {!</td><td>!} [+ str_change_fkp +]% {!</td><td>!} [+ fkp_seats +] {!</td><td>!} [+ fkp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#274875'> </div> !} DKP: {!</td><td>!} [+ dkp_r +]% {!</td><td>!} [+ str_change_dkp +]% {!</td><td>!} [+ dkp_seats +] {!</td><td>!} [+ dkp_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#0060BD'> </div> !} DKP: {!</td><td>!} [+ dkp_r +]% {!</td><td>!} [+ str_change_dkp +]% {!</td><td>!} [+ dkp_seats +] {!</td><td>!} [+ dkp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +]% {!</td><td>!} [+ dvp_seats +] {!</td><td>!} [+ dvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#426366'> </div> !} DVLP: {!</td><td>!} [+ dvlp_r +]% {!</td><td>!} [+ str_change_dvlp +]% {!</td><td>!} [+ dvlp_seats +] {!</td><td>!} [+ dvlp_seats_change_display +] {!</td></tr>!}
 {!</table>!}
@@ -391,7 +409,7 @@ In current Germany politics, antisemite candidates in rural constituencies are t
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#161654'> </div> !} DVP: {!</td><td>!} [+ dvp_r +]% {!</td><td>!} [+ str_change_dvp +]% {!</td><td>!} [+ dvp_seats +] {!</td><td>!} [+ dvp_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} DSP: {!</td><td>!} [+ dsp_r +]% {!</td><td>!} [+ str_change_dsp +]% {!</td><td>!} [+ dsp_seats +] {!</td><td>!} [+ dsp_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#954B00'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 
 = Others [+ other_parties +]%
@@ -400,9 +418,9 @@ In the Reichstag, there are also a number of candidates not affiliated with a sp
 
 {!<table>!}
 {!<tr><td>Party</td><td>Vote share</td><td>% Change</td><td> Seats</td><td> Seat Change</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#274875'> </div> !} Agrarians: {!</td><td>!} [+ agrarian_r +]% {!</td><td>!} [+ str_change_agrarian +]% {!</td><td>!} [+ agrarian_seats +] {!</td><td>!} [+ agrarian_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3A6957'> </div> !} Agrarians: {!</td><td>!} [+ agrarian_r +]% {!</td><td>!} [+ str_change_agrarian +]% {!</td><td>!} [+ agrarian_seats +] {!</td><td>!} [+ agrarian_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div> !} Independents: {!</td><td>!} [+ other_r +] % {!</td><td>!} [+ str_change_other +]% {!</td><td>!} [+ other_seats +] {!</td><td>!} [+ other_seats_change_display +] {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#2E4D1F'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#954B00'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#FFC300'> </div> !} Minority Liberals: {!</td><td>!} [+ minorityliberal_r +]% {!</td><td>!} [+ str_change_minorityliberal +] {!</td><td>!} [+ minorityliberal_seats +] {!</td><td>!} [+ minorityliberal_seats_change_display +] {!</td></tr>!}
 {!</table>!}
 

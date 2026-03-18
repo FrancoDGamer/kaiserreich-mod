@@ -576,8 +576,17 @@ table {
 .seat.dvlp {
     fill: #426366;
 }
-.seat.dsp {
+.seat.antisemites {
     fill: #954B00;
+}
+.seat.lrp {
+    fill: #3A7B9C;
+}
+.seat.fkp {
+    fill: #3EBEC1;
+}
+.seat.dkp {
+    fill: #0060BD;
 }
 .seat.pp {
     fill: #FF96D7;
@@ -596,6 +605,9 @@ table {
 }
 .seat.dkp {
     fill: #274875;
+}
+.seat.danes {
+    fill: #9C3A42;
 }
 
 .tooltip-text {
