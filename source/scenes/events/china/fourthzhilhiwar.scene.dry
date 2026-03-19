@@ -1,5 +1,5 @@
 title: Border clashes around Yan
-subtitle: r
+subtitle: Is war on the horizon?!
 on-arrival: {!
 !}
 tags: event
@@ -7,14 +7,16 @@ view-if: year = 1928 and month = 3
 priority: 2
 max-visits: 1
 
-Germany intervention, problems
+The newspapers in Germany are aripe with news. A series of communiques have came out via telegraph from the Yunnan and Shanxi provinces declaring the Qing government illegitimate. At the same time, the Chinese Warlord Zhang Zuolin has began 
 
-Communications intercepted 
+Just barely one year ago, the German Empire had intervened in China in favour of the Zhili clique. Though it avoided further encroachement of Japanese influence, the gains from  are yet to be seen 
 
-Chancellor must act
 
-- @wait: Wait for development on the situation 
-- @preempt: Pre-empt the chancellor's move and call a party congress to determine our next steps, we must take action.
+
+The Reichskanzler, Ulrich von Brockdorff-Rantzau, has currently . 
+
+- @wait: Wait for further developments on the situation 
+- @preempt: Pre-empt the chancellor's move and call an emergency party congress to determine our next steps.
 
 @wait 
 
@@ -22,11 +24,82 @@ Nothing happens
 
 @preempt 
 subtitle: This will enable us to choose a stance on the war, from opposing it to supporting it.
-go-to: zhilhi_congress_menu
+on-arrival: {!
+Q.total_influence = 0;
+Q.total_influence == Math.round(spd_r * 5);
 
-WIP  
+for (var faction of Q.factions) {
+    Q[faction + '_influence'] = Math.floor(Q.total_influence/Q[faction + '_strength']);   
+}
 
-@zhilhi_congress_menu
+!}
+on-display: {!
+data = []
+    data.push({
+        "id": "spdlabor",
+        "legend": "Labor",
+        "name": "Labor",
+        "seats": Math.round(Q.labor_influence*5.0),
+    });
+    data.push({
+        "id": "spdcentre",
+        "legend": "Labor",
+        "name": "Labor",
+        "seats": Math.round(Q.centre_influence*5.0),
+    });
+    data.push({
+        "id": "reform",
+        "legend": "Reformists",
+        "name": "Reformists",
+        "seats": Math.round(Q.reformist_influence*5.0),
+    });
+    data.push({
+        "id": "left",
+        "legend": "Labor",
+        "name": "Labor",
+        "seats": Math.round(Q.left_influence*5.0),
+    });
+
+if (window && d3) {
+    var width = 500; 
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50; 
+        height = width;
+        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+    } 
+
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#reichstag").datum(data).call(parliament);
+}
+!}
+go-to: zhili_congress_menu
+
+@zhili_congress_menu
+
+= Party Congress
+
+{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+
+With the news coming in and the Brockdorff cabinet still busy discussing course of action, the SPD has called a party conference in the town of [BLANK]. As the delegates make their way in from all over the country, the atmosphere is weirdly tense, in part due to how unusual it is. 
+
+The SPD has not traditionally taken strong action on foreign affairs. However, Stresemann's proposal to intervene in 1924 led to outrage from the war weary German population, causing his and Reichskanzler Arthur von Posadowsky-Wehner's entire cabinet to fall. Meanwhile . Many in our party left, previously aligned with the USPD, have . .
+
+Even so, the conference was met with significant doubt from many of the delegates who are more distrustful of the party leadership across the entire SPD aisle, and thus come with a degree of opposition to any decisions that can be made here.
+
+At , Party Chairman Hermann Muller , 
+
+{!<table>!}
+{!<tr><td>Organization</td><td>Delegates Share</td>!}
+{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Left: {!</td><td>!} [+ left_influence +]%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} Center: {!</td><td>!} [+ center_influence +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} Labor: {!</td><td>!} [+ labor_influence +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3A7B9C'> </div> !} Reformist: {!</td><td>!} [+ reformist_influence +]% {!</td></tr>!}
+{!</table>!}
 
 - @antiwar: German Imperialism in Asia is cruel and a blight on our nation. We must harshly oppose intervention.
 - @prowar: Japan is the real threat in Asia. We must try to convince the party to support conflict with Japan. 
@@ -60,31 +133,12 @@ WIP
 
 @prowar 
 subtitle: This option is highly unpopular around the party, we will have a tough time convincing them. 
+on-arrival: Q.zhiliprowar = 0; Q.zhiliprowar == 1;
 
-- @prowar_force: Let's force a vote. 
-- @prowar_negotiations: Let's try to convince the party.
-- @prowar_concede: A bit early, but call the congress off.
-- @zhilhi_congress_menu: Can we bring up another stance?
-
-@prowar_force
-
-WIP
-
-@prowar_negotiations
-
-WIP
-
-@prowar_concede
-
-WIP
+- @negotiations: Let's force a vote. 
 
 @neutral
 subtitle: There are some demands for action, we'll have to address them.
-
-- @neutral_force: Let's force a vote. 
-- @neutral_negotiations: Let's try to convince the party.
-- @neutral_concede: A bit early, but call the congress off.
-- @zhilhi_congress_menu: Can we bring up another stance?
 
 @neutral_force
 
@@ -109,3 +163,26 @@ subtitle: This option is seen by many as insane, it is going to lead to a lot of
 
 @ignore
 subtitle: Focus on bread and gas prices.
+
+@negotiations 
+go-to: zhilhi-negotiation-menu
+
+hi we're negotiating testt
+
+@zhili-negotiation-menu
+
+- @vote: Let's bring it to a vote.
+- @noopposition: The party has agree
+- @favours: Do we have any leverage we can use to tilt the vote?
+
+@vote
+
+WIP
+
+@noopposition
+
+WIP
+
+@favours
+
+WIP
