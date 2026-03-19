@@ -133,7 +133,6 @@ WIP
 
 @prowar 
 subtitle: This option is highly unpopular around the party, we will have a tough time convincing them. 
-on-arrival: Q.zhiliprowar = 0; Q.zhiliprowar == 1;
 
 - @negotiations: Let's force a vote. 
 
