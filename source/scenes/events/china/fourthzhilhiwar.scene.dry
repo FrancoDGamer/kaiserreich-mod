@@ -34,7 +34,7 @@ for (var faction of Q.factions) {
 
 !}
 on-display: {!
-data = [
+data = data.concat([
     {
         "id": "labor",
         "legend": "Labor",
@@ -59,7 +59,7 @@ data = [
         "name": "Left",
         "seats": Math.round(Q.left_influence),
     }
-];
+]);
 
 if (window && d3) {
     var width = 500; 
