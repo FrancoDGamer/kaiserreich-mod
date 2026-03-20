@@ -32,6 +32,11 @@ for (var faction of Q.factions) {
     Q[faction + '_influence'] = Math.floor(Q.total_influence/Q[faction + '_strength']);   
 }
 
+Q.reformist_influence = 25;
+Q.center_influence = 25;
+Q.labor_influence = 25;
+Q.left_influence = 25;
+
 !}
 on-display: {!
 data = []
@@ -42,10 +47,10 @@ data = []
         "seats": Math.round(Q.labor_influence*5.0),
     });
     data.push({
-        "id": "spdcentre",
+        "id": "spdcenter",
         "legend": "Labor",
         "name": "Labor",
-        "seats": Math.round(Q.centre_influence*5.0),
+        "seats": Math.round(Q.center_influence*5.0),
     });
     data.push({
         "id": "reform",
