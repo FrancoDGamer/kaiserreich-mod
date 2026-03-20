@@ -102,7 +102,6 @@ if (Q.dissent < 0) {
 if (Q.month_actions >= 1) {
     Q.time += 1;
     Q.month_actions = 0;
-    Q.month += 1;
     Q.week += 2;
     if (Q.week > 5) {
         month += 1;
