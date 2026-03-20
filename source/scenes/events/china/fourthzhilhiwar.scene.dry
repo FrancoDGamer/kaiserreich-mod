@@ -34,30 +34,124 @@ for (var faction of Q.factions) {
 
 !}
 on-display: {!
+data = [
+    {
+        "id": "sp",
+        "legend": "SP",
+        "name": "SP",
+        "seats": Math.round(Q.sp_r*5),
+    }
+];
+if (Q.sapd_formed && Q.sapd_r) {
+    data.push({
+            "id": "sapd",
+            "legend": "SAPD",
+            "name": "SAPD",
+            "seats": Math.round(Q.sapd_r*5),
+            });
+}
 data = data.concat([
     {
-        "id": "labor",
-        "legend": "Labor",
-        "name": "Labor",
-        "seats": Math.round(Q.labor_influence),
+        "id": "spd",
+        "legend": "SPD",
+        "name": "SPD",
+        "seats": Math.round(Q.spd_r*5),
     },
     {
-        "id": "center",
+        "id": "fvp",
+        "legend": "FVP",
+        "name": "FVP",
+        "seats": Math.round(Q.fvp_r*5),
+    },
+    {
+        "id": "pp",
+        "legend": "PP",
+        "name": "PP",
+        "seats": Math.round(Q.pp_r*5),
+    },
+    {
+        "id": "guelph",
+        "legend": "GUELPH",
+        "name": "GUELPH",
+        "seats": Math.round(Q.guelph_r*5),
+    },
+    {
+        "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": Math.round(Q.center_influence),
+        "seats": Math.round(Q.z_r*5),
     },
     {
-        "id": "reformist",
-        "legend": "Reformists",
-        "name": "Reformists",
-        "seats": Math.round(Q.reformist_influence),
+        "id": "lrp",
+        "legend": "LRP",
+        "name": "LRP",
+        "seats": Math.round(Q.lrp_r*5),
     },
     {
-        "id": "left",
-        "legend": "Left",
-        "name": "Left",
-        "seats": Math.round(Q.left_influence),
+        "id": "elvp",
+        "legend": "ELVP",
+        "name": "ELVP",
+        "seats": Math.round(Q.elvp_r*5),
+    },
+    {
+        "id": "bvp",
+        "legend": "BVP",
+        "name": "BVP",
+        "seats": Math.round(Q.bvp_r*5),
+    },
+    {
+        "id": "nlp",
+        "legend": "NLP",
+        "name": "NLP",
+        "seats": Math.round(Q.nlp_r*5),
+    },
+    {
+        "id": "minorityliberal",
+        "legend": "MINORITYLIBERAL",
+        "name": "MINORITYLIBERAL",
+        "seats": Math.round(Q.minorityliberal_r*5),
+    },
+    {
+        "id": "danes",
+        "legend": "DANES",
+        "name": "DANES",
+        "seats": Math.round(Q.danes_r*5),
+    },
+    {
+        "id": "fkp",
+        "legend": "FKP",
+        "name": "FKP",
+        "seats": Math.round(Q.fkp_r*5),
+    },
+    {
+        "id": "dkp",
+        "legend": "DKP",
+        "name": "DKP",
+        "seats": Math.round(Q.dkp_r*5),
+    },
+    {
+        "id": "dvlp",
+        "legend": "DVLP",
+        "name": "DVLP",
+        "seats": Math.round(Q.dvlp_r*5),
+    },
+    {
+        "id": "dvp",
+        "legend": "DVP",
+        "name": "DVP",
+        "seats": Math.round(Q.dvp_r*5),
+    },
+    {
+        "id": "dsp",
+        "legend": "DSP",
+        "name": "DSP",
+        "seats": Math.round(Q.dsp_r*5),
+    },
+    {
+        "id": "other",
+        "legend": "Other",
+        "name": "Other",
+        "seats": Math.round(Q.other_r*5),
     }
 ]);
 
