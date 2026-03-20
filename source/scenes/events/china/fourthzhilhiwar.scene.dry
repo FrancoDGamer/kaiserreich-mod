@@ -39,8 +39,9 @@ Q.left_influence = 25;
 
 !}
 on-display: {!
-data = []
-    data.concat({
+data = [];
+    data.concat([
+        {
         "id": "spdlabor",
         "legend": "Labor",
         "name": "Labor",
@@ -63,7 +64,8 @@ data = []
         "legend": "Labor",
         "name": "Labor",
         "seats": 25
-    });
+    }
+    ]);
 
 if (window && d3) {
     var width = 500; 
