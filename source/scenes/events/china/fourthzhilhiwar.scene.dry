@@ -40,32 +40,30 @@ Q.left_influence = 25;
 !}
 on-display: {!
 data = [];
-    data.concat([
-        {
+    data.push({
         "id": "spdlabor",
         "legend": "Labor",
         "name": "Labor",
         "seats": 25
-    },
-    {
+    });
+    data.push({
         "id": "spdcenter",
         "legend": "Labor",
         "name": "Labor",
         "seats": 25
-    },
-    {
+    });
+    data.push({
         "id": "reform",
         "legend": "Reformists",
         "name": "Reformists",
         "seats": 25
-    },
-    {
+    });
+    data.push({
         "id": "left",
         "legend": "Labor",
         "name": "Labor",
         "seats": 25
-    }
-    ]);
+    });
 
 if (window && d3) {
     var width = 500; 
