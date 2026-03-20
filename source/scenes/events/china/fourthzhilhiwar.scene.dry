@@ -33,6 +33,8 @@ for (var faction of Q.factions) {
 }
 !}
 on-display: {!
+
+if Q.yes {
 data = [
     {
         "id": "labor",
@@ -59,7 +61,7 @@ data = [
         "seats": Math.round(Q.left_influence),
     },
 ];
-
+}
 if (window && d3) {
     var width = 500; 
     var height = 500;
