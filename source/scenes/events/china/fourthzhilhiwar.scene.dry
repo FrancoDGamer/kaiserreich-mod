@@ -86,7 +86,7 @@ go-to: zhili_congress_menu
 
 @zhili_congress_menu
 
-= Party Congress
+= Party Congress v0.1
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
