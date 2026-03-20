@@ -81,8 +81,6 @@ if (window && d3) {
 !}
 go-to: zhili_congress_menu
 
-@zhili_congress_menu
-
 = Party Congress v0.1
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
@@ -102,6 +100,8 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#000E91'> </div> !} Labor: {!</td><td>!} [+ labor_influence +]% {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#3A7B9C'> </div> !} Reformist: {!</td><td>!} [+ reformist_influence +]% {!</td></tr>!}
 {!</table>!}
+
+@zhili_congress_menu
 
 - @antiwar: German Imperialism in Asia is cruel and a blight on our nation. We must harshly oppose intervention.
 - @prowar: Japan is the real threat in Asia. We must try to convince the party to support conflict with Japan. 
