@@ -44,25 +44,25 @@ data = [];
         "id": "spdlabor",
         "legend": "Labor",
         "name": "Labor",
-        "seats": 25
+        "seats": 25,
     });
     data.push({
         "id": "spdcenter",
         "legend": "Labor",
         "name": "Labor",
-        "seats": 25
+        "seats": 25,
     });
     data.push({
         "id": "reform",
         "legend": "Reformists",
         "name": "Reformists",
-        "seats": 25
+        "seats": 25,
     });
     data.push({
         "id": "left",
         "legend": "Labor",
         "name": "Labor",
-        "seats": 25
+        "seats": 25,
     });
 
 if (window && d3) {
