@@ -34,7 +34,7 @@ for (var faction of Q.factions) {
 !}
 on-display: {!
 
-if Q.yes {
+if (Q.yes) {
 data = [
     {
         "id": "labor",
