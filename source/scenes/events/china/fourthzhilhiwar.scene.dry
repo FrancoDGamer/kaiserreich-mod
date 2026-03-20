@@ -26,10 +26,14 @@ Nothing happens
 subtitle: This will enable us to choose a stance on the war, from opposing it to supporting it.
 on-arrival: {!
 Q.total_influence = 0;
-Q.total_influence == Math.round(spd_r * 5);
+Q.total_influence == Math.round(Q.spd_r * 5);
+
+
+
+
 
 for (var faction of Q.factions) {
-    Q[faction + '_influence'] = Math.floor(Q.total_influence/Q[faction + '_strength']);   
+    Q[faction + '_influence'] = Q[faction + '_strength'];  
 }
 
 !}
