@@ -607,8 +607,24 @@ table {
     fill: #274875;
 }
 .seat.danes {
-    fill: #9C3A42;
+    fill: #F2B3B3;
 }
+
+/* colored seats for party factions */
+.seat.left {
+    fill: #D10000;
+}
+.seat.center {
+    fill: #E30063;
+}
+.seat.labor {
+    fill: #FF80C5;
+}
+.seat.reformist {
+    fill: #9C3F9E;
+}
+
+
 
 .tooltip-text {
     text-decoration: underline;

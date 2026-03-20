@@ -23,7 +23,7 @@ The Reichskanzler, Ulrich von Brockdorff-Rantzau, has currently .
 Nothing happens
 
 @preempt 
-subtitle: This will enable us to choose a stance on the war, from opposing it to supporting it.
+subtitle: Seen as a nuclear answer to the news at this stage in time, this will enable us to choose a stance on the war, from opposing it to supporting it.
 on-arrival: {!
 Q.total_influence = 0;
 Q.total_influence == Math.round(Q.spd_r * 5);
@@ -79,7 +79,7 @@ if (window && d3) {
 !}
 go-to: zhili_congress_menu
 
-= Party Congress v0.1
+= Party Congress
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
