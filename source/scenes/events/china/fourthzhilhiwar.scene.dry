@@ -40,29 +40,29 @@ Q.left_influence = 25;
 !}
 on-display: {!
 data = []
-    data.push({
+    data.concat({
         "id": "spdlabor",
         "legend": "Labor",
         "name": "Labor",
-        "seats": Math.round(Q.labor_influence*5.0),
-    });
-    data.push({
+        "seats": 25
+    },
+    {
         "id": "spdcenter",
         "legend": "Labor",
         "name": "Labor",
-        "seats": Math.round(Q.center_influence*5.0),
-    });
-    data.push({
+        "seats": 25
+    },
+    {
         "id": "reform",
         "legend": "Reformists",
         "name": "Reformists",
-        "seats": Math.round(Q.reformist_influence*5.0),
-    });
-    data.push({
+        "seats": 25
+    },
+    {
         "id": "left",
         "legend": "Labor",
         "name": "Labor",
-        "seats": Math.round(Q.left_influence*5.0),
+        "seats": 25
     });
 
 if (window && d3) {
