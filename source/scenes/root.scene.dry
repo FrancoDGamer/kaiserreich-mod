@@ -58,6 +58,10 @@ Q.reformist_strength = 25;
 Q.reformist_dissent = 5;
 Q.neorevisionist_strength = 5;
 Q.neorevisionist_dissent = 10;
+Q.reformist_influence = 25;
+Q.center_influence = 25;
+Q.labor_influence = 25;
+Q.left_influence = 25;
 
 // secret events...
 Q.unions_independent = 0;
