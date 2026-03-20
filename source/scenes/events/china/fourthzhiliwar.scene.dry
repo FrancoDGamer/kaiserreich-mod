@@ -29,7 +29,7 @@ Q.total_influence = 0;
 Q.total_influence == Math.round(Q.spd_r * 5);
 
 for (var faction of Q.factions) {
-    Q[faction + '_influence'] = Q[faction + '_strength'];  
+    Q[faction + '_influence'] = Math.floor(Q[faction + '_strength']*(Q.total_influence/100));  
 }
 !}
 on-display: {!
@@ -93,20 +93,20 @@ At , Party Chairman Hermann Muller ,
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#000000'> </div> !} Left: {!</td><td>!} [+ left_influence +]%  {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#8AF9FF'> </div> !} Center: {!</td><td>!} [+ center_influence +]% {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#000E91'> </div> !} Labor: {!</td><td>!} [+ labor_influence +]% {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#3A7B9C'> </div> !} Reformist: {!</td><td>!} [+ reformist_influence +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Left: {!</td><td>!} [+ left_influence +]%  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Center: {!</td><td>!} [+ center_influence +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Labor: {!</td><td>!} [+ labor_influence +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#9C3F9E'> </div> !} Reformist: {!</td><td>!} [+ reformist_influence +]% {!</td></tr>!}
 {!</table>!}
 
 @zhili_congress_menu
 
-- @antiwar: German Imperialism in Asia is cruel and a blight on our nation. We must harshly oppose intervention.
-- @prowar: Japan is the real threat in Asia. We must try to convince the party to support conflict with Japan. 
+- @antiwar: German Imperialis a cruel blight on our nation. We must harshly oppose further intervention.
+- @prowar: Japan is the real threat. We must try to convince the party to support the conflict to stop another Imperialist regime. 
 - @neutral: Too many lives are at stake here. The SPD should take a neutral stance on the matter for now. Party members should avoid talking about the war to their constituents whilst we watch and see.
 - @principled: We must offer principled opposition to both sides. Japan and Germany are equally as guilty in this stance. 
 - @free: We must avoid taking an unified stance on the matter, we shall issue an internal declaration to push for the representatives freedom of choice on the matter.
-- @china: What should matter the most is China, not Japan or Germany. The Zhilhi are corrupt and ineffective, therefore the SPD must consider support for a Chinese Faction and push German politics towards their favour. 
+- @china: What should matter the most is China, not Japan or Germany. The Zhili are corrupt and ineffective, therefore the SPD must consider support for a Chinese Faction and push German politics towards their favour. 
 - @ignore: Rather than focusing on social matters, the SPD should actively ignore the war and focus on issues that affect the workers here and now.
 
 @antiwar 
