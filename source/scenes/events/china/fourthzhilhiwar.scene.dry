@@ -28,41 +28,38 @@ on-arrival: {!
 Q.total_influence = 0;
 Q.total_influence == Math.round(Q.spd_r * 5);
 
-
-
-
-
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = Q[faction + '_strength'];  
 }
 
 !}
 on-display: {!
-data = [];
-    data.push({
+data = [
+    {
         "id": "labor",
         "legend": "Labor",
         "name": "Labor",
         "seats": Math.round(Q.labor_influence),
-    });
-    data.push({
+    },
+    {
         "id": "center",
         "legend": "Center",
         "name": "Center",
         "seats": Math.round(Q.center_influence),
-    });
-    data.push({
+    },
+    {
         "id": "reformist",
         "legend": "Reformists",
         "name": "Reformists",
         "seats": Math.round(Q.reformist_influence),
-    });
-    data.push({
+    },
+    {
         "id": "left",
         "legend": "Left",
         "name": "Left",
         "seats": Math.round(Q.left_influence),
-    });
+    }
+];
 
 if (window && d3) {
     var width = 500; 
