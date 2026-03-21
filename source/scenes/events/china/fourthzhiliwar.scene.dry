@@ -221,13 +221,14 @@ if (Q.zhili_ignore) {
 }
 
 Q.zhilivotesupport = total_vote_pool_support - total_dissent;
+console.log(Q.zhilivotesupport);
 
 !}
 go-to: zhili-negotiation-menu
 
 hi we're negotiating testt
 
-our support is [+ Q.zhilivotesupport +]
+our support s
 
 @zhili-negotiation-menu
 
