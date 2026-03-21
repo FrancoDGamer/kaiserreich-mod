@@ -171,7 +171,7 @@ go-to: negotiations
 @negotiations 
 on-arrival: {!
 
-Q.total_vote_pool = ((Q.reformist_influence) + (Q.labor_influence) + (Q.left_influence) + (Q.center_influence));
+Q.total_vote_pool = Q.reformist_influence+Q.labor_influence+Q.left_influence+Q.center_influence;
 
 Q.total_vote_pool_support = (Q.total_vote_pool);
 
