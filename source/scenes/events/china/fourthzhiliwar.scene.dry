@@ -116,8 +116,7 @@ subtitle: This option lets us capitalize on German weariness to the conflicts an
 on-arrival: {!
     Q.zhili_antiwar = 1;
 !}
-
-- @negotiations
+go-to: negotiations 
 
 @prowar 
 subtitle: This option is highly unpopular around the party, we will have a tough time convincing them. 
