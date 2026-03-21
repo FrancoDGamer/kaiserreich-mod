@@ -30,6 +30,7 @@ Q.total_influence = Math.round(Q.spd_r * 5);
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100));  
     Q.total_influence += (Q[faction + '_influence']);
+    Q[faction + '_influence' + '_display'] = (Q[faction + '_influence']).toFixed(1)
 }
 
 Q.left_influence = Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence;
@@ -163,44 +164,44 @@ At , Party Chairman Hermann Muller ,
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalists: {!</td><td>!} [+ pseudo_syndicalist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Classical Marxists: {!</td><td>!} [+ classical_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalists: {!</td><td>!} [+ pseudo_syndicalist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Classical Marxists: {!</td><td>!} [+ classical_marxist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
 = Centre
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#fd007f'> </div> !} Centrists: {!</td><td>!} [+ centrist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#773b63'> </div> !} Austromarxists: {!</td><td>!} [+ austromarxist_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#fd007f'> </div> !} Centrists: {!</td><td>!} [+ centrist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#773b63'> </div> !} Austromarxists: {!</td><td>!} [+ austromarxist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
 = Labour
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#ff48b9'> </div> !} Populists: {!</td><td>!} [+ populist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#be0085'> </div> !} Trade Unions: {!</td><td>!} [+ trade_union_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ff48b9'> </div> !} Populists: {!</td><td>!} [+ populist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#be0085'> </div> !} Trade Unions: {!</td><td>!} [+ trade_union_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
 = Young Turks
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#3e17a8'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3e17a8'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
 = Right
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#3500f7'> </div> !} Staatspolitikers: {!</td><td>!} [+ staatspolitiker_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#ffbb00'> </div> !} Social Liberals: {!</td><td>!} [+ social_liberal_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#88693b'> </div> !} Patriotic Socialists: {!</td><td>!} [+ national_socialist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3500f7'> </div> !} Staatspolitikers: {!</td><td>!} [+ staatspolitiker_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ffbb00'> </div> !} Social Liberals: {!</td><td>!} [+ social_liberal_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#88693b'> </div> !} Patriotic Socialists: {!</td><td>!} [+ national_socialist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
 @zhili_congress_menu
@@ -270,7 +271,7 @@ go-to: negotiations
 @negotiations 
 on-arrival: {!
 
-Q.total_vote_pool = ((Q.reformist_influence) + (Q.labor_influence) + (Q.left_influence) + (Q.center_influence) + (Q.young_turk_influence));
+Q.total_vote_pool = ((Q.right_influence) + (Q.labor_influence) + (Q.left_influence) + (Q.center_influence) + (Q.young_turk_influence));
 
 Q.total_vote_pool_support = (Q.total_vote_pool);
 
