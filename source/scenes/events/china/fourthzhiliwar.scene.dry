@@ -211,7 +211,7 @@ if (Q.zhili_ignore) {
     Q.total_vote_pool_support -= Q.reformist_influence/2;
 }
 
-Q.zhilivotesupport = Q.total_vote_pool_support;
+Q.zhilivotesupport = Q.total_vote_pool_support - total_dissent;
 
 !}
 go-to: zhili-negotiation-menu
@@ -227,9 +227,7 @@ our support is [+ zhilivotesupport +]
 - @favours: Do we have any leverage we can use to tilt the vote?
 
 @vote
-choose-if: {!
-Q.zhilivotesupport >= 50;
-!}
+choose-if: zhilivotesupport > 50;
 
 WIP
 
