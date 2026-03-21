@@ -175,42 +175,6 @@ Q.total_vote_pool = ((Q.reformist_influence) + (Q.labor_influence) + (Q.left_inf
 
 Q.total_vote_pool_support = (Q.total_vote_pool);
 
-if (Q.zhili_antiwar) {
-    Q.total_vote_pool_support -= (Q.reformist_influence/2);
-    Q.total_vote_pool_support -= (Q.labor_influence/2);
-} else
-
-if (Q.zhili_prowar) {
-    Q.total_vote_pool_support -= (Q.center_influence/2);
-    Q.total_vote_pool_support -= (Q.left_influence);
-} else
-
-if (Q.zhili_neutral) {
-    Q.total_vote_pool_support -= (Q.left_influence);
-    Q.total_vote_pool_support -= (Q.reformist_influence/2);
-} else
-
-if (Q.zhili_principled) {
-    Q.total_vote_pool_support -= (Q.left_influence/2);
-} else
-
-if (Q.zhili_free) {
-    Q.total_vote_pool_support -= (Q.left_influence/2);
-    Q.total_vote_pool_support -= (Q.center_influence);
-} else
-
-if (Q.zhili_china) {
-    Q.total_vote_pool_support -= (Q.left_influence/2);
-    Q.total_vote_pool_support -= (Q.center_influence);
-    Q.total_vote_pool_support -= (Q.reformist_influence);
-    Q.total_vote_pool_support -= (Q.labor_influence/2);
-} else
-
-if (Q.zhili_ignore) {
-    Q.total_vote_pool_support -= (Q.left_influence/2);
-    Q.total_vote_pool_support -= (Q.center_influence/2);
-    Q.total_vote_pool_support -= (Q.reformist_influence/2);
-}
 
 Q.zhilivotesupport = (Q.total_vote_pool_support).toFixed(1);
 
