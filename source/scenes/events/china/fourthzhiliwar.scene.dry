@@ -29,8 +29,7 @@ Q.total_influence = Math.round(Q.spd_r * 5);
 
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100));  
-    Q.total_influence += (Q[faction + '_influence']);
-    Q[faction + '_influence' + '_display'] = (Q[faction + '_influence']).toFixed(1)
+    Q[faction + '_influence' + '_display'] = Math.round(Q[faction + '_influence'])
 }
 
 Q.left_influence = Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence;
