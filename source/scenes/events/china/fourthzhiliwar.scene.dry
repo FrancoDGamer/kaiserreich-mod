@@ -237,7 +237,7 @@ our support s
 - @favours: Do we have any leverage we can use to tilt the vote?
 
 @vote
-view-if: Q.zhilivotesupport >= 50;
+choose-if: zhilivotesupport >= 50;
 
 WIP
 
