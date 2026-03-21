@@ -175,8 +175,6 @@ Q.total_vote_pool = (Q.reformist_influence + Q.labor_influence + Q.left_influenc
 
 Q.total_vote_pool_support = (Q.total_vote_pool);
 
-Q.total_vote_pool_support = 300;
-
 Q.zhilivotesupport = (Q.total_vote_pool_support);
 
 Q.zhilivotesupport_display = ((Q.total_vote_pool_support/total_vote_pool)*100).toFixed(1);
