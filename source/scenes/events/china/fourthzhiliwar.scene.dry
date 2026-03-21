@@ -234,7 +234,6 @@ our support is [+ zhilivotesupport +]
 - @favours: Do we have any leverage we can use to tilt the vote?
 
 @vote
-choose-if: zhilivotesupport >= 50
 
 WIP
 
