@@ -170,7 +170,6 @@ on-arrival: {!
 !}
 go-to: negotiations 
 
-
 @negotiations 
 on-arrival: {!
 
@@ -217,6 +216,7 @@ if (Q.zhili_ignore) {
 }
 
 Q.zhilivotesupport = Q.total_vote_pool_support;
+
 Q.zhilivotesupport_display = ((Q.total_vote_pool_support/total_vote_pool)*100).toFixed(1);
 
 !}
