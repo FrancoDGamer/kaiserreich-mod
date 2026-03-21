@@ -75,6 +75,9 @@ if (window && d3) {
     parliament.exit.toCenter(false).bigToSmall(true);
     d3.select("#reichstag").datum(data).call(parliament);
 }
+
+Q.zhili_options = ['prowar','antiwar','neutral','principled','free','china','ignore'];
+
 !}
 go-to: zhili_congress_menu
 
@@ -110,6 +113,9 @@ At , Party Chairman Hermann Muller ,
 
 @antiwar 
 subtitle: This option lets us capitalize on German weariness to the conflicts and wars we've been getting into, however we will have to convince the dissenting factions.
+on-arrival: {!
+    Q.zhili_antiwar = 1;
+!}
 
 WIP
 
@@ -162,6 +168,12 @@ subtitle: This option is seen by many as insane, it is going to lead to a lot of
 subtitle: Focus on bread and gas prices.
 
 @negotiations 
+on-arrival {!
+
+for (var option of Q.zhili_options and var faction of Q.factions) {
+    Q[option + '_' + faction + '_oppose'] = 0;  
+}
+!}
 go-to: zhili-negotiation-menu
 
 hi we're negotiating testt
@@ -175,6 +187,16 @@ hi we're negotiating testt
 @vote
 
 WIP
+
+- @successvote
+- @failurevote
+
+@successvote
+view-if: {!
+
+
+!}
+
 
 @noopposition
 
