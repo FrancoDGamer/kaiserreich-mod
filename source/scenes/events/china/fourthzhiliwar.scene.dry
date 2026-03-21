@@ -215,7 +215,7 @@ if (Q.zhili_ignore) {
     Q.total_vote_pool_support -= Q.reformist_influence/2;
 }
 
-Q.zhilivotesupport = total_vote_pool_support - total_dissent;
+Q.zhilivotesupport = Q.total_vote_pool_support - Q.total_dissent;
 
 !}
 go-to: zhili-negotiation-menu
