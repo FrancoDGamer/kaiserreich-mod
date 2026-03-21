@@ -612,13 +612,13 @@ table {
 
 /* colored seats for party factions */
 .seat.pseudo_syndicalist {
-    fill: #BD1111;
+    fill: #a71212;
 }
 .seat.classical_marxist {
     fill: #FF0808;
 }
 .seat.spartacist {
-    fill: #FF5C5C;
+    fill: #ff7b7b;
 }
 .seat.center {
     fill: #fd007f;
@@ -645,10 +645,10 @@ table {
     fill: #ffbb00;
 }
 .seat.national_socialist {
-    fill: #dda44e;
+    fill: #88693b;
 }
 .seat.neorevisionist {
-    fill: #4d3f9e;
+    fill: linear-gradient(#000 10px, #ff0000 10px, #ffd000 10px);
 }
 .seat.hanover {
     fill: #850000;

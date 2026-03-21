@@ -157,12 +157,44 @@ At , Party Chairman Hermann Muller ,
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalist: {!</td><td>!} [+ pseudo_syndicalist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td>} A wing of our party that is often accused of its syndicalist tone. Many of them have ties to the SP or even the FAUD, and seem to be in the SP mostly for pragmatic reasons. {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Classical Marxist: {!</td><td>!} [+ classical_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td>} Classical Marxists are Orthodox Marxists that have been in the SPD for a very long time, most of them tracing back all the way to 1891. A lot of them joined up with the USPD, but following the party's reunification, rejected to join up with the center, declaring allegiance to an older SPD. {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalists: {!</td><td>!} [+ pseudo_syndicalist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Classical Marxists: {!</td><td>!} [+ classical_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td>} Spartacists were SPD Delegates who formed the International Group, many of them following the trend of Rosa Luxemburg and Paul Levi. Following reunification with the USPD, a significant chunk of them have rejoined our party ranks. {!</td></tr>!}
+{!</table>!}
+
+= Centre
+
+{!<table>!}
+{!<tr><td>Organization</td><td>Delegates Share</td>!}
+{!<tr><td><div class="box" style='background-color:#fd007f'> </div> !} Centrists: {!</td><td>!} [+ center_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#773b63'> </div> !} Austromarxists: {!</td><td>!} [+ austromarxist_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!</table>!}
+
+= Labour
+
+{!<table>!}
+{!<tr><td>Organization</td><td>Delegates Share</td>!}
+{!<tr><td><div class="box" style='background-color:#ff48b9'> </div> !} Populists: {!</td><td>!} [+ populist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#be0085'> </div> !} Trade Unions: {!</td><td>!} [+ trade_union_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!</table>!}
+
+= Young Turks
+
+{!<table>!}
+{!<tr><td>Organization</td><td>Delegates Share</td>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!</table>!}
+
+= Right
+
+{!<table>!}
+{!<tr><td>Organization</td><td>Delegates Share</td>!}
+{!<tr><td><div class="box" style='background-color:#3500f7'> </div> !} Staatspolitikers: {!</td><td>!} [+ staatspolitiker_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ffbb00'> </div> !} Social Liberals: {!</td><td>!} [+ social_liberal_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#88693b'> </div> !} Patriotic Socialists: {!</td><td>!} [+ national_socialist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
 @zhili_congress_menu
