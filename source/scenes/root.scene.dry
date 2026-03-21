@@ -47,7 +47,8 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['pseudo_syndicalist', 'classical_marxist', 'spartacist', 'center', 'pragmatist', 'austromarxist', 'trade_union', 'codeterminist', 'populist',  'staatspolitiker', 'social_liberal', 'national_socialist', 'neorevisionist', 'hanover'];
+Q.factions = ['pseudo_syndicalist', 'classical_marxist', 'spartacist', 'centrist', 'pragmatist', 'austromarxist', 'trade_union', 'codeterminist', 'populist',  'staatspolitiker', 'social_liberal', 'national_socialist', 'neorevisionist', 'hanover'];
+Q.party_wings = ['left','labor','center','right','young_turk']
 
 // should this be normalized to 100%?
 
