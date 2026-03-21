@@ -168,10 +168,10 @@ subtitle: This option is seen by many as insane, it is going to lead to a lot of
 subtitle: Focus on bread and gas prices.
 
 @negotiations 
-on-arrival {!
+on-arrival: {!
 
 for (var option of Q.zhili_options) {
-    Q[option + '_oppose'] = 0;  
+    Q[option + '_oppose'] = 0;
 }
 
 !}
