@@ -29,14 +29,15 @@ Q.total_influence = Math.round(Q.spd_r * 5);
 
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100));  
-    Q[faction + '_influence' + '_display'] = Math.round(Q[faction + '_influence'])
+    Q[faction + '_influence' + '_display'] = Math.round(Q[faction + '_influence']);
+    Q[faction + '_percentage'] = Q[faction + '_influence']/Q.total_influence;
 }
 
-Q.left_influence = Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence;
-Q.right_influence = Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence;
-Q.center_influence = Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence;
-Q.labor_influence = Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence;
-Q.young_turk_influence = Q.hanover_influence + Q.neorevisionist_influence;
+Q.left_influence = ((Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)/Q.total_influence)*100;
+Q.right_influence = ((Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)/Q.total_influence)*100;
+Q.center_influence = ((Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)/Q.total_influence)*100;
+Q.labor_influence = ((Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)/Q.total_influence)*100;
+Q.young_turk_influence = ((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100;
 
 !}
 on-display: {!
@@ -159,16 +160,16 @@ Even so, the conference was met with significant doubt from many of the delegate
 
 At , Party Chairman Hermann Muller , 
 
-= Party Left 
+= Party Left - [+ left_influence +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalists: {!</td><td>!} [+ pseudo_syndicalist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalists: {!</td><td>!} [+ pseudo_syndicalist_influence_display +] Delegates {!</td><td>!} [+ pseudo_syndicalist_percentage +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Classical Marxists: {!</td><td>!} [+ classical_marxist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Centre
+= Centre - [+ centrist_influence +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -177,7 +178,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Labour
+= Labour - [+ labor_influence +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -186,7 +187,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Young Turks
+= Young Turks - [+ young_turk_influence +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -194,7 +195,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Right
+= Right - [+ right_influence +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
