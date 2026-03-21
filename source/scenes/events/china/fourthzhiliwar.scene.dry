@@ -28,7 +28,7 @@ on-arrival: {!
 Q.total_influence = Math.round(Q.spd_r * 5);
 
 for (var faction of Q.factions) {
-    Q[faction + '_influence'] = Q.total_influence * (Q[faction + '_strength']/100);  
+    Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100)).toFixed(1);  
 }
 
 for (var faction of Q.factions) {
@@ -224,7 +224,7 @@ go-to: zhili-negotiation-menu
 
 hi we're negotiating testt
 
-our support is [+ zhilivotesupport +]
+our support is [+ zhilivotesupport_display +]
 
 @zhili-negotiation-menu
 
