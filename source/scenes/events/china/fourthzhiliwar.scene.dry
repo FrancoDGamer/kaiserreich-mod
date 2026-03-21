@@ -81,8 +81,6 @@ if (window && d3) {
     d3.select("#reichstag").datum(data).call(parliament);
 }
 
-Q.zhili_options = ['prowar','antiwar','neutral','principled','free','china','ignore'];
-
 !}
 go-to: zhili_congress_menu
 
@@ -173,13 +171,13 @@ go-to: negotiations
 @negotiations 
 on-arrival: {!
 
-Q.total_vote_pool = Q.reformist_influence + Q.labor_influence + Q.left_influence + Q.center_influence;
+Q.total_vote_pool = (Q.reformist_influence + Q.labor_influence + Q.left_influence + Q.center_influence);
 
-Q.total_vote_pool_support = Q.total_vote_pool;
+Q.total_vote_pool_support = (Q.total_vote_pool);
 
 Q.total_vote_pool_support = 300;
 
-Q.zhilivotesupport = Q.total_vote_pool_support;
+Q.zhilivotesupport = (Q.total_vote_pool_support);
 
 Q.zhilivotesupport_display = ((Q.total_vote_pool_support/total_vote_pool)*100).toFixed(1);
 
