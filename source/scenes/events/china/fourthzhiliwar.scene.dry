@@ -211,12 +211,14 @@ if (Q.zhili_ignore) {
     Q.china_reformist = 1;
 }
 
+Q.zhilivotesupport = 0;
+
 for (var option of Q.zhili_options) {
     if (Q[option + '_' + faction] = 1) {
-        Q.zhilivotesupport = Q[faction + '_influence']/2
+        Q.zhilivotesupport += Q[faction + '_influence']/2
     }
     if (Q[option + '_' + faction] = 2) {
-        Q.zhilivotesupport = Q[faction + '_influence']
+        Q.zhilivotesupport += Q[faction + '_influence']
     }
     console.log(Q.zhilivotesupport)
 }
