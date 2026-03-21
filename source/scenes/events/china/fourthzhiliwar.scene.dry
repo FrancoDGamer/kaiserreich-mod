@@ -30,6 +30,11 @@ Q.total_influence = Math.round(Q.spd_r * 5);
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = Q.total_influence * (Q[faction + '_strength']/100);  
 }
+
+for (var faction of Q.factions) {
+    Q[faction + '_influence' + '_display'] = ((Q[faction + '_influence']/Q.total_influence)*100).toFixed(1);  
+}
+
 !}
 on-display: {!
 data = [
@@ -95,10 +100,10 @@ At , Party Chairman Hermann Muller ,
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Left: {!</td><td>!} [+ left_influence +]%  {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Center: {!</td><td>!} [+ center_influence +]% {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Labor: {!</td><td>!} [+ labor_influence +]% {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#9C3F9E'> </div> !} Reformist: {!</td><td>!} [+ reformist_influence +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Left: {!</td><td>!} [+ left_influence +] Delegates {!</td><td>!} [+ left_influence_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Center: {!</td><td>!} [+ center_influence +] Delegates {!</td><td>!} [+ center_influence_display +] {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Labor: {!</td><td>!} [+ labor_influence +] Delegates {!</td><td>!} [+ labor_influence_display +]  {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#9C3F9E'> </div> !} Reformist: {!</td><td>!} [+ reformist_influence +] Delegates {!</td><td>!} [+ reformist_influence_display +]  {!</td></tr>!}
 {!</table>!}
 
 @zhili_congress_menu
@@ -212,6 +217,7 @@ if (Q.zhili_ignore) {
 }
 
 Q.zhilivotesupport = Q.total_vote_pool_support;
+Q.zhilivotesupport_display = ((Q.total_vote_pool_support/total_vote_pool)*100).toFixed(1);
 
 !}
 go-to: zhili-negotiation-menu
