@@ -29,10 +29,7 @@ Q.total_influence = Math.round(Q.spd_r * 5);
 
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100));  
-}
-
-for (var faction of Q.factions) {
-    Q[faction + '_influence' + '_display'] = ((Q[faction + '_influence']/Q.total_influence)*100).toFixed(1);  
+    Q.total_influence += (Q[faction + '_influence']);
 }
 
 !}
@@ -156,12 +153,16 @@ Even so, the conference was met with significant doubt from many of the delegate
 
 At , Party Chairman Hermann Muller , 
 
+= Party Left 
+
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Left: {!</td><td>!} [+ pseudo_syndicalist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Center: {!</td><td>!} [+ classical_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Labor: {!</td><td>!} [+ spartacist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
-{!<tr><td><div class="box" style='background-color:#9C3F9E'> </div> !} Reformist: {!</td><td>!} [+ center_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalist: {!</td><td>!} [+ pseudo_syndicalist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td>} A wing of our party that is often accused of its syndicalist tone. Many of them have ties to the SP or even the FAUD, and seem to be in the SP mostly for pragmatic reasons. {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Classical Marxist: {!</td><td>!} [+ classical_marxist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td>} Classical Marxists are Orthodox Marxists that have been in the SPD for a very long time, most of them tracing back all the way to 1891. A lot of them joined up with the USPD, but following the party's reunification, rejected to join up with the center, declaring allegiance to an older SPD. {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td>} Spartacists were SPD Delegates who formed the International Group, many of them following the trend of Rosa Luxemburg and Paul Levi. Following reunification with the USPD, a significant chunk of them have rejoined our party ranks. {!</td></tr>!}
 {!</table>!}
 
 @zhili_congress_menu
