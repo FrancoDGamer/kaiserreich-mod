@@ -611,20 +611,48 @@ table {
 }
 
 /* colored seats for party factions */
-.seat.left {
-    fill: #D10000;
+.seat.pseudo_syndicalist {
+    fill: #BD1111;
+}
+.seat.classical_marxist {
+    fill: #FF0808;
+}
+.seat.spartacist {
+    fill: #FF5C5C;
 }
 .seat.center {
-    fill: #E30063;
+    fill: #fd007f;
 }
-.seat.labor {
-    fill: #FF80C5;
+.seat.pragmatist {
+    fill: #773b63;
 }
-.seat.reformist {
-    fill: #9C3F9E;
+.seat.austromarxist {
+    fill: #febeff;
 }
-
-
+.seat.trade_union {
+    fill: #ff48b9;
+}
+.seat.codeterminist {
+    fill: #be0085;
+}
+.seat.populist {
+    fill: #690000;
+}
+.seat.staatspolitiker {
+    fill: #3500f7;
+}
+.seat.social_liberal {
+    fill: #ffbb00;
+}
+.seat.national_socialist {
+    fill: #dda44e;
+}
+.seat.neorevisionist {
+    fill: #4d3f9e;
+}
+.seat.hanover {
+    fill: #850000;
+}
 
 .tooltip-text {
     text-decoration: underline;
