@@ -108,10 +108,10 @@ At , Party Chairman Hermann Muller ,
 
 @zhili_congress_menu
 
-- @antiwar: German Imperialis a cruel blight on our nation. We must harshly oppose further intervention.
-- @prowar: Japan is the real threat. We must try to convince the party to support the conflict to stop another Imperialist regime. 
+- @antiwar: German Imperialism is a cruel blight on our nation. We must harshly oppose further intervention.
+- @prowar: Japan is the real threat to the people of Asia. We must try to convince the party to support the conflict to stop another Imperialist regime. 
 - @neutral: Too many lives are at stake here. The SPD should take a neutral stance on the matter for now. Party members should avoid talking about the war to their constituents whilst we watch and see.
-- @principled: We must offer principled opposition to both sides. Japan and Germany are equally as guilty in this stance. 
+- @principled: We must offer principled opposition against both sides. Japan and Germany are equally as guilty in their actions. 
 - @free: We must avoid taking an unified stance on the matter, we shall issue an internal declaration to push for the representatives freedom of choice on the matter.
 - @china: What should matter the most is China, not Japan or Germany. The Zhili are corrupt and ineffective, therefore the SPD must consider support for a Chinese Faction and push German politics towards their favour. 
 - @ignore: Rather than focusing on social matters, the SPD should actively ignore the war and focus on issues that affect the workers here and now.
@@ -224,7 +224,7 @@ go-to: zhili-negotiation-menu
 
 hi we're negotiating testt
 
-our support is [+ zhilivotesupport_display +]
+our support is [+ zhilivotesupport +]
 
 @zhili-negotiation-menu
 
