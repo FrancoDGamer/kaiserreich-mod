@@ -184,7 +184,7 @@ At , Party Chairman Hermann Muller ,
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
-{!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:linear-gradient(#000 10px, #ff0000 10px, #ffd000 10px)'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
