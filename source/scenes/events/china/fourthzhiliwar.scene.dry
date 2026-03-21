@@ -123,48 +123,48 @@ subtitle: This option is highly unpopular around the party, we will have a tough
 on-arrival: {!
     Q.zhili_prowar = 1;
 !}
+go-to: negotiations 
 
-- @negotiations: Let's force a vote. 
 
 @neutral
 subtitle: There are some demands for action, we'll have to address them.
 on-arrival: {!
     Q.zhili_neutral = 1;
 !}
+go-to: negotiations 
 
-- @negotiations
 
 @principled
 subtitle: A prime compromise between many differing viewpoints, this is not hard to convince the congress, however some of the more extreme hawks or doves will be disappointed. 
 on-arrival: {!
     Q.zhili_principled = 1;
 !}
+go-to: negotiations 
 
-- @negotiations
 
 @free
 subtitle: Not hard to get it passed, but after calling the congress, representatives are expecting to come out with a decision.
 on-arrival: {!
     Q.zhili_free = 1;
 !}
+go-to: negotiations 
 
-- @negotiations
 
 @china
 subtitle: This option is seen by many as insane, it is going to lead to a lot of discussion around the party, but we might be able to choose a warlord to support?...
 on-arrival: {!
     Q.zhili_china = 1;
 !}
+go-to: negotiations 
 
-- @negotiations
 
 @ignore
 subtitle: Focus on bread and gas prices.
 on-arrival: {!
     Q.zhili_ignore = 1;
 !}
+go-to: negotiations 
 
-- @negotiations
 
 @negotiations 
 on-arrival: {!
