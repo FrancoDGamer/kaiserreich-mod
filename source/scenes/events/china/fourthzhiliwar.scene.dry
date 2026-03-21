@@ -173,8 +173,6 @@ Q.total_vote_pool = Q.reformist_influence + Q.labor_influence + Q.left_influence
 
 Q.total_vote_pool_support = 598;
 
-Q.total_vote_pool_support = Q.total_vote_pool;
-
 if (Q.zhili_antiwar) {
     Q.total_vote_pool_support -= Q.reformist_influence/2;
     Q.total_vote_pool_support -= Q.labor_influence/2;
