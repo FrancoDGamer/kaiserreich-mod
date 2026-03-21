@@ -170,8 +170,8 @@ subtitle: Focus on bread and gas prices.
 @negotiations 
 on-arrival: {!
 
-for (var option of Q.zhili_options) {
-    Q[option + '_oppose'] = 0;
+for (var option of Q.zhili_options and var faction of Q.factions) {
+    Q[option + '_' + faction + '_oppose'] = 0;
 }
 
 !}
@@ -193,11 +193,12 @@ WIP
 - @failurevote
 
 @successvote
-view-if: {!
 
+WIP
 
-!}
+@failurevote
 
+WIP
 
 @noopposition
 
