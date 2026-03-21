@@ -214,7 +214,7 @@ if (Q.zhili_ignore) {
 Q.zhilivotesupport = 0;
 
 if (Q[option + '_' + faction] = 1) {
-        Q.zhilivotesupport += Q[faction + '_influence']
+        Q.zhilivotesupport += Q[faction + '_influence'];
 }
 
 !}
