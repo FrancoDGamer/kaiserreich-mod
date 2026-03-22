@@ -25,7 +25,16 @@ Nothing happens
 @preempt 
 subtitle: Seen as a nuclear answer to the news at this stage in time, this will enable us to choose a stance on the war, from opposing it to supporting it.
 on-arrival: {!
+//define values for Zhili debate
 Q.total_influence = Math.round(Q.spd_r * 5);
+
+Q.zhili_antiwar = 0;
+Q.zhili_prowar = 0;
+Q.zhili_neutral = 0;
+Q.zhili_principled = 0;
+Q.zhili_free = 0;
+Q.zhili_china = 0;
+Q.zhili_ignore = 0;
 
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100));  
@@ -158,15 +167,15 @@ go-to: zhili_congress_menu
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
-With the news coming in and the Brockdorff cabinet still busy discussing course of action, the SPD has called a party conference in the town of [BLANK]. As the delegates make their way in from all over the country, the atmosphere is weirdly tense, in part due to how unusual it is. 
+With the news on the conflict still hot and coming in and the Brockdorff cabinet still busy discussing course of action, the SPD chooses to host their party conference in the town of [BLANK] for logistical purposes. As the delegates make their way in from all over the country, the atmosphere is quite tense and uncertain, in other part due to how unusual it is. 
 
-The SPD has not traditionally taken strong action on foreign affairs. However, Stresemann's proposal to intervene in 1924 led to outrage from the war weary German population, causing his and Reichskanzler Arthur von Posadowsky-Wehner's entire cabinet to fall. Meanwhile . Many in our party left, previously aligned with the USPD, have . .
+Since the March Reforms, the SPD has not been known for taking strong action on foreign affairs and we have remained mostly inactive since forcing Luderndoff's hand into peace. However, Stresemann's proposal to intervene in 1924 led to outrage from the war weary German population, causing his and Reichskanzler Arthur von Posadowsky-Wehner's entire cabinet to fall. Meanwhile the Chinese Intervention has been acquiring grumblings among the less warhawky sides of society. Many in our party left, previously aligned with the USPD, believe it is our duty to take strong action to stop Imperialism.
 
 Even so, the conference was met with significant doubt from many of the delegates who are more distrustful of the party leadership across the entire SPD aisle, and thus come with a degree of opposition to any decisions that can be made here.
 
-At , Party Chairman Hermann Muller , 
+At , Party Chairman Hermann Muller declares the opening, 
 
-= Party Left - [+ left_influence +]% of the Conferece - [+ left_delegates +] Delegates
+= Party Left - [+ left_influence_display +]% of the Conferece - [+ left_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -175,7 +184,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Centre - [+ center_influence +]% of the Conferece - [+ left_delegates +] Delegates
+= Centre - [+ center_influence_display +]% of the Conferece - [+ left_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -184,7 +193,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Labour - [+ labor_influence +]% of the Conferece - [+ labor_delegates +] Delegates
+= Labour - [+ labor_influence_display +]% of the Conferece - [+ labor_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -193,7 +202,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Young Turks - [+ young_turk_influence +]% of the Conferece - [+ young_turk_delegates +] Delegates
+= Young Turks - [+ young_turk_influence_display +]% of the Conferece - [+ young_turk_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -201,7 +210,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Right - [+ right_influence +]% of the Conferece - [+ right_delegates +] Delegates
+= Right - [+ right_influence_display +]% of the Conferece - [+ right_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -223,14 +232,14 @@ At , Party Chairman Hermann Muller ,
 @antiwar 
 subtitle: This option lets us capitalize on German weariness to the conflicts and wars we've been getting into, however we will have to convince the dissenting factions.
 on-arrival: {!
-    Q.zhili_antiwar = 1;
+    Q.zhili_antiwar += 1;
 !}
 go-to: negotiations 
 
 @prowar 
 subtitle: This option is highly unpopular around the party, we will have a tough time convincing them. 
 on-arrival: {!
-    Q.zhili_prowar = 1;
+    Q.zhili_prowar += 1;
 !}
 go-to: negotiations 
 
@@ -238,7 +247,7 @@ go-to: negotiations
 @neutral
 subtitle: There are some demands for action, we'll have to address them.
 on-arrival: {!
-    Q.zhili_neutral = 1;
+    Q.zhili_neutral += 1;
 !}
 go-to: negotiations 
 
@@ -246,7 +255,7 @@ go-to: negotiations
 @principled
 subtitle: A prime compromise between many differing viewpoints, this is not hard to convince the congress, however some of the more extreme hawks or doves will be disappointed. 
 on-arrival: {!
-    Q.zhili_principled = 1;
+    Q.zhili_principled += 1;
 !}
 go-to: negotiations 
 
@@ -262,7 +271,7 @@ go-to: negotiations
 @china
 subtitle: This option is seen by many as insane, it is going to lead to a lot of discussion around the party, but we might be able to choose a warlord to support?...
 on-arrival: {!
-    Q.zhili_china = 1;
+    Q.zhili_china += 1;
 !}
 go-to: negotiations 
 
@@ -270,7 +279,7 @@ go-to: negotiations
 @ignore
 subtitle: Focus on bread and gas prices.
 on-arrival: {!
-    Q.zhili_ignore = 1;
+    Q.zhili_ignore += 1;
 !}
 go-to: negotiations 
 
@@ -281,6 +290,9 @@ Q.total_vote_pool = (Q.right_influence + Q.labor_influence + Q.left_influence + 
 
 Q.total_vote_pool_support = Q.total_vote_pool;
 
+if (Q.zhili_antiwar == 1) {
+    Q.total_vote_pool_support -= right_influence;
+}
 
 Q.zhilivotesupport = (Q.total_vote_pool_support);
 
