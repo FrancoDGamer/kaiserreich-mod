@@ -180,8 +180,8 @@ blockquote + blockquote.attribution {
 }
 #tools_wrapper {
   position: absolute;
-  width: 100%;
-  max-width: 690em;
+  width: 80%;
+  max-width: 590em;
   left: 0;
   right: 0;
   margin: 0 auto;

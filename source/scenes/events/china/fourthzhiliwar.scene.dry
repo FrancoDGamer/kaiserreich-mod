@@ -201,10 +201,11 @@ Since the March Reforms, the SPD has not been known for taking strong action on 
 
 Even so, the conference was met with significant doubt from many of the delegates who are more distrustful of the party leadership across the entire SPD aisle, and thus come with a degree of opposition to any decisions that can be made here.
 
-At , Party Chairman Hermann Muller declares the opening, 
+At , Party Chairman Hermann Muller declares the opening, he apologizes for the sudden and unexpected nature of this congress and thanks everyone for attending.
 
-= Party Left - [+ left_influence_percentage +]% of the Conferece - [+ left_delegates +] Delegates
+= Party Left - [+ left_influence_percentage +]% of the Conference - [+ left_delegates +] Delegates
 
+The Party Left is composed of our far left, classical marxists that go back before the first weltkrieg, and USPD spartacists who did not go over to the SP.
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -213,8 +214,9 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Centre - [+ center_influence_percentage +]% of the Conferece - [+ left_delegates +] Delegates
+= Centre - [+ center_influence_percentage +]% of the Conference - [+ left_delegates +] Delegates
 
+Our party centre is made up of pragmatic politicians trying to steer the course between the revolutionary and reformist debates.
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -223,8 +225,9 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Labour - [+ labor_influence_percentage +]% of the Conferece - [+ labor_delegates +] Delegates
+= Labour - [+ labor_influence_percentage +]% of the Conference - [+ labor_delegates +] Delegates
 
+The labor is composed of populist politicians, prominent trade unionists, and a number of "codeterminists" interested primarily in socialization of work.
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -233,8 +236,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Young Turks - [+ young_turk_influence_percentage +]% of the Conferece - [+ young_turk_delegates +] Delegates
-
+= Young Turks - [+ young_turk_influence_percentage +]% of the Conference - [+ young_turk_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -242,7 +244,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Right - [+ right_influence_percentage +]% of the Conferece - [+ right_delegates +] Delegates
+= Right - [+ right_influence_percentage +]% of the Conference - [+ right_delegates +] Delegates
 
 
 {!<table>!}

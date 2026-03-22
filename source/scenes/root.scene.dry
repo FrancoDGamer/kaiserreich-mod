@@ -56,9 +56,20 @@ for (var faction of Q.factions) {
     Q[faction + '_dissent'] = 0;  
 }
 
-for (var faction of Q.factions) {
-    Q[faction + '_strength'] = (100/14);  
-}
+Q.pseudo_syndicalist = 2;
+Q.classical_marxist_strength = 8;
+Q.spartacist_strength = 7;
+Q.centrist_strength = 20;
+Q.pragmatist_strength = 8;
+Q.austromarxist_strength = 6;
+Q.trade_union_strength = 10;
+Q.codeterminist_strength = 2;
+Q.populist_strength = 6;
+Q.staatspolitiker_strength = 18;
+Q.social_liberal_strength = 6;
+Q.national_socialist_strength = 1;
+Q.neorevisionist_strength = 3;
+Q.hanover_strength = 3;
 
 Q.left_strength = 15;
 Q.left_dissent = 20;
