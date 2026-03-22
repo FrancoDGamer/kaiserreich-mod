@@ -341,8 +341,8 @@ if (window && d3) {
     if (!Q.historical_mode) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties_graph,
-            {'spd': '#E30063', 'sp': '#D10000', 'z': '#000', 'nlp': '#53683B', 'bvp': '#69A2BE', 'fvp': '#FFED4D', 'minorityliberal': '#FFC300', 'guelph': '#B5BA54', 'pp': '#FF96D7', 'elvp': '#000E91', 'dkp': '#274875', 'dvp': '#161654', 'dvlp': '#426366', 'dsp': '#003317', 'other': '#909090', 'agrarian': '#00644b', 'danes': '#F2B3B3', 'fkp': '#3EBEC1', 'antisemites': '#954B00', 'lrp': '#3A7B9C'},
-            {'spd': 'SPD', 'sp': 'SP', 'z': 'Z', 'nlp': 'NLP', 'bvp': 'BVP', 'fvp': 'FVP', 'minorityliberal': 'Liberal', 'guelph': 'GHP', 'pp': 'PP', 'elvp': 'ELVP', 'dkp': 'DKP', 'dvp': 'DVP', 'dvlp': 'DVLP', 'dsp': 'DSP', 'other': 'Other', 'agrarian': 'Agrarian', 'danes': 'Danes', 'fkp': 'FKP', 'antisemites': 'Antisemite', 'lrp': 'LRP'});
+            {'spd': '#E30063', 'sp': '#D10000', 'z': '#000'},
+            {'spd': 'SPD', 'sp': 'SP', 'z': 'Z'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
