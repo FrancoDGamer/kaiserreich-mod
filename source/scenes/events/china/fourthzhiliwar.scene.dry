@@ -366,9 +366,8 @@ WIP
 
 @antiwar_concession1
 on-arrival {!
-    Q.zhili_opposition -= (Q.right_influence/2);
     
-    if (Q.zhili_opposition <= 0) {
+    if (Q.zhili_opposition < 0) {
         Q.zhili_opposition = 0;
     }
 
