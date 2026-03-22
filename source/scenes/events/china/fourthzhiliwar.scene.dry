@@ -55,15 +55,16 @@ Q.labor_influence = (((Q.populist_influence + Q.trade_union_influence + Q.codete
 Q.young_turk_influence = (((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100).toFixed(1);
 
 
-Q.left_delegates = Math.round(Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)
+Q.left_delegates = Math.round(Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence);
 
-Q.right_delegates = Math.round(Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)
+Q.right_delegates = Math.round(Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence);
 
-Q.center_delegates = Math.round(Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)
+Q.center_delegates = Math.round(Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence);
 
-Q.labor_delegates = Math.round(Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)
+Q.labor_delegates = Math.round(Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence);
 
-Q.young_turk_delegates = Math.round(Q.hanover_influence + Q.neorevisionist_influence)
+Q.young_turk_delegates = Math.round(Q.hanover_influence + Q.neorevisionist_influence);
+
 
 Q.zhili_antiwar = 0;
 
@@ -204,6 +205,7 @@ At , Party Chairman Hermann Muller declares the opening,
 
 = Party Left - [+ left_influence_percentage +]% of the Conferece - [+ left_delegates +] Delegates
 
+
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
 {!<tr><td><div class="box" style='background-color:#D10000'> </div> !} Pseudo Syndicalists: {!</td><td>!} [+ pseudo_syndicalist_influence_display +] Delegates {!</td><td>!} [+ pseudo_syndicalist_percentage +] {!</td></tr>!}
@@ -212,6 +214,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!</table>!}
 
 = Centre - [+ center_influence_percentage +]% of the Conferece - [+ left_delegates +] Delegates
+
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -222,6 +225,7 @@ At , Party Chairman Hermann Muller declares the opening,
 
 = Labour - [+ labor_influence_percentage +]% of the Conferece - [+ labor_delegates +] Delegates
 
+
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
 {!<tr><td><div class="box" style='background-color:#ff48b9'> </div> !} Populists: {!</td><td>!} [+ populist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
@@ -231,6 +235,7 @@ At , Party Chairman Hermann Muller declares the opening,
 
 = Young Turks - [+ young_turk_influence_percentage +]% of the Conferece - [+ young_turk_delegates +] Delegates
 
+
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
 {!<tr><td><div class="box" style='background-color:#3e17a8'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
@@ -238,6 +243,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!</table>!}
 
 = Right - [+ right_influence_percentage +]% of the Conferece - [+ right_delegates +] Delegates
+
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
