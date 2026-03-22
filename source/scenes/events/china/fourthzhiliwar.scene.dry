@@ -279,7 +279,7 @@ on-arrival: {!
 
 Q.total_vote_pool = (Q.right_influence + Q.labor_influence + Q.left_influence + Q.center_influence + Q.young_turk_influence);
 
-Q.total_vote_pool_support = (Q.total_vote_pool/Q.dissent);
+Q.total_vote_pool_support = Q.total_vote_pool;
 
 if (Q.zhili_antiwar) {
     Q.total_vote_pool_support -= (staatspolitiker_influence/2) + (national_socialist_influence/2) + (populist_influence/2)
