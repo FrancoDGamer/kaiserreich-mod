@@ -169,7 +169,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Centre - [+ centrist_influence +] Delegates
+= Centre - [+ center_influence +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
