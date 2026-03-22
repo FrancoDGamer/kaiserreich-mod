@@ -56,7 +56,7 @@ for (var faction of Q.factions) {
     Q[faction + '_dissent'] = 0;  
 }
 
-Q.pseudo_syndicalist = 2;
+Q.pseudo_syndicalist_strength = 2;
 Q.classical_marxist_strength = 8;
 Q.spartacist_strength = 7;
 Q.centrist_strength = 20;
