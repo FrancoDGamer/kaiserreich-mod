@@ -576,6 +576,9 @@ table {
 .seat.dvlp {
     fill: #426366;
 }
+.seat.dsp {
+    fill: #003317;
+}
 .seat.antisemites {
     fill: #954B00;
 }
@@ -608,6 +611,9 @@ table {
 }
 .seat.danes {
     fill: #F2B3B3;
+}
+.seat.agrarian {
+    fill: #00644b;
 }
 
 /* colored seats for party factions */
