@@ -366,9 +366,9 @@ WIP
 
 @antiwar_concession1
 on-arrival {!
-    Q.zhili_opposition -= Q.right_influence/2;
+    Q.zhili_opposition -= (Q.right_influence/2);
     if (Q.zhili_opposition < 0) {
-        Q.zhili_opposition = 0
+        Q.zhili_opposition = 0;
     }
 !}
 subtitle: This will move our party towards a more decentralized model and make it hard for us to rally any dissenting representatives to a vote in the future.
