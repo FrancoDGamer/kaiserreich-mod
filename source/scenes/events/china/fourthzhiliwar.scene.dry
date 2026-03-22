@@ -39,6 +39,12 @@ Q.center_influence = ((Q.centrist_influence + Q.austromarxist_influence + Q.prag
 Q.labor_influence = ((Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)/Q.total_influence)*100;
 Q.young_turk_influence = ((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100;
 
+Q.left_delegates = Math.round(Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)
+Q.right_delegates = Math.round(Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)
+Q.center_delegates = Math.round(Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)
+Q.labor_delegates = Math.round(Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)
+Q.young_turk_delegates = Math.round(Q.hanover_influence + Q.neorevisionist_influence)
+
 !}
 on-display: {!
 data = [
@@ -67,9 +73,9 @@ data = [
         "seats": Math.round(Q.hanover_influence),
     },
     {
-        "id": "centrists",
-        "legend": "Centrists",
-        "name": "Centrists",
+        "id": "centrist",
+        "legend": "Centrist",
+        "name": "Centrist",
         "seats": Math.round(Q.centrist_influence),
     },
     {
@@ -160,7 +166,7 @@ Even so, the conference was met with significant doubt from many of the delegate
 
 At , Party Chairman Hermann Muller , 
 
-= Party Left - [+ left_influence +] Delegates
+= Party Left - [+ left_influence +]% of the Conferece - [+ left_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -169,7 +175,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Centre - [+ center_influence +] Delegates
+= Centre - [+ center_influence +]% of the Conferece - [+ left_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -178,7 +184,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Labour - [+ labor_influence +] Delegates
+= Labour - [+ labor_influence +]% of the Conferece - [+ labor_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -187,7 +193,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Young Turks - [+ young_turk_influence +] Delegates
+= Young Turks - [+ young_turk_influence +]% of the Conferece - [+ young_turk_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -195,7 +201,7 @@ At , Party Chairman Hermann Muller ,
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Right - [+ right_influence +] Delegates
+= Right - [+ right_influence +]% of the Conferece - [+ right_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -271,14 +277,17 @@ go-to: negotiations
 @negotiations 
 on-arrival: {!
 
-Q.total_vote_pool = ((Q.right_influence) + (Q.labor_influence) + (Q.left_influence) + (Q.center_influence) + (Q.young_turk_influence));
+Q.total_vote_pool = (Q.right_influence + Q.labor_influence + Q.left_influence + Q.center_influence + Q.young_turk_influence);
 
-Q.total_vote_pool_support = (Q.total_vote_pool);
+Q.total_vote_pool_support = (Q.total_vote_pool/Q.dissent);
+
+if (Q.zhili_antiwar) {
+    Q.total_vote_pool_support -= (staatspolitiker_influence/2) + (national_socialist_influence/2) + (populist_influence/2)
+}
 
 Q.zhilivotesupport = (Q.total_vote_pool_support);
 
 Q.zhilivotesupport_display = (Q.total_vote_pool_support).toFixed(1);
-
 
 !}
 go-to: zhili-negotiation-menu
