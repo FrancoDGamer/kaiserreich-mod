@@ -11,7 +11,7 @@ if (toolsWrapper) {
 const content = document.getElementById('content');
 
 if (content) {
-  content.style.width = '1000px';
+  content.style.width = '100%';
 }
 
 !}
@@ -22,5 +22,5 @@ on-departure: {!
 !}
 
 {!<svg id="map" style="width: 500px; height: 400px;">
-    <img src="img/map.svg">
+    <img src="img/map.svg" style="max-width: 100%">
 </svg>!}

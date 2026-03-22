@@ -41,9 +41,9 @@ body.dark-mode .tools {
   border-width: 4px;
   border-color: #888;
 }
-header, #content, footer {
+header, footer {
   color: var(--text-color);
-  max-width: 5400px;
+  max-width: 540px;
   margin: 0 auto;
   overflow: auto;
 }
@@ -56,6 +56,10 @@ header, #content, footer {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   border-style: double;
   border-width: 4px;
+  color: var(--text-color);
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow: auto;
 }
 footer {
   margin-top: 1em;
