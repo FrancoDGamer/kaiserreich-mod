@@ -44,15 +44,15 @@ Q.labor_influence = ((Q.populist_influence + Q.trade_union_influence + Q.codeter
 Q.young_turk_influence = ((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100;
 
 
-Q.left_influence = (((Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)/Q.total_influence)*100).toFixed(1);
+Q.left_influence_percentage = (((Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)/Q.total_influence)*100).toFixed(1);
 
-Q.right_influence = (((Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)/Q.total_influence)*100).toFixed(1);
+Q.right_influence_percentage = (((Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)/Q.total_influence)*100).toFixed(1);
 
-Q.center_influence = (((Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)/Q.total_influence)*100).toFixed(1);
+Q.center_influence_percentage = (((Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)/Q.total_influence)*100).toFixed(1);
 
-Q.labor_influence = (((Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)/Q.total_influence)*100).toFixed(1);
+Q.labor_influence_percentage = (((Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)/Q.total_influence)*100).toFixed(1);
 
-Q.young_turk_influence = (((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100).toFixed(1);
+Q.young_turk_influence_percentage = (((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100).toFixed(1);
 
 
 Q.left_delegates = Math.round(Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence);
