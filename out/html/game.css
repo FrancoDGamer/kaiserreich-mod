@@ -43,11 +43,12 @@ body.dark-mode .tools {
 }
 header, #content, footer {
   color: var(--text-color);
-  max-width: 540px;
+  max-width: 5400px;
   margin: 0 auto;
   overflow: auto;
 }
 #content {
+  width: 540px;
   position: relative;
   background-color: var(--content-bg-color);
   font-size: 1.1em;
