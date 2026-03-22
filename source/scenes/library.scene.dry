@@ -2,5 +2,5 @@ title: Library
 
 
 {!<svg id="map" style="width: 500px; height: 400px;">
-    <img src="out/html/img/map.svg">
+    <img src="img/map.svg">
 </svg>!}
