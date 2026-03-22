@@ -265,8 +265,7 @@ Q.new_middle_qol = 100;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
 Q.parties = ['spd', 'sp', 'faud', 'z', 'nlp', 'bvp', 'fvp', 'lvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other', 'agrarian', 'danes', 'fkp', 'antisemites', 'lrp', 'upn', 'dnef'];
-Q.parties_graph = ['spd', 'sp', 'faud', 'z', 'nlp', 'bvp', 'fvp', 'lvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other', 'agrarian', 'danes', 'fkp', 'antisemites', 'lrp', 'upn', 'dnef'];
-
+Q.parties_graph = ['spd', 'sp', 'z', 'nlp', 'bvp', 'fvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other', 'agrarian', 'danes', 'fkp', 'antisemites', 'lrp'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
@@ -323,7 +322,6 @@ Q.old_middle_agrarian = 1.13;
 Q.old_middle_danes = 0.23;
 Q.old_middle_upn = 0;
 Q.old_middle_dnef = 0;
-
 
 Q.new_middle_faud = 1;
 Q.new_middle_spd = 26.76;
@@ -481,7 +479,6 @@ Q.old_danes_r = 0.23;
 Q.old_upn_r = 0;
 Q.old_dnef_r = 0;
 
-
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
@@ -495,7 +492,6 @@ Q.election_records = [];
 Q.party_support_records = [];
 // inflation and unemployment records
 Q.economic_records = [];
-
 
 // State of the government
 Q.president = "Herbert von Dirksen";
