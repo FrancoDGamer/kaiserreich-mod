@@ -259,8 +259,34 @@ window.displayText = function (text) {
         }
     };
 
-
-
+  /*
+   * graph functions
+   * */
+  window.toggleDem = function toggleDemographicTable() {
+      const resultsDiv = document.getElementById('results');
+      // Toggle display between 'none' and 'block'
+      if (resultsDiv.style.display === 'none' || resultsDiv.style.display === '') {
+          resultsDiv.style.display = 'block'; // or 'table' for the table specifically
+      } else {
+          resultsDiv.style.display = 'none';
+      }
+  };
+  window.toggleGraph = function toggleGraph() {
+      const svgElement = document.getElementById('party_support_history');
+      if (svgElement.style.display === 'none' || svgElement.style.display === '') {
+          svgElement.style.display = 'block';
+      } else {
+          svgElement.style.display = 'none';
+      }
+  };
+  window.toggleElectionGraph = function toggleElectionGraph() {
+      const svgElement = document.getElementById('election_history');
+      if (svgElement.style.display === 'none' || svgElement.style.display === '') {
+          svgElement.style.display = 'block';
+      } else {
+          svgElement.style.display = 'none';
+      }
+  };
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
