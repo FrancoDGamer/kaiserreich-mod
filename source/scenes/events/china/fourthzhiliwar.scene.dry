@@ -195,17 +195,19 @@ go-to: zhili_congress_menu
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
-With the news on the conflict still hot and coming in and the Brockdorff cabinet still busy discussing course of action, the SPD chooses to host their party conference in the town of [BLANK] for logistical purposes. As the delegates make their way in from all over the country, the atmosphere is quite tense and uncertain, in other part due to how unusual it is. 
+With the news on the conflict still hot and coming in and the Brockdorff cabinet still busy discussing course of action, the SPD chooses to host their party conference in Berlin for logistical purposes. As the delegates make their way in, most of them already present, the atmosphere is quite tense and uncertain, in other part due to how unusual it is. 
 
-Since the March Reforms, the SPD has not been known for taking strong action on foreign affairs and we have remained mostly inactive since forcing Luderndoff's hand into peace. However, Stresemann's proposal to intervene in 1924 led to outrage from the war weary German population, causing his and Reichskanzler Arthur von Posadowsky-Wehner's entire cabinet to fall. Meanwhile the Chinese Intervention has been acquiring grumblings among the less warhawky sides of society. Many in our party left, previously aligned with the USPD, believe it is our duty to take strong action to stop Imperialism.
+Since the March Reforms, the SPD has not been known for taking strong action on foreign affairs and we have remained mostly inactive since forcing Luderndoff's hand into peace. However, Stresemann's proposal to intervene in 1924 led to outrage from the war weary German population, causing his and Reichskanzler Arthur von Posadowsky-Wehner's entire cabinet to fall. Meanwhile the Chinese Intervention has been acquiring grumblings among the less warhawky sides of society. Many in our party left, previously aligned with the now defunct USPD, believe it is our duty to take strong action to stop Imperialism.
 
-Even so, the conference was met with significant doubt from many of the delegates who are more distrustful of the party leadership across the entire SPD aisle, and thus come with a degree of opposition to any decisions that can be made here.
+Even so, the conference was met with significant apathy and doubt from many of the delegates who are more distrustful of the party leadership, indepedently of aisle, and thus come with a degree of opposition to any decisions that can be made here.
 
-At , Party Chairman Hermann Muller declares the opening, he apologizes for the sudden and unexpected nature of this congress and thanks everyone for attending.
+Party Chairman Hermann Muller declares the opening of the conference in a speech wherein he apologizes for the sudden and unexpected nature of this congress and thanks everyone for attending. Otto Wels, the co-chairman and leader of the party's executive, explains the situation and offers a summary of what is known so far, he notes that it's important the SPD act united in times of crisis, and that what is done here might very well change the entire fate of this potential war with Japan.
+
+Immediately, from multiple wings, a variety of opinions begin to form:
 
 = Party Left - [+ left_influence_percentage +]% of the Conference - [+ left_delegates +] Delegates
 
-The Party Left is composed of our far left, classical marxists that go back before the first weltkrieg, and USPD spartacists who did not go over to the SP.
+Led by Max Seydewitz, the Party Left gives passionate speeches about the need for the SPD to finally take opposition. They still remember when the SPD voted for war loans in the first Weltkrieg, calling it a betrayal of our values. The left urges the SPD to stop the war at any and all costs.
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -216,7 +218,7 @@ The Party Left is composed of our far left, classical marxists that go back befo
 
 = Centre - [+ center_influence_percentage +]% of the Conference - [+ left_delegates +] Delegates
 
-Our party centre is made up of pragmatic politicians trying to steer the course between the revolutionary and reformist debates.
+Though unwilling to outright support active opposition against the war if it means consequences or damage to party unity, the Center largely agrees with the left that we should not do a repeat of 1916. Some of the USPD Centrists sympathise with the left, including Muller himself who makes moral appeals around the situation, however, fear backfiring and understand the trouble in outright opposing the Brockdorff cabinet amidst a golden age, and wish to explore other options before committing to an anti-war course.
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -227,7 +229,9 @@ Our party centre is made up of pragmatic politicians trying to steer the course 
 
 = Labour - [+ labor_influence_percentage +]% of the Conference - [+ labor_delegates +] Delegates
 
-The labor is composed of populist politicians, prominent trade unionists, and a number of "codeterminists" interested primarily in socialization of work.
+Labour concerns are largely worried about the effect of a war than any ideological situations, though it's also where the largest portion of "neutral" delegates can be found. Unwilling to take a side, as both options could hurt Germany, they focus on practical gains and largely desire the party to focus on prices rather than taking a stance in some distant war.
+
+Some of the more radical left delegates accuse of them essentially supporting the conflict: A SPD that does not takes a stance effectively gives way to the warhawks of society to go unopposed, and some question if some of the populist politicians won't turn heel as soon as they're talking to their constituents...
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -238,6 +242,8 @@ The labor is composed of populist politicians, prominent trade unionists, and a 
 
 = Young Turks - [+ young_turk_influence_percentage +]% of the Conference - [+ young_turk_delegates +] Delegates
 
+The "Young Turks", composed of the more radicalized youth of the party, is virtually in favour of some kind of proactive action against Japan. The Hofgeismarer Group of reformists argues that we need principled opposition against further Kaisermarine gains on the region, as well as Japanese incursions, though well meaning, many wonder how both goals could be accomplished beyond token support. Meanwhile, the Hanover Group of orthodox marxists meanwhile propose an even more radical idea: The SPD should support the Chinese people's right to self-determination. This in practice essentially will involve lending support to one of the many warlords. 
+
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
 {!<tr><td><div class="box" style='background-color:#3e17a8'> </div> !} Hofgeismarer Group: {!</td><td>!} [+ neorevisionist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
@@ -246,6 +252,9 @@ The labor is composed of populist politicians, prominent trade unionists, and a 
 
 = Right - [+ right_influence_percentage +]% of the Conference - [+ right_delegates +] Delegates
 
+The Party's Right is largely quiet throughout the conference, with Labor taking the lead in the less dove sides, but they make a number of impactful arguments that reach even some leftists. They claim that though internationalism and pacifism are ideal, the SPD cannot exchange an imperialist power for another, much less act against Germany before we even know if this is Japan. They claim we will be portrayed as collaborationists or saboteurs, and that even if we succeed beyond all reasonable doubt, we'll only be handing China to Japan instead. Rather than doing something as reckless, they propose we simply wait and see for further developments. Failing that, they ask to leave this matter to the representatives.
+
+The current minister-president of Saxony, Roberth Wirth, claims that the closer we align ourselves to the Brockdorff cabinet in stance, the easier he'll have a time passing a series of industrial reforms aimed at expanding worker management over the textile industry, which would be a huge win for our workers in Saxony, as well as potentially boost economic output. 
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}

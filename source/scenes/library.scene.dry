@@ -22,7 +22,7 @@ on-departure: {!
 !}
 
 {!<svg id="map">
-    <img src="img/map.svg" style="max-width: 100%;width:3450px;height:4360px;position:absolute;left:0;top:0;">
+    <img src="img/map.svg" style="max-width: 100%;position:absolute;left:0;top:0;">
     <a title="Mali" href="https://en.wikipedia.org/wiki/Mali" target="_blank" id="malic">
     <path
           inkscape:connector-curvature="0"
