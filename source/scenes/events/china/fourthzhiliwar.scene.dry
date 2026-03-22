@@ -365,6 +365,8 @@ WIP
 WIP
 
 @antiwar_concession1
+subtitle: This will move our party towards a more decentralized model and make it hard for us to rally any dissenting representatives to a vote in the future.
+view-if: zhili_antiwar == 1
 on-arrival {!
     Q.zhili_opposition -= (Q.right_influence/2);
     
@@ -373,8 +375,6 @@ on-arrival {!
     }
 
 !}
-subtitle: This will move our party towards a more decentralized model and make it hard for us to rally any dissenting representatives to a vote in the future.
-view-if: zhili_antiwar == 1
 go-to: negotiations
 
 @antiwar_concession2
