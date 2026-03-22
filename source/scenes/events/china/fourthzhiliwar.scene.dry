@@ -43,6 +43,18 @@ Q.labor_influence = ((Q.populist_influence + Q.trade_union_influence + Q.codeter
 
 Q.young_turk_influence = ((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100;
 
+
+Q.left_influence = (((Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)/Q.total_influence)*100).toFixed(1);
+
+Q.right_influence = (((Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)/Q.total_influence)*100).toFixed(1);
+
+Q.center_influence = (((Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)/Q.total_influence)*100).toFixed(1);
+
+Q.labor_influence = (((Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)/Q.total_influence)*100).toFixed(1);
+
+Q.young_turk_influence = (((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100).toFixed(1);
+
+
 Q.left_delegates = Math.round(Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)
 
 Q.right_delegates = Math.round(Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)
@@ -66,6 +78,8 @@ Q.zhili_free = 0;
 Q.zhili_china = 0;
 
 Q.zhili_ignore = 0;
+
+Q.zhili_opposition = 0;
 
 !}
 on-display: {!
@@ -246,6 +260,7 @@ At , Party Chairman Hermann Muller declares the opening,
 subtitle: This option lets us capitalize on German weariness to the conflicts and wars we've been getting into, however we will have to convince the dissenting factions.
 on-arrival: {!
     Q.zhili_antiwar += 1;
+    Q.zhili_opposition += Q.right_influence;
 !}
 go-to: negotiations 
 
@@ -301,8 +316,7 @@ on-arrival: {!
 
 Q.total_vote_pool = (Q.right_influence + Q.labor_influence + Q.left_influence + Q.center_influence + Q.young_turk_influence);
 
-Q.total_vote_pool_support = Q.total_vote_pool;
-
+Q.total_vote_pool_support = Q.total_vote_pool - Q.zhili_opposition;
 
 Q.zhilivotesupport = (Q.total_vote_pool_support);
 
