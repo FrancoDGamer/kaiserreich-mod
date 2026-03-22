@@ -340,7 +340,7 @@ hi we're negotiating testt
 
 our support is [+ zhilivotesupport_display +]%
 
-[? if zhilivotesupport >= 50 and zhili_antiwar = 1 : Somehow, this has turned out to be a very divisive measure. ?]
+[? if zhilivotesupport >= 50 and zhilivotesupport <= 59 and zhili_antiwar = 1 : Somehow, this has turned out to be a very divisive measure. ?]
 
 [? if zhilivotesupport >= 60 and zhili_antiwar = 1 : As expected, most of the party is supportive of opposing the war, however a number of dissenters exist and are calling for a vote. We are certain to win, but we could try to further discussions and appease them. ?]
 
