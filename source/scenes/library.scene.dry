@@ -1,4 +1,6 @@
 title: Library
 
 
-{!<svg href="out/html/img/map.svg" id="map" style="width: 500px; height: 400px;"> </svg>!}
+{!<svg id="map" style="width: 500px; height: 400px;">
+    <img src="out/html/img/map.svg">
+</svg>!}
