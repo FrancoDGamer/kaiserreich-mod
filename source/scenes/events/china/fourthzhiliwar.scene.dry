@@ -370,7 +370,7 @@ view-if: zhili_antiwar == 1
 on-arrival {!
     
     if (Q.zhili_opposition < 0) {
-        Q.zhili_opposition = 0;
+        Q.zhili_opposition -= 1;
     }
 
 !}
