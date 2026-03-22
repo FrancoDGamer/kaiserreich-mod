@@ -25,7 +25,6 @@ Nothing happens
 @preempt 
 subtitle: Seen as a nuclear answer to the news at this stage in time, this will enable us to choose a stance on the war, from opposing it to supporting it.
 on-arrival: {!
-//define values for Zhili debate
 Q.total_influence = Math.round(Q.spd_r * 5);
 
 Q.zhili_antiwar = 0;
