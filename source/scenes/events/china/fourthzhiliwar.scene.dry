@@ -267,6 +267,11 @@ subtitle: This option lets us capitalize on German weariness to the conflicts an
 on-arrival: {!
     Q.zhili_antiwar += 1;
     Q.zhili_opposition += Q.right_influence;
+    Q.zhili_antiwar_concession_1 = 1;
+    Q.zhili_antiwar_concession_2 = 1;
+    Q.zhili_antiwar_concession_3 = 1;
+    Q.zhili_antiwar_concession_4 = 1;
+    Q.zhili_antiwar_concession_5 = 1;
 !}
 go-to: negotiations 
 
@@ -367,6 +372,7 @@ WIP
 @antiwar_concession1
 subtitle: This will move our party towards a more decentralized model and make it hard for us to rally any dissenting representatives to a vote in the future.
 view-if: zhili_antiwar == 1
+choose-if: zhili_antiwar_concession_1 == 0   
 on-arrival: {!
     Q.zhili_opposition -= (Q.right_influence/2);
     
@@ -374,6 +380,7 @@ on-arrival: {!
         Q.zhili_opposition = 0;
     }
 
+    Q.zhili_antiwar_concession_1 = 1
 !}
 go-to: zhili-negotiation-menu
 
@@ -387,9 +394,12 @@ on-arrival: {!
         Q.zhili_opposition = 0;
     }
 
+    Q.zhili_antiwar_concession_2 = 1
+
 !}
 subtitle: This concession is already well liked by some of the pragmatists, though it can legitimize this course of action with moderates, possibly making it harder to pull out in the future without a good reason.
 view-if: zhili_antiwar == 1
+choose-if: zhili_antiwar_concession_2 == 0   
 go-to: negotiations
 
 @antiwar_urge 
@@ -399,9 +409,13 @@ on-arrival: {!
     if (Q.zhili_opposition < 0) {
         Q.zhili_opposition = 0;
     }
+    Q.zhili_antiwar_concession_3 = 1
 
 !}
 subtitle: If we can't make the best out of an early congress, this rethoric will very quickly lead this decision to be seen as a mistake in hindsight.
+choose-if: zhili_antiwar_concession_3 == 0   
+view-if: zhili_antiwar == 1
+go-to: negotiations
 
 @antiwar_vote
 on-arrival: {!
@@ -411,9 +425,12 @@ on-arrival: {!
         Q.zhili_opposition = 0;
     }
 
+    Q.zhili_antiwar_concession_4 = 1
+
 !}
 subtitle: As the main opposition party, this is a consistent approach that's easy to convince the dissenters and could bring actual gains, however, if we fail to make inroads into the March Coalition, it might backfire.
 view-if: zhili_antiwar == 1
+choose-if: zhili_antiwar_concession_4 == 0
 go-to: negotiations
 
 @antiwar_uspd
@@ -424,7 +441,10 @@ on-arrival: {!
         Q.zhili_opposition = 0;
     }
 
+    Q.zhili_antiwar_concession_5 = 1
+
 !}
 subtitle: Though focusing on the past can be a powerful tool and is hard for our opponents to win, this moves us sharply towards the left.
 view-if: zhili_antiwar == 1
+choose-if: zhili_antiwar_concession_5 == 0   
 go-to: negotiations
