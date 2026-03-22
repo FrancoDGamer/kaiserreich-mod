@@ -7,6 +7,13 @@ const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
   toolsWrapper.style.display = 'none';
 }
+
+const content = document.getElementById('content');
+
+if (content) {
+  content.style.width = '1000px';
+}
+
 !}
 on-departure: {!
     if (toolsWrapper) {
