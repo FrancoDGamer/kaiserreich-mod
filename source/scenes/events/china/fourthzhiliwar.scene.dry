@@ -335,11 +335,20 @@ hi we're negotiating testt
 
 our support is [+ zhilivotesupport_display +]%
 
+[? if zhilivotesupport >= 50 and zhili_antiwar = 1 : Somehow, this has turned out to be a very divisive measure. ?]
+
+[? if zhilivotesupport >= 60 and zhili_antiwar = 1 : As expected, most of the party is supportive of opposing the war, however a number of dissenters exist and are calling for a vote. We are certain to win, but we could try to further discussions and appease them. ?]
+
 @zhili-negotiation-menu
 
 - @vote: Let's bring it to a vote.
-- @noopposition: The party has agree
+- @noopposition: The party has agreed on this course of action. We don't need a vote!
 - @favours: Do we have any leverage we can use to tilt the vote?
+- @antiwar_vote: We will focus on the potential gains: The March Coalition is big and only the SPD and the far right are possible sources for the anti-war movement.
+- @antiwar_concession1: We will promise a "tolerant" party discipline. Officially the SPD will posit itself as anti-war, but we won't force representatives to campaign on it. 
+- @antiwar_concession2: We shall concede on a "restrained" campaign: No leveraging outside resources and no non-parliamentarian measures to stop intervention. The SPD will get this war stopped via primarily parliamentary processes.
+- @antiwar_urge: We must urge about the timing, it's essential we act as soon as possible!
+- @antiwar_uspd: We will focus on a debate around the mistakes of the past. The USPD, the war, and the Ludendorff cabinet that the SPD unwittingly aided. 
 
 @vote
 choose-if: zhilivotesupport >= 50
@@ -347,9 +356,63 @@ choose-if: zhilivotesupport >= 50
 WIP
 
 @noopposition
+choose-if: zhilivotesupport >= 75
 
 WIP
 
 @favours
 
 WIP
+
+@antiwar_concession1
+on-arrival {!
+    Q.zhili_opposition -= Q.right_influence/2;
+    if (Q.zhili_opposition) < 0 {
+        Q.zhili_opposition = 0
+    }
+!}
+subtitle: This will move our party towards a more decentralized model and make it hard for us to rally any dissenting representatives to a vote in the future.
+view-if: zhili_antiwar == 1
+go-to: negotiations
+
+@antiwar_concession2
+on-arrival {!
+    Q.zhili_opposition -= Q.right_influence/2;
+    if (Q.zhili_opposition) < 0 {
+        Q.zhili_opposition = 0
+    }
+!}
+subtitle: This concession is already well liked by some of the pragmatists, though it can legitimize this course of action with moderates, possibly making it harder to pull out in the future without a good reason.
+view-if: zhili_antiwar == 1
+go-to: negotiations
+
+@antiwar_urge 
+on-arrival {!
+    Q.zhili_opposition -= Q.right_influence/2;
+    if (Q.zhili_opposition) < 0 {
+        Q.zhili_opposition = 0
+    }
+!}
+subtitle: If we can't make the best out of an early congress, this rethoric will very quickly lead this decision to be seen as a mistake in hindsight.
+
+@antiwar_vote
+on-arrival {!
+    Q.zhili_opposition -= Q.right_influence/2;
+    if (Q.zhili_opposition) < 0 {
+        Q.zhili_opposition = 0
+    }
+!}
+subtitle: As the main opposition party, this is a consistent approach that's easy to convince the dissenters and could bring actual gains, however, if we fail to make inroads into the March Coalition, it might backfire.
+view-if: zhili_antiwar == 1
+go-to: negotiations
+
+@antiwar_uspd
+on-arrival {!
+    Q.zhili_opposition -= Q.right_influence/2;
+    if (Q.zhili_opposition) < 0 {
+        Q.zhili_opposition = 0
+    }
+!}
+subtitle: Though focusing on the past can be a powerful tool and is hard for our opponents to win, this moves us sharply towards the left.
+view-if: zhili_antiwar == 1
+go-to: negotiations
