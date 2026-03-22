@@ -267,11 +267,11 @@ subtitle: This option lets us capitalize on German weariness to the conflicts an
 on-arrival: {!
     Q.zhili_antiwar += 1;
     Q.zhili_opposition += Q.right_influence;
-    Q.zhili_antiwar_concession_1 = 1;
-    Q.zhili_antiwar_concession_2 = 1;
-    Q.zhili_antiwar_concession_3 = 1;
-    Q.zhili_antiwar_concession_4 = 1;
-    Q.zhili_antiwar_concession_5 = 1;
+    Q.zhili_antiwar_concession_1 = 0;
+    Q.zhili_antiwar_concession_2 = 0;
+    Q.zhili_antiwar_concession_3 = 0;
+    Q.zhili_antiwar_concession_4 = 0;
+    Q.zhili_antiwar_concession_5 = 0;
 !}
 go-to: negotiations 
 
