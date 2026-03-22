@@ -337,7 +337,6 @@ if (window && d3) {
     d3.select("#election_history").datum(Q.election_records).call(lines);
     //document.getElementById('election_history').innerHTML = svg.outerHTML;
 
-    // party support records should not have so many ticks
     if (!Q.historical_mode) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties_graph,
@@ -357,6 +356,13 @@ go-to: coalition_menu
 = Election results
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+
+{!<button class="tab_button" id="demographics_tab" onclick="window.toggleDem();">Demographic Results</button>!}
+{!<button class="tab_button" id="election_tab" onclick="window.toggleElectionGraph();">Previous Elections Graph</button>!}
+{!<button class="tab_button" id="graph_tab" onclick="window.toggleGraph();">Party Support Graph</button>!}
+
+{!<svg id="election_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
+{!<svg id="party_support_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
 
 = Marxist Parties [+ leftist_parties +]%
 
@@ -445,14 +451,6 @@ In the Reichstag, there are also a number of candidates not affiliated with a sp
 {!<tr><td><div class="box" style='background-color:#954B00'> </div> !} Antisemites: {!</td><td>!} [+ antisemites_r +]% {!</td><td>!} [+ str_change_antisemites +]% {!</td><td>!} [+ antisemites_seats +] {!</td><td>!} [+ antisemites_seats_change_display +] {!</td></tr>!}
 {!<tr><td><div class="box" style='background-color:#FFC300'> </div> !} Minority Liberals: {!</td><td>!} [+ minorityliberal_r +]% {!</td><td>!} [+ str_change_minorityliberal +] {!</td><td>!} [+ minorityliberal_seats +] {!</td><td>!} [+ minorityliberal_seats_change_display +] {!</td></tr>!}
 {!</table>!}
-
-
-{!<button class="tab_button" id="demographics_tab" onclick="window.toggleDem();">Demographic Results</button>!}
-{!<button class="tab_button" id="election_tab" onclick="window.toggleElectionGraph();">Previous Elections Graph</button>!}
-{!<button class="tab_button" id="graph_tab" onclick="window.toggleGraph();">Party Support Graph</button>!}
-
-{!<svg id="election_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
-{!<svg id="party_support_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
 
 = **Potential coalitions:**
 

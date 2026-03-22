@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'sp', 'faud', 'z', 'nlp', 'bvp', 'fvp', 'lvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other', 'agrarian', 'danes', 'fkp', 'antisemites', 'lrp', 'upn', 'dnef'];
+        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E30063', 'sp': '#D10000', 'z': '#000', 'nlp': '#53683B', 'bvp': '#69A2BE', 'fvp': '#FFED4D', 'minorityliberal': '#FFC300', 'guelph': '#B5BA54', 'pp': '#FF96D7', 'elvp': '#000E91', 'dkp': '#274875', 'dvp': '#161654', 'dvlp': '#426366', 'dsp': '#003317', 'other': '#909090', 'agrarian': '#00644b', 'danes': '#F2B3B3', 'fkp': '#3EBEC1', 'antisemites': '#954B00', 'lrp': '#3A7B9C'};
+        partyColors = {'spd': '#E3000F', 'kpd': '#700000', 'ddp': '#D3C24D', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3E88B3', 'nsdap': '#7A3C00', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'sp': 'SP', 'z': 'Z', 'nlp': 'NLP', 'bvp': 'BVP', 'fvp': 'FVP', 'minorityliberal': 'Liberal', 'guelph': 'GHP', 'pp': 'PP', 'elvp': 'ELVP', 'dkp': 'DKP', 'dvp': 'DVP', 'dvlp': 'DVLP', 'dsp': 'DSP', 'other': 'Other', 'agrarian': 'Agrarian', 'danes': 'Danes', 'fkp': 'FKP', 'antisemites': 'Antisemite', 'lrp': 'LRP'};
+        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
@@ -59,9 +59,12 @@ d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataM
 
       // Declare the y (vertical position) scale.
       if (!dataMax) {
-          const maxSPD = d3.max(data, d => d.spd);
-          const maxNSDAP = d3.max(data, d => d.nsdap);
-          dataMax = maxSPD >= maxNSDAP ? maxSPD + 10 : maxNSDAP + 10;
+            const maxSPD = d3.max(data, d => d.spd);
+            const maxDVLP = d3.max(data, d => d.dvlp);
+            const maxZ = d3.max(data, d => d.z);
+
+            const overallMax = d3.max([maxSPD, maxDVLP, maxZ]);
+            dataMax = overallMax + 10;
           dataMin = 0;
       }
       const yScale = d3.scaleLinear([dataMin, dataMax], [height - marginBottom, marginTop]);
