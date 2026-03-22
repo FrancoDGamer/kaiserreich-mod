@@ -455,28 +455,29 @@ Q.upn_r = 0;
 Q.dnef_r = 0;
 
 // diff from prev
-Q.old_spd_r = 27;
-Q.old_sp_r = 2;
-Q.old_z_r = 18;
-Q.old_fvp_r = 13;
-Q.old_nlp_r = 9;
-Q.old_dkp_r = 10;
-Q.old_dvp_r = 2;
-Q.old_dvlp_r = 4;
-Q.old_dsp_r = 1;
-Q.old_other_r = 2;
-Q.old_minorityliberal_r = 1;
-Q.old_pp_r = 4;
-Q.old_elvp_r = 2;
-Q.old_guelph_r = 2;
+Q.old_spd_r = 20.86;
+Q.old_sp_r = 8.84;
+Q.old_z_r = 13.33;
 Q.old_bvp_r = 3;
-Q.guelph_r = 0.91;
-Q.antisemites_r = 1.36;
-Q.agrarian_r = 1.13;
-Q.danes_r = 0.23;
-Q.upn_r = 0;
-Q.dnef_r = 0;
-Q.fkp = 0;
+Q.old_lrp_r = 0.23;
+Q.old_fvp_r = 9.98;
+Q.old_lvp_r = 0;
+Q.old_nlp_r = 12.70;
+Q.old_fkp_r = 3.40;
+Q.old_dkp_r = 11.11;
+Q.old_dvp_r = 0;
+Q.old_dvlp_r = 3.17;
+Q.old_dsp_r = 0;
+Q.old_other_r = 1.36;
+Q.old_minorityliberal_r = 1.36;
+Q.old_pp_r = 3.85;
+Q.old_elvp_r = 2.04;
+Q.old_guelph_r = 1.36;
+Q.old_antisemites_r = 2.27;
+Q.old_agrarian_r = 0.91;
+Q.old_danes_r = 0.23;
+Q.old_upn_r = 0;
+Q.old_dnef_r = 0;
 
 
 // sapd isn't formed yet, but it may be formed

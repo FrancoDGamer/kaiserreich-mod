@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd'];
+        parties = ['spd', 'sp', 'faud', 'z', 'nlp', 'bvp', 'fvp', 'lvp', 'minorityliberal', 'guelph', 'pp', 'elvp', 'dkp', 'dvp', 'dvlp', 'dsp', 'other', 'agrarian', 'danes', 'fkp', 'antisemites', 'lrp', 'upn', 'dnef'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F'};
+        partyColors = {'spd': '#E30063', 'sp': '#D10000', 'z': '#000', 'nlp': '#53683B', 'bvp': '#69A2BE', 'fvp': '#FFED4D', 'minorityliberal': '#FFC300', 'guelph': '#B5BA54', 'pp': '#FF96D7', 'elvp': '#000E91', 'dkp': '#274875', 'dvp': '#161654', 'dvlp': '#426366', 'dsp': '#003317', 'other': '#909090', 'agrarian': '#00644b', 'danes': '#F2B3B3', 'fkp': '#3EBEC1', 'antisemites': '#954B00', 'lrp': '#3A7B9C'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD'};
+        partyNames = {'spd': 'SPD', 'sp': 'SP', 'z': 'Z', 'nlp': 'NLP', 'bvp': 'BVP', 'fvp': 'FVP', 'minorityliberal': 'Liberal', 'guelph': 'GHP', 'pp': 'PP', 'elvp': 'ELVP', 'dkp': 'DKP', 'dvp': 'DVP', 'dvlp': 'DVLP', 'dsp': 'DSP', 'other': 'Other', 'agrarian': 'Agrarian', 'danes': 'Danes', 'fkp': 'FKP', 'antisemites': 'Antisemite', 'lrp': 'LRP'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
