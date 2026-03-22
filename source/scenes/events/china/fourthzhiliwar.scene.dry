@@ -27,14 +27,6 @@ subtitle: Seen as a nuclear answer to the news at this stage in time, this will 
 on-arrival: {!
 Q.total_influence = Math.round(Q.spd_r * 5);
 
-Q.zhili_antiwar = 0;
-Q.zhili_prowar = 0;
-Q.zhili_neutral = 0;
-Q.zhili_principled = 0;
-Q.zhili_free = 0;
-Q.zhili_china = 0;
-Q.zhili_ignore = 0;
-
 for (var faction of Q.factions) {
     Q[faction + '_influence'] = (Q.total_influence * (Q[faction + '_strength']/100));  
     Q[faction + '_influence' + '_display'] = Math.round(Q[faction + '_influence']);
@@ -42,16 +34,38 @@ for (var faction of Q.factions) {
 }
 
 Q.left_influence = ((Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)/Q.total_influence)*100;
+
 Q.right_influence = ((Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)/Q.total_influence)*100;
+
 Q.center_influence = ((Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)/Q.total_influence)*100;
+
 Q.labor_influence = ((Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)/Q.total_influence)*100;
+
 Q.young_turk_influence = ((Q.hanover_influence + Q.neorevisionist_influence)/Q.total_influence)*100;
 
 Q.left_delegates = Math.round(Q.pseudo_syndicalist_influence + Q.classical_marxist_influence + Q.spartacist_influence)
+
 Q.right_delegates = Math.round(Q.staatspolitiker_influence + Q.social_liberal_influence + Q.national_socialist_influence)
+
 Q.center_delegates = Math.round(Q.centrist_influence + Q.austromarxist_influence + Q.pragmatist_influence)
+
 Q.labor_delegates = Math.round(Q.populist_influence + Q.trade_union_influence + Q.codeterminist_influence)
+
 Q.young_turk_delegates = Math.round(Q.hanover_influence + Q.neorevisionist_influence)
+
+Q.zhili_antiwar = 0;
+
+Q.zhili_prowar = 0;
+
+Q.zhili_neutral = 0;
+
+Q.zhili_principled = 0;
+
+Q.zhili_free = 0;
+
+Q.zhili_china = 0;
+
+Q.zhili_ignore = 0;
 
 !}
 on-display: {!
@@ -174,7 +188,7 @@ Even so, the conference was met with significant doubt from many of the delegate
 
 At , Party Chairman Hermann Muller declares the opening, 
 
-= Party Left - [+ left_influence_display +]% of the Conferece - [+ left_delegates +] Delegates
+= Party Left - [+ left_influence_percentage +]% of the Conferece - [+ left_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -183,7 +197,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#FF80C5'> </div> !} Spartacists: {!</td><td>!} [+ spartacist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Centre - [+ center_influence_display +]% of the Conferece - [+ left_delegates +] Delegates
+= Centre - [+ center_influence_percentage +]% of the Conferece - [+ left_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -192,7 +206,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#febeff'> </div> !} Pragmatists: {!</td><td>!} [+ pragmatist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Labour - [+ labor_influence_display +]% of the Conferece - [+ labor_delegates +] Delegates
+= Labour - [+ labor_influence_percentage +]% of the Conferece - [+ labor_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -201,7 +215,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#690000'> </div> !} Codeterminists: {!</td><td>!} [+ codeterminist_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Young Turks - [+ young_turk_influence_display +]% of the Conferece - [+ young_turk_delegates +] Delegates
+= Young Turks - [+ young_turk_influence_percentage +]% of the Conferece - [+ young_turk_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -209,7 +223,7 @@ At , Party Chairman Hermann Muller declares the opening,
 {!<tr><td><div class="box" style='background-color:#E30063'> </div> !} Hanover Group: {!</td><td>!} [+ hanover_influence_display +] Delegates {!</td><td>!} a {!</td></tr>!}
 {!</table>!}
 
-= Right - [+ right_influence_display +]% of the Conferece - [+ right_delegates +] Delegates
+= Right - [+ right_influence_percentage +]% of the Conferece - [+ right_delegates +] Delegates
 
 {!<table>!}
 {!<tr><td>Organization</td><td>Delegates Share</td>!}
@@ -289,9 +303,6 @@ Q.total_vote_pool = (Q.right_influence + Q.labor_influence + Q.left_influence + 
 
 Q.total_vote_pool_support = Q.total_vote_pool;
 
-if (Q.zhili_antiwar == 1) {
-    Q.total_vote_pool_support -= right_influence;
-}
 
 Q.zhilivotesupport = (Q.total_vote_pool_support);
 
