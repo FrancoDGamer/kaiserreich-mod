@@ -369,9 +369,9 @@ subtitle: This will move our party towards a more decentralized model and make i
 view-if: zhili_antiwar == 1
 on-arrival {!
     
-    if (Q.zhili_opposition < 0) {
-        Q.zhili_opposition -= 1;
-    }
+if (Q.pro_republic < 0) {
+    Q.pro_republic = 0;
+}
 
 !}
 go-to: negotiations
