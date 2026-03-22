@@ -400,7 +400,7 @@ on-arrival: {!
 subtitle: This concession is already well liked by some of the pragmatists, though it can legitimize this course of action with moderates, possibly making it harder to pull out in the future without a good reason.
 view-if: zhili_antiwar == 1
 choose-if: zhili_antiwar_concession_2 == 0   
-go-to: negotiations
+go-to: zhili-negotiation-menu
 
 @antiwar_urge 
 on-arrival: {!
@@ -415,7 +415,7 @@ on-arrival: {!
 subtitle: If we can't make the best out of an early congress, this rethoric will very quickly lead this decision to be seen as a mistake in hindsight.
 choose-if: zhili_antiwar_concession_3 == 0   
 view-if: zhili_antiwar == 1
-go-to: negotiations
+go-to: zhili-negotiation-menu
 
 @antiwar_vote
 on-arrival: {!
@@ -431,7 +431,7 @@ on-arrival: {!
 subtitle: As the main opposition party, this is a consistent approach that's easy to convince the dissenters and could bring actual gains, however, if we fail to make inroads into the March Coalition, it might backfire.
 view-if: zhili_antiwar == 1
 choose-if: zhili_antiwar_concession_4 == 0
-go-to: negotiations
+go-to: zhili-negotiation-menu
 
 @antiwar_uspd
 on-arrival: {!
@@ -447,4 +447,4 @@ on-arrival: {!
 subtitle: Though focusing on the past can be a powerful tool and is hard for our opponents to win, this moves us sharply towards the left.
 view-if: zhili_antiwar == 1
 choose-if: zhili_antiwar_concession_5 == 0   
-go-to: negotiations
+go-to: zhili-negotiation-menu
