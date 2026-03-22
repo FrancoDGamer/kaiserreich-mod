@@ -360,6 +360,8 @@ go-to: coalition_menu
 {!<button class="tab_button" id="election_tab" onclick="window.toggleElectionGraph();">Previous Elections Graph</button>!}
 {!<button class="tab_button" id="graph_tab" onclick="window.toggleGraph();">Party Support Graph</button>!}
 
+{!<svg id="election_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
+{!<svg id="party_support_history" style="width: 500px; height: 400px; display: none;"> </svg>!}
 
 = Marxist Parties [+ leftist_parties +]%
 
